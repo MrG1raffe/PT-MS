@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6930 64-bit) (preloaded format=pdflatex 2019.1.15)  17 MAR 2019 15:26
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6930 64-bit) (preloaded format=pdflatex 2019.1.15)  17 MAR 2019 20:59
 entering extended mode
 **./TV&MS.tex
 (TV&MS.tex
@@ -407,20 +407,20 @@ File: t2acmr.fd 2001/08/11 v1.0a Computer Modern Cyrillic font definitions
 ))
 \openout1 = `TV&MS.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 50.
-LaTeX Font Info:    ... okay on input line 50.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 50.
-LaTeX Font Info:    ... okay on input line 50.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 50.
-LaTeX Font Info:    ... okay on input line 50.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 50.
-LaTeX Font Info:    ... okay on input line 50.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 50.
-LaTeX Font Info:    ... okay on input line 50.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 50.
-LaTeX Font Info:    ... okay on input line 50.
-LaTeX Font Info:    Checking defaults for T2A/cmr/m/n on input line 50.
-LaTeX Font Info:    ... okay on input line 50.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 51.
+LaTeX Font Info:    ... okay on input line 51.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 51.
+LaTeX Font Info:    ... okay on input line 51.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 51.
+LaTeX Font Info:    ... okay on input line 51.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 51.
+LaTeX Font Info:    ... okay on input line 51.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 51.
+LaTeX Font Info:    ... okay on input line 51.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 51.
+LaTeX Font Info:    ... okay on input line 51.
+LaTeX Font Info:    Checking defaults for T2A/cmr/m/n on input line 51.
+LaTeX Font Info:    ... okay on input line 51.
 
 ("C:\Users\Дмитрий\AppData\Local\Programs\MiKTeX 2.9\tex/context/base\su
 pp-pdf.mkii"
@@ -501,19 +501,19 @@ Package grfext Info: Graphics extension search list:
 
 {C:/Users/Дмитрий/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}] [2
 ]
-LaTeX Font Info:    Try loading font information for U+rsfs on input line 66.
+LaTeX Font Info:    Try loading font information for U+rsfs on input line 67.
 
 ("C:\Users\Дмитрий\AppData\Local\Programs\MiKTeX 2.9\tex/latex/jknappen\
 ursfs.fd"
 File: ursfs.fd 1998/03/24 rsfs font definition file (jk)
 )
-LaTeX Font Info:    Try loading font information for U+msa on input line 66.
+LaTeX Font Info:    Try loading font information for U+msa on input line 67.
 
 ("C:\Users\Дмитрий\AppData\Local\Programs\MiKTeX 2.9\tex/latex/amsfonts\
 umsa.fd"
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 66.
+LaTeX Font Info:    Try loading font information for U+msb on input line 67.
 
 ("C:\Users\Дмитрий\AppData\Local\Programs\MiKTeX 2.9\tex/latex/amsfonts\
 umsb.fd"
@@ -522,86 +522,86 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 <pictures/ping.jpg, id=26, 1204.5pt x 1204.5pt>
 File: pictures/ping.jpg Graphic file (type jpg)
 <use pictures/ping.jpg>
-Package pdftex.def Info: pictures/ping.jpg  used on input line 131.
+Package pdftex.def Info: pictures/ping.jpg  used on input line 132.
 (pdftex.def)             Requested size: 14.22546pt x 14.22636pt.
  [4 <./pictures/ping.jpg>]
 <pictures/cat.jpg, id=30, 184.69pt x 184.69pt>
 File: pictures/cat.jpg Graphic file (type jpg)
 <use pictures/cat.jpg>
-Package pdftex.def Info: pictures/cat.jpg  used on input line 175.
+Package pdftex.def Info: pictures/cat.jpg  used on input line 176.
 (pdftex.def)             Requested size: 14.22595pt x 14.22636pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 172--179
+Underfull \hbox (badness 10000) in paragraph at lines 173--180
 
  []
 
 [5 <./pictures/cat.jpg>]
-Underfull \hbox (badness 10000) in paragraph at lines 189--190
+Underfull \hbox (badness 10000) in paragraph at lines 190--191
 
  []
 
 <pictures/cond_prob.jpg, id=37, 216.05719pt x 152.06813pt>
 File: pictures/cond_prob.jpg Graphic file (type jpg)
 <use pictures/cond_prob.jpg>
-Package pdftex.def Info: pictures/cond_prob.jpg  used on input line 191.
+Package pdftex.def Info: pictures/cond_prob.jpg  used on input line 192.
 (pdftex.def)             Requested size: 121.278pt x 85.35826pt.
 
-Overfull \hbox (64.3725pt too wide) in paragraph at lines 191--191
+Overfull \hbox (64.3725pt too wide) in paragraph at lines 192--192
 [][] 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 191--196
+Underfull \hbox (badness 10000) in paragraph at lines 192--197
 
  []
 
 File: pictures/ping.jpg Graphic file (type jpg)
 <use pictures/ping.jpg>
-Package pdftex.def Info: pictures/ping.jpg  used on input line 201.
+Package pdftex.def Info: pictures/ping.jpg  used on input line 202.
 (pdftex.def)             Requested size: 14.22546pt x 14.22636pt.
 
-Overfull \hbox (21.8966pt too wide) in paragraph at lines 219--220
+Overfull \hbox (21.8966pt too wide) in paragraph at lines 220--221
 []\T2A/cmr/m/it/12 ������� $\OML/cmm/m/it/12 A[]; A[]; [] ; A[]$ \T2A/cmr/m/it/
 12 ��-��-��-��-�� $[]$,
  []
 
 [6 <./pictures/cond_prob.jpg>] [7]
-Underfull \hbox (badness 10000) in paragraph at lines 247--254
+Underfull \hbox (badness 10000) in paragraph at lines 248--255
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 255--264
+Underfull \hbox (badness 10000) in paragraph at lines 256--265
 
  []
 
 [8]
 File: pictures/ping.jpg Graphic file (type jpg)
 <use pictures/ping.jpg>
-Package pdftex.def Info: pictures/ping.jpg  used on input line 285.
+Package pdftex.def Info: pictures/ping.jpg  used on input line 286.
 (pdftex.def)             Requested size: 14.22546pt x 14.22636pt.
 File: pictures/ping.jpg Graphic file (type jpg)
 <use pictures/ping.jpg>
-Package pdftex.def Info: pictures/ping.jpg  used on input line 305.
+Package pdftex.def Info: pictures/ping.jpg  used on input line 306.
 (pdftex.def)             Requested size: 14.22546pt x 14.22636pt.
  [9]
-Overfull \hbox (32.6404pt too wide) in paragraph at lines 325--326
+Overfull \hbox (32.6404pt too wide) in paragraph at lines 326--327
 []\T2A/cmr/m/it/12 ����� $\OML/cmm/m/it/12 ; $ \T2A/cmr/m/it/12 --- ���-���-�
 �� ��-��-��-��. ��-��� ���-��-���� $[]$
  []
 
 
-LaTeX Warning: Command \CYRI invalid in math mode on input line 328.
+LaTeX Warning: Command \CYRI invalid in math mode on input line 329.
 
 Missing character: There is no � in font cmr12!
 
-Underfull \hbox (badness 1496) in paragraph at lines 327--331
+Underfull \hbox (badness 1496) in paragraph at lines 328--332
 \T2A/cmr/bx/n/12 �������������� $[] \OT1/cmr/m/n/12 = [] []$\T2A/cmr/m/n/12 . �
 �-��-���, ���
  []
 
 [10] [11]
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 385.
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 386.
 
 
 ("C:\Users\Дмитрий\AppData\Local\Programs\MiKTeX 2.9\tex/latex/base\omsc
@@ -609,14 +609,14 @@ mr.fd"
 File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <12> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 385.
-LaTeX Font Info:    Try loading font information for U+bbm on input line 407.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 386.
+LaTeX Font Info:    Try loading font information for U+bbm on input line 408.
 
 ("C:\Users\Дмитрий\AppData\Local\Programs\MiKTeX 2.9\tex/latex/bbm\ubbm.
 fd"
 File: ubbm.fd 1999/03/15 V 1.2 Font definition for bbm font - TH
 ) [12]
-Overfull \hbox (3.05792pt too wide) detected at line 423
+Overfull \hbox (3.05792pt too wide) detected at line 424
 [] \OML/cmm/m/it/12 f\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 x\OT1/cmr/m/n/12 )\OML/c
 mm/m/it/12 \OT1/cmr/m/n/12 (\OML/cmm/m/it/12 dx\OT1/cmr/m/n/12 ) = [][][] []\O
 ML/cmm/m/it/12 [][] []\OT1/cmr/m/n/12 +\OML/cmm/m/it/12 n\OT1/cmr/m/n/12 ([])
@@ -627,76 +627,73 @@ ML/cmm/m/it/12 [][] []\OT1/cmr/m/n/12 +\OML/cmm/m/it/12 n\OT1/cmr/m/n/12 ([])
 <pictures/kantor.png, id=69, 202.50656pt x 107.65219pt>
 File: pictures/kantor.png Graphic file (type png)
 <use pictures/kantor.png>
-Package pdftex.def Info: pictures/kantor.png  used on input line 488.
+Package pdftex.def Info: pictures/kantor.png  used on input line 489.
 (pdftex.def)             Requested size: 160.57169pt x 85.35826pt.
 
-Overfull \hbox (103.66618pt too wide) in paragraph at lines 488--488
+Overfull \hbox (103.66618pt too wide) in paragraph at lines 489--489
 [][] 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 481--494
+Underfull \hbox (badness 10000) in paragraph at lines 482--495
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 481--494
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 481--494
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 481--494
+Underfull \hbox (badness 10000) in paragraph at lines 482--495
 
  []
 
 [15]
-Underfull \hbox (badness 10000) in paragraph at lines 494--498
+Underfull \hbox (badness 10000) in paragraph at lines 495--499
 
  []
 
-[16 <./pictures/kantor.png>] (TV&MS.aux) ) 
+[16 <./pictures/kantor.png>]
+Overfull \hbox (1.93245pt too wide) detected at line 522
+\U/msb/m/n/12 E\OML/cmm/m/it/12  \OT1/cmr/m/n/12 = [] \OML/cmm/m/it/12 d\U/ms
+b/m/n/12 P \OT1/cmr/m/n/12 = [][][] []\U/msb/m/n/12 P[][] []\OT1/cmr/m/n/12 +\O
+ML/cmm/m/it/12 n\U/msb/m/n/12 P\OT1/cmr/m/n/12 ([])[]
+ []
+
+[17] [18] (TV&MS.aux) ) 
 Here is how much of TeX's memory you used:
- 3673 strings out of 492946
- 49834 string characters out of 3122270
- 121731 words of memory out of 3000000
- 7473 multiletter control sequences out of 15000+200000
+ 3674 strings out of 492946
+ 49837 string characters out of 3122270
+ 121741 words of memory out of 3000000
+ 7474 multiletter control sequences out of 15000+200000
  15732 words of font info for 46 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 41i,7n,30p,905b,200s stack positions out of 5000i,500n,10000p,200000b,50000s
- <C:\Users\Дмитрий\AppData\Loc
-al\MiKTeX\2.9\fonts/pk/ljfour/public/bbm/dpi600\bbm12.pk> <C:\Users\Дмитр�
-�й\AppData\Local\MiKTeX\2.9\fonts/pk/ljfour/lh/lh-t2a/dpi600\lati1200.pk> <C:\
-Users\Дмитрий\AppData\Local\MiKTeX\2.9\fonts/pk/ljfour/lh/lh-t2a/dpi600\
-labx2488.pk> <C:\Users\Дмитрий\AppData\Local\MiKTeX\2.9\fonts/pk/ljfour/
-lh/lh-t2a/dpi600\larm1200.pk> <C:\Users\Дмитрий\AppData\Local\MiKTeX\2.9
-\fonts/pk/ljfour/lh/lh-t2a/dpi600\labx1200.pk> <C:\Users\Дмитрий\AppData
-\Local\MiKTeX\2.9\fonts/pk/ljfour/lh/lh-t2a/dpi600\labx1440.pk> <C:\Users\Дм�
-�трий\AppData\Local\MiKTeX\2.9\fonts/pk/ljfour/lh/lh-t2a/dpi600\labx1728.pk
-><C:/Users/Дмитрий/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/
-amsfonts/cm/cmex10.pfb><C:/Users/Дмитрий/AppData/Local/Programs/MiKTeX 2
-.9/fonts/type1/public/amsfonts/cmextra/cmex8.pfb><C:/Users/Дмитрий/AppDa
-ta/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/User
-s/Дмитрий/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/
-cm/cmmi6.pfb><C:/Users/Дмитрий/AppData/Local/Programs/MiKTeX 2.9/fonts/t
-ype1/public/amsfonts/cm/cmmi8.pfb><C:/Users/Дмитрий/AppData/Local/Progra
-ms/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/Дмитрий
-/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr6.pfb><C:/
-Users/Дмитрий/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfo
-nts/cm/cmr8.pfb><C:/Users/Дмитрий/AppData/Local/Programs/MiKTeX 2.9/font
-s/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/Дмитрий/AppData/Local/Pr
-ograms/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Users/Дмитр
-ий/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/symbols/msam
-10.pfb><C:/Users/Дмитрий/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/p
-ublic/amsfonts/symbols/msbm10.pfb><C:/Users/Дмитрий/AppData/Local/Progra
-ms/MiKTeX 2.9/fonts/type1/public/rsfs/rsfs10.pfb>
-Output written on TV&MS.pdf (16 pages, 471641 bytes).
+ 41i,7n,30p,1103b,200s stack positions out of 5000i,500n,10000p,200000b,50000s
+ <C:\Users\Дмитрий\AppData\Local\MiKTeX\2.9\fonts
+/pk/ljfour/public/bbm/dpi600\bbm12.pk> <C:\Users\Дмитрий\AppData\Local\M
+iKTeX\2.9\fonts/pk/ljfour/lh/lh-t2a/dpi600\lati1200.pk> <C:\Users\Дмитри�
+�\AppData\Local\MiKTeX\2.9\fonts/pk/ljfour/lh/lh-t2a/dpi600\labx2488.pk> <C:\Us
+ers\Дмитрий\AppData\Local\MiKTeX\2.9\fonts/pk/ljfour/lh/lh-t2a/dpi600\la
+rm1200.pk> <C:\Users\Дмитрий\AppData\Local\MiKTeX\2.9\fonts/pk/ljfour/lh
+/lh-t2a/dpi600\labx1200.pk> <C:\Users\Дмитрий\AppData\Local\MiKTeX\2.9\f
+onts/pk/ljfour/lh/lh-t2a/dpi600\labx1440.pk> <C:\Users\Дмитрий\AppData\L
+ocal\MiKTeX\2.9\fonts/pk/ljfour/lh/lh-t2a/dpi600\labx1728.pk><C:/Users/Дмит
+рий/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmex10.
+pfb><C:/Users/Дмитрий/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/publ
+ic/amsfonts/cmextra/cmex8.pfb><C:/Users/Дмитрий/AppData/Local/Programs/M
+iKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Users/Дмитрий/Ap
+pData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi6.pfb><C:/Us
+ers/Дмитрий/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfont
+s/cm/cmmi8.pfb><C:/Users/Дмитрий/AppData/Local/Programs/MiKTeX 2.9/fonts
+/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/Дмитрий/AppData/Local/Prog
+rams/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr6.pfb><C:/Users/Дмитри�
+�/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:
+/Users/Дмитрий/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsf
+onts/cm/cmsy10.pfb><C:/Users/Дмитрий/AppData/Local/Programs/MiKTeX 2.9/f
+onts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Users/Дмитрий/AppData/Local/
+Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/symbols/msam10.pfb><C:/Users/Д
+митрий/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/symb
+ols/msbm10.pfb><C:/Users/Дмитрий/AppData/Local/Programs/MiKTeX 2.9/fonts
+/type1/public/rsfs/rsfs10.pfb>
+Output written on TV&MS.pdf (18 pages, 484527 bytes).
 PDF statistics:
- 386 PDF objects out of 1000 (max. 8388607)
+ 401 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  21 words of extra memory for PDF output out of 10000 (max. 10000000)
 
