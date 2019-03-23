@@ -7,6 +7,11 @@
 \usepackage{graphicx}
 \usepackage{bbm} % для индикатора
 \usepackage{chngcntr} % без этого пакета у меня не робит counterwithin
+\usepackage{ulem} % нужен для \uline, которая умеет переносить подчеркнутый текст
+\usepackage{tikz}  
+\usetikzlibrary{arrows,decorations.pathmorphing,backgrounds,positioning,fit,petri}
+\usepgflibrary{arrows.meta}
+\usetikzlibrary{arrows.meta}
 
 \graphicspath{{pictures/}}
 \DeclareGraphicsExtensions{.pdf,.png,.jpg}
@@ -49,6 +54,7 @@
 
 
 \begin{document}
+
 \tableofcontents
 \newpage
 
@@ -568,4 +574,106 @@ $$ \Expec\xi = \sum\limits_{n=1}^{\infty} n \frac{c}{n^2} $$
 $\xi$ может быть любая точка из отрезка $[0,1]$.
 
 С матожиданием и мединой связана задача о <<деловых людях>>. (здесь будет ссылка) 
+\newpage
+
+\section{Виды сходимости случайных величин}
+
+В этом разделе мы введем вагон непонятных определений, а потом постараемся запутаться еще больше, доказывая, какая сходимость круче, и ковыряясь в контрипримерах. Но для начала вспомним наших старых знакомых: измеримое пространство $(\Omega, \Ev)$, вероятностное пространство $(\Omega, \Ev, \Pro)$ и случайную величину $\xi \colon \Omega \rightarrow \Real$, которая обладает свойством
+$$\forall B \in \Bor \quad \xi^{-1}(B) = \{ \omega \in \Omega \colon \xi(\omega) \in B \} \in \Ev$$
+
+Пусть теперь $\xi, \xi_1, \xi_2, \dots$ "--- случайные величины на $(\Omega, \Ev)$.
+
+\begin{Def}
+Последовательность случайных величин $\{\xi_n\}$ \uline{сходится} к случайной величине $\xi$ \uline{почти наверное (с вероятностью 1)}, если вероятность множества тех элементарных событий, где она не сходится, равно нулю.
+$$\{ \xi_n \} \xrightarrow{\text{п.н.}} \xi, \text{если} \quad \Pro(\Set{\omega}{\xi_n(\omega) \nrightarrow \xi}) = 0$$
+\end{Def}
+
+\begin{Ex}
+Пусть $\xi_n$ принимает значение $n$ в рациональных точках числовой прямой и $0$ "--- в иррациональных. Тогда $\{\xi_n\} \xrightarrow{\text{п.н.}} 0$, так как мера множества рациональных чисел, где случайная величина расходится, "--- ноль.
+\end{Ex}
+
+\begin{Def}
+Последовательность случайных величин $\{\xi_n\}$ \uline{сходится} к случайной величине $\xi$ \uline{в среднем порядка $r$}, если $r$-тый момент их разности сходится к нулю.
+$$\{ \xi_n \} \xrightarrow{\text{(r)}} \xi, \text{если} \quad \Expec(\xi_n - \xi)^r \xrightarrow[n \rightarrow +\infty]{} 0$$
+\end{Def}
+
+\begin{Ex}
+Возьмем в качестве множества $\Omega$ окружность длины 1, событиями будут борелевские множества, а вероятность введем как меру Лебега. События $A_n$ введем таким образом: $A_1$~"--- дуга длины $1/2$, отложенная от какой-то точки против часовой стрелки. $A_n$~"--- дуга длины $\frac{1}{n+1}$, отложенная против часовой стрелки от конца дуги $A_{n-1}$. Введем случайную величину: $\xi_n(\omega) = \Ind(\omega \in A_n)$
+Покажем, что $\{\xi_n\}$ сходится к $0$ в среднем любого положительного порядка.
+$$\Expec(\xi_n - \xi)^r = \Expec\xi_n^r = \Expec\left(\Ind(\omega \in A_n)\right)^r = \Pro(A_n) = 1/n \xrightarrow[n \rightarrow +\infty]{} 0$$
+\end{Ex}
+
+\begin{St}
+Из сходимости в среднем, вообще говоря, не следует сходимость почти наверное.
+\end{St}
+
+\begin{Proof}
+В рассмотренном выше примере $\xi_n(\omega)$ не сходится ни в одной точке окружности. Действительно, так как ряд $\sum_{n=1}^\infty \frac{1}{n}$ расходится, то для любой точки $\omega$ на окружности мы можем указать бесконечное число номеров $n_k$, таких что $\omega~\in~A_{n_k}$.~
+\end{Proof}
+
+\begin{St}
+Из сходимости почти наверное, вообще говоря, не следует сходимость в среднем.
+\end{St}
+
+\begin{Proof}
+Рассмотрим отрезок $[0, 1]$, с событиями, являющимися борелевскими множествами и вероятностью, введенной как мера Лебега. Положим $\xi_n(\omega) = e^{n} \Ind(\omega \in [0, 1/n])$. Тогда $\xi_n \xrightarrow{\text{п.н.}} 0$, но при этом $\forall r > 0 \quad \Expec\xi_n^r = e^{np}\Expec\Ind(\omega \in [0, 1/n]) = e^{np}/n$, а эта величина стремится к бесконечности, значит, сходимости в среднем нет.~
+\end{Proof}
+
+\begin{Why}
+Чтобы было не так грустно, по ходу введения новых видов сходимости будем рисовать картинку, где все эти сходимости напиханы.
+\end{Why}
+
+\begin{tikzpicture}
+	\node (prob1) at (0, 2) [rectangle,draw] {$\{ \xi_n \} \xrightarrow{\text{п.н.}} \xi$};
+	\node (power) at (0, 0) [rectangle,draw] {$\{ \xi_n \} \xrightarrow{(r)} \xi$};
+	\node (vertel) at (1, 1) [rectangle,draw] {Вертел я эти графики, 2 часа в ноль};
+	\draw [double,thick,-{Implies[]}] (prob1) -> (power);
+\end{tikzpicture}
+
+Введем еще один вид сходимости.
+
+\begin{Def}
+Последовательность случайных величин $\{\xi_n\}$ \uline{сходится} к случайной величине $\xi$ \uline{по вероятности}, если для любого сколь угодно малого положительного $\varepsilon$ вероятность таких событий, что модуль разности $\xi_n$ и $\xi$ больше $\varepsilon$, стремится к $0$.
+$$\{\xi_n\} \xrightarrow{\Pro} \xi, \text{если} \quad \forall \varepsilon > 0 \quad \Pro(\Set{\omega}{|\xi_n(\omega) - \xi(\omega)| > \varepsilon}) \xrightarrow[n \rightarrow +\infty]{} 0$$
+\end{Def}
+
+\begin{Wtf}
+На этом моменте может немного поплавиться мозг в попытках понять, чем сходимость по вероятности отличается от сходимости с вероятностью 1. Действительно, и там и там мы говорим, что вероятность тех событий, на которых случайная величина не сходится, равна нулю. Но разница в том, что в случае сходимости почти наверное мы сначала устремляем $n$ к бесконечности, а потом считаем вероятность, событий, когда не сходится, а в случае сходимости по вероятности мы сначала посчитали вероятность для какого-то фиксированного $n$, а потом устремились к бесконечности. 
+\end{Wtf}
+
+\begin{Ex}
+Докажем, что та жуткая последовательность случайных величин на окружности сходится по вероятности к нулю. Действительно, 
+$$\Pro(\Set{\omega}{|\xi_n(\omega) - 0| > \varepsilon}) = \Pro(\Set{\omega}{\xi_n(\omega) > \varepsilon}) = \Pro(\Set{\omega}{\xi_n(\omega) = 1}) = 1/n \xrightarrow[n \rightarrow +\infty]{} 0$$
+\end{Ex}
+
+\begin{St}
+Только что рассмотренным примером мы доказали, что из сходимости по вероятности, вообще говоря, не следует сходимость почти наверное.
+\end{St}
+
+\begin{St}
+Из сходимости по вероятности, вообще говоря, не следует сходимость в среднем.
+\end{St}
+
+\begin{Proof}
+Для доказательства воспользуемся примером про отрезок. Докажем, что $\{\xi_n\} \xrightarrow{\Pro} 0$. Действительно, $\Pro{\Set{\omega}{\xi_n(\omega) > \varepsilon}} = 1/n \xrightarrow[n \rightarrow +\infty]{} 0$. Отсутствие сходимости в среднем мы уже доказали.
+\end{Proof}
+
+\begin{Th}
+Из сходимости почти наверное следует сходимость по вероятности.
+\end{Th}
+
+\begin{Proof}
+Сначала докажем, что $\{ \xi_n \} \xrightarrow{\text{п.н.}} \xi \quad \Leftrightarrow \quad \Pro\left(\sup \limits_{k \geqslant n} |\xi_k -\xi| \geqslant \varepsilon\right) \rightarrow 0$. Положим $A_n^\varepsilon = \Set{\omega}{|\xi_n -\xi| \geqslant \varepsilon}$, 
+$A^\varepsilon = \varlimsup A_n^\varepsilon \equiv \bigcap\limits_{n=1}^\infty \bigcup\limits_{k \geqslant n} A_k^\varepsilon$. Тогда:
+$$\Pro\left(\Set{\omega}{\xi_n(\omega) \nrightarrow \xi}\right) = 0 \quad \Leftrightarrow \quad \Pro\left(\bigcup_{\varepsilon > 0} A^\varepsilon\right) = 0 \quad \Leftrightarrow \quad \Pro\left(\bigcup_{m=1} A^{1/m}\right) = 0 \quad \Leftrightarrow$$
+$$\Leftrightarrow \quad \Pro(A^{1/m}) = 0, m \geqslant 1 \quad \Leftrightarrow \quad \Pro(A^\varepsilon) = 0, \varepsilon > 0 \quad \Leftrightarrow \quad 
+\Pro\left( \bigcup_{k \geqslant n} A_k^\varepsilon \right) \xrightarrow[n \rightarrow \infty]{} 0, \varepsilon > 0 \quad \Leftrightarrow$$
+$$\Leftrightarrow \quad \Pro\left(\sup \limits_{k \geqslant n} |\xi_k -\xi| \geqslant \varepsilon\right) \xrightarrow[n \rightarrow \infty]{} 0 \quad \Rightarrow \quad \Pro\left( |\xi_k - \xi| \geqslant \varepsilon \right) \rightarrow 0.$$
+А последнее утверждение "--- это определение сходимости по вероятности.
+\end{Proof}
+
+\begin{Wtf}
+Совершенно жуткое доказательство, понимается методом вглядывания: если достаточно долго медитировать над каждой импликацией, то все переходы в конце концов станут понятными.
+\end{Wtf}
+
 \end{document}
