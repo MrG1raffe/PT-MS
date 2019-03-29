@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2019.3.22)  23 MAR 2019 11:45
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2019.3.22)  29 MAR 2019 11:04
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -957,17 +957,132 @@ File: pgfmodulematrix.code.tex 2013/09/17  (rcs-revision 1.8)
 zlibrarytopaths.code.tex
 File: tikzlibrarytopaths.code.tex 2008/06/17 v3.0.1a (rcs-revision 1.2)
 )))
-(/usr/share/texlive/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tik
-zlibraryarrows.code.tex
-File: tikzlibraryarrows.code.tex 2008/01/09 v3.0.1a (rcs-revision 1.1)
+(/usr/share/texlive/texmf-dist/tex/latex/pb-diagram/pb-diagram.sty
+\dgARROWLENGTH=\skip47
+\dgTEXTARROWLENGTH=\skip48
+\dgHORIZPAD=\skip49
+\dgVERTPAD=\skip50
+\dgLABELOFFSET=\skip51
+\dgARROWPARTS=\count121
+\dgDOTSPACING=\skip52
+\dgDOTSIZE=\skip53
+\dgMAXSQUARE=\count122
+\dgMINDBLSQ=\count123
+\dgCOLUMNWIDTH=\skip54
+\dg@HORIZ=\count124
+\dg@VERT=\count125
+\dg@XLPAD=\count126
+\dg@YBPAD=\count127
+\dg@XRPAD=\count128
+\dg@YTPAD=\count129
+\dg@X=\count130
+\dg@Y=\count131
+\dg@XGRID=\count132
+\dg@YGRID=\count133
+\dg@SIZE=\count134
+\dg@USERSIZE=\count135
+\dg@DX=\count136
+\dg@DY=\count137
+\dg@XLBL=\count138
+\dg@YLBL=\count139
+\dg@XOFFSET=\count140
+\dg@YOFFSET=\count141
+\dg@LBLOFF=\count142
+\dg@XLBLOFF=\count143
+\dg@YLBLOFF=\count144
+\dg@LBLPOS=\count145
+\dg@XTEMP=\count146
+\dg@YTEMP=\count147
+\dg@ZTEMP=\count148
+\dg@XNODE=\count149
+\dg@YNODE=\count150
+\dg@XEND=\count151
+\dg@YEND=\count152
+\dg@WEND=\count153
+\dg@HEND=\count154
+\dg@COUNT=\count155
+\dg@NODEBOX=\box42
+\dg@LABONEBOX=\box43
+\dg@LABTWOBOX=\box44
+)
+(/usr/share/texlive/texmf-dist/tex/latex/pgfplots/pgfplots.sty
+(/usr/share/texlive/texmf-dist/tex/generic/pgfplots/pgfplots.revision.tex)
+Package: pgfplots 2017/06/05 v1.15 Data Visualization (1.15)
 
-(/usr/share/texlive/texmf-dist/tex/generic/pgf/libraries/pgflibraryarrows.code.
-tex
-File: pgflibraryarrows.code.tex 2013/09/23 v3.0.1a (rcs-revision 1.16)
-\arrowsize=\dimen164
+(/usr/share/texlive/texmf-dist/tex/generic/pgfplots/pgfplots.code.tex
+(/usr/share/texlive/texmf-dist/tex/generic/pgfplots/pgfplotscore.code.tex
+\t@pgfplots@toka=\toks36
+\t@pgfplots@tokb=\toks37
+\t@pgfplots@tokc=\toks38
+\pgfplots@tmpa=\dimen164
+\c@pgfplots@coordindex=\count156
+\c@pgfplots@scanlineindex=\count157
+
+(/usr/share/texlive/texmf-dist/tex/generic/pgfplots/sys/pgfplotssysgeneric.code
+.tex))
+(/usr/share/texlive/texmf-dist/tex/generic/pgfplots/libs/pgfplotslibrary.code.t
+ex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgfplots/oldpgfcompatib/pgfplotsoldp
+gfsupp_loader.code.tex
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/libraries/pgflibraryfpu.code.tex
+)
+Package pgfplots: loading complementary arithmetics for your pgf version...
+
+(/usr/share/texlive/texmf-dist/tex/generic/pgfplots/oldpgfcompatib/pgfplotsoldp
+gfsupp_pgflibraryfpu.code.tex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgfplots/oldpgfcompatib/pgfplotsoldp
+gfsupp_pgfmathfloat.code.tex
+\c@pgfmathroundto@lastzeros=\count158
 ))
-(/usr/share/texlive/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tik
-zlibrarydecorations.pathmorphing.code.tex
+(/usr/share/texlive/texmf-dist/tex/generic/pgfplots/util/pgfplotsutil.code.tex
+(/usr/share/texlive/texmf-dist/tex/generic/pgfplots/liststructure/pgfplotslists
+tructure.code.tex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgfplots/liststructure/pgfplotslists
+tructureext.code.tex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgfplots/liststructure/pgfplotsarray
+.code.tex
+\c@pgfplotsarray@tmp=\count159
+)
+(/usr/share/texlive/texmf-dist/tex/generic/pgfplots/liststructure/pgfplotsmatri
+x.code.tex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgfplots/numtable/pgfplotstableshare
+d.code.tex
+\c@pgfplotstable@counta=\count160
+\t@pgfplotstable@a=\toks39
+)
+(/usr/share/texlive/texmf-dist/tex/generic/pgfplots/liststructure/pgfplotsdeque
+.code.tex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgfplots/util/pgfplotsbinary.code.te
+x
+(/usr/share/texlive/texmf-dist/tex/generic/pgfplots/util/pgfplotsbinary.data.co
+de.tex))
+(/usr/share/texlive/texmf-dist/tex/generic/pgfplots/util/pgfplotsutil.verb.code
+.tex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgfplots/libs/pgflibrarypgfplots.sur
+fshading.code.tex
+\c@pgfplotslibrarysurf@no=\count161
+
+(/usr/share/texlive/texmf-dist/tex/generic/pgfplots/sys/pgflibrarypgfplots.surf
+shading.pgfsys-pdftex.def)))
+(/usr/share/texlive/texmf-dist/tex/generic/pgfplots/util/pgfplotscolormap.code.
+tex
+(/usr/share/texlive/texmf-dist/tex/generic/pgfplots/util/pgfplotscolor.code.tex
+))
+(/usr/share/texlive/texmf-dist/tex/generic/pgfplots/pgfplotsstackedplots.code.t
+ex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgfplots/pgfplotsplothandlers.code.t
+ex
+(/usr/share/texlive/texmf-dist/tex/generic/pgfplots/pgfplotsmeshplothandler.cod
+e.tex
+(/usr/share/texlive/texmf-dist/tex/generic/pgfplots/pgfplotsmeshplotimage.code.
+tex)))
+(/usr/share/texlive/texmf-dist/tex/generic/pgfplots/pgfplots.scaling.code.tex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgfplots/pgfplotscoordprocessing.cod
+e.tex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgfplots/pgfplots.errorbars.code.tex
+) (/usr/share/texlive/texmf-dist/tex/generic/pgfplots/pgfplots.markers.code.tex
+) (/usr/share/texlive/texmf-dist/tex/generic/pgfplots/pgfplotsticks.code.tex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgfplots/pgfplots.paths.code.tex)
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tik
 zlibrarydecorations.code.tex
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/modules/pgfmoduledecorations.cod
@@ -977,19 +1092,65 @@ e.tex
 \pgfdecoratedinputsegmentcompleteddistance=\dimen167
 \pgfdecoratedinputsegmentremainingdistance=\dimen168
 \pgf@decorate@distancetomove=\dimen169
-\pgf@decorate@repeatstate=\count121
+\pgf@decorate@repeatstate=\count162
 \pgfdecorationsegmentamplitude=\dimen170
 \pgfdecorationsegmentlength=\dimen171
 )
-\tikz@lib@dec@box=\box42
+\tikz@lib@dec@box=\box45
 )
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tik
+zlibrarydecorations.pathmorphing.code.tex
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/libraries/decorations/pgflibrary
 decorations.pathmorphing.code.tex))
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tik
+zlibrarydecorations.pathreplacing.code.tex
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/libraries/decorations/pgflibrary
+decorations.pathreplacing.code.tex))
+\pgfplots@numplots=\count163
+\pgfplots@xmin@reg=\dimen172
+\pgfplots@xmax@reg=\dimen173
+\pgfplots@ymin@reg=\dimen174
+\pgfplots@ymax@reg=\dimen175
+\pgfplots@zmin@reg=\dimen176
+\pgfplots@zmax@reg=\dimen177
+)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tik
+zlibraryplotmarks.code.tex
+File: tikzlibraryplotmarks.code.tex 2008/01/09 v3.0.1a (rcs-revision 1.1)
+
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/libraries/pgflibraryplotmarks.co
+de.tex
+File: pgflibraryplotmarks.code.tex 2015/08/03 v3.0.1a (rcs-revision 1.14)
+))) (/usr/share/texlive/texmf-dist/tex/latex/caption/caption.sty
+Package: caption 2016/02/21 v3.3-144 Customizing captions (AR)
+
+(/usr/share/texlive/texmf-dist/tex/latex/caption/caption3.sty
+Package: caption3 2016/05/22 v1.7-166 caption3 kernel (AR)
+Package caption3 Info: TeX engine: e-TeX on input line 67.
+\captionmargin=\dimen178
+\captionmargin@=\dimen179
+\captionwidth=\dimen180
+\caption@tempdima=\dimen181
+\caption@indent=\dimen182
+\caption@parindent=\dimen183
+\caption@hangindent=\dimen184
+)
+\c@ContinuedFloat=\count164
+)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tik
+zlibraryarrows.code.tex
+File: tikzlibraryarrows.code.tex 2008/01/09 v3.0.1a (rcs-revision 1.1)
+
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/libraries/pgflibraryarrows.code.
+tex
+File: pgflibraryarrows.code.tex 2013/09/23 v3.0.1a (rcs-revision 1.16)
+\arrowsize=\dimen185
+))
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tik
 zlibrarybackgrounds.code.tex
 File: tikzlibrarybackgrounds.code.tex 2013/07/18 v3.0.1a (rcs-revision 1.3)
-\pgf@layerbox@background=\box43
-\pgf@layerboxsaved@background=\box44
+\pgf@layerbox@background=\box46
+\pgf@layerboxsaved@background=\box47
 )
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tik
 zlibrarypositioning.code.tex
@@ -1006,15 +1167,15 @@ File: tikzlibrarypetri.code.tex 2013/07/17 v3.0.1a (rcs-revision 1.3)
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/libraries/pgflibraryarrows.meta.
 code.tex
 File: pgflibraryarrows.meta.code.tex 2015/05/13 v3.0.1a (rcs-revision 1.13)
-\pgfarrowinset=\dimen172
-\pgfarrowlength=\dimen173
-\pgfarrowwidth=\dimen174
-\pgfarrowlinewidth=\dimen175
+\pgfarrowinset=\dimen186
+\pgfarrowlength=\dimen187
+\pgfarrowwidth=\dimen188
+\pgfarrowlinewidth=\dimen189
 )
-\c@Th=\count122
-\c@Def=\count123
-\c@Lem=\count124
-\c@St=\count125
+\c@Th=\count165
+\c@Def=\count166
+\c@Lem=\count167
+\c@St=\count168
  (./TV&MS.aux
 LaTeX Font Info:    Try loading font information for T2A+cmr on input line 3.
 
@@ -1023,34 +1184,34 @@ File: t2acmr.fd 2001/08/11 v1.0a Computer Modern Cyrillic font definitions
 ))
 \openout1 = `TV&MS.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 56.
-LaTeX Font Info:    ... okay on input line 56.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 56.
-LaTeX Font Info:    ... okay on input line 56.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 56.
-LaTeX Font Info:    ... okay on input line 56.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 56.
-LaTeX Font Info:    ... okay on input line 56.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 56.
-LaTeX Font Info:    ... okay on input line 56.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 56.
-LaTeX Font Info:    ... okay on input line 56.
-LaTeX Font Info:    Checking defaults for T2A/cmr/m/n on input line 56.
-LaTeX Font Info:    ... okay on input line 56.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 60.
+LaTeX Font Info:    ... okay on input line 60.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 60.
+LaTeX Font Info:    ... okay on input line 60.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 60.
+LaTeX Font Info:    ... okay on input line 60.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 60.
+LaTeX Font Info:    ... okay on input line 60.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 60.
+LaTeX Font Info:    ... okay on input line 60.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 60.
+LaTeX Font Info:    ... okay on input line 60.
+LaTeX Font Info:    Checking defaults for T2A/cmr/m/n on input line 60.
+LaTeX Font Info:    ... okay on input line 60.
 
 (/usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count126
-\scratchdimen=\dimen176
-\scratchbox=\box45
-\nofMPsegments=\count127
-\nofMParguments=\count128
-\everyMPshowfont=\toks36
-\MPscratchCnt=\count129
-\MPscratchDim=\dimen177
-\MPnumerator=\count130
-\makeMPintoPDFobject=\count131
-\everyMPtoPDFconversion=\toks37
+\scratchcounter=\count169
+\scratchdimen=\dimen190
+\scratchbox=\box48
+\nofMPsegments=\count170
+\nofMParguments=\count171
+\everyMPshowfont=\toks40
+\MPscratchCnt=\count172
+\MPscratchDim=\dimen191
+\MPnumerator=\count173
+\makeMPintoPDFobject=\count174
+\everyMPtoPDFconversion=\toks41
 ) (/usr/share/texlive/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
 Package: epstopdf-base 2016/05/15 v2.6 Base part for package epstopdf
 
@@ -1106,24 +1267,33 @@ Package grfext Info: Graphics extension search list:
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
-ABD: EveryShipout initializing macros (./TV&MS.toc)
+ABD: EveryShipout initializing macros
+
+Package pgfplots Warning: running in backwards compatibility mode (unsuitable t
+ick labels; missing features). Consider writing \pgfplotsset{compat=1.15} into 
+your preamble.
+ on input line 60.
+
+Package caption Info: Begin \AtBeginDocument code.
+Package caption Info: End \AtBeginDocument code.
+(./TV&MS.toc)
 \tf@toc=\write4
 \openout4 = `TV&MS.toc'.
 
  [1
 
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}] [2]
-LaTeX Font Info:    Try loading font information for U+rsfs on input line 73.
+LaTeX Font Info:    Try loading font information for U+rsfs on input line 80.
 
 (/usr/share/texlive/texmf-dist/tex/latex/jknapltx/ursfs.fd
 File: ursfs.fd 1998/03/24 rsfs font definition file (jk)
 )
-LaTeX Font Info:    Try loading font information for U+msa on input line 73.
+LaTeX Font Info:    Try loading font information for U+msa on input line 80.
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 73.
+LaTeX Font Info:    Try loading font information for U+msb on input line 80.
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
@@ -1131,98 +1301,98 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 <pictures/ping.jpg, id=30, 1204.5pt x 1204.5pt>
 File: pictures/ping.jpg Graphic file (type jpg)
 <use pictures/ping.jpg>
-Package pdftex.def Info: pictures/ping.jpg  used on input line 138.
+Package pdftex.def Info: pictures/ping.jpg  used on input line 145.
 (pdftex.def)             Requested size: 14.22546pt x 14.22636pt.
  [4 <./pictures/ping.jpg>]
 <pictures/cat.jpg, id=34, 184.69pt x 184.69pt>
 File: pictures/cat.jpg Graphic file (type jpg)
 <use pictures/cat.jpg>
-Package pdftex.def Info: pictures/cat.jpg  used on input line 182.
+Package pdftex.def Info: pictures/cat.jpg  used on input line 189.
 (pdftex.def)             Requested size: 14.22595pt x 14.22636pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 179--186
+Underfull \hbox (badness 10000) in paragraph at lines 186--193
 
  []
 
 [5 <./pictures/cat.jpg>]
-Underfull \hbox (badness 10000) in paragraph at lines 196--197
+Underfull \hbox (badness 10000) in paragraph at lines 203--204
 
  []
 
 <pictures/cond_prob.jpg, id=41, 216.05719pt x 152.06813pt>
 File: pictures/cond_prob.jpg Graphic file (type jpg)
 <use pictures/cond_prob.jpg>
-Package pdftex.def Info: pictures/cond_prob.jpg  used on input line 198.
+Package pdftex.def Info: pictures/cond_prob.jpg  used on input line 205.
 (pdftex.def)             Requested size: 121.278pt x 85.35826pt.
 
-Overfull \hbox (64.3725pt too wide) in paragraph at lines 198--198
+Overfull \hbox (64.3725pt too wide) in paragraph at lines 205--205
 [][] 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 198--203
+Underfull \hbox (badness 10000) in paragraph at lines 205--210
 
  []
 
 File: pictures/ping.jpg Graphic file (type jpg)
 <use pictures/ping.jpg>
-Package pdftex.def Info: pictures/ping.jpg  used on input line 208.
+Package pdftex.def Info: pictures/ping.jpg  used on input line 215.
 (pdftex.def)             Requested size: 14.22546pt x 14.22636pt.
 
-Overfull \hbox (21.8966pt too wide) in paragraph at lines 226--227
+Overfull \hbox (21.8966pt too wide) in paragraph at lines 233--234
 []\T2A/cmr/m/it/12 События $\OML/cmm/m/it/12 A[]; A[]; [] ; A[]$ \T2A/cmr/m/it/
 12 на-зы-ва-ют-ся $[]$,
  []
 
 [6 <./pictures/cond_prob.jpg>] [7]
-Underfull \hbox (badness 10000) in paragraph at lines 254--261
+Underfull \hbox (badness 10000) in paragraph at lines 261--268
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 262--271
+Underfull \hbox (badness 10000) in paragraph at lines 269--278
 
  []
 
 [8]
 File: pictures/ping.jpg Graphic file (type jpg)
 <use pictures/ping.jpg>
-Package pdftex.def Info: pictures/ping.jpg  used on input line 292.
+Package pdftex.def Info: pictures/ping.jpg  used on input line 299.
 (pdftex.def)             Requested size: 14.22546pt x 14.22636pt.
 File: pictures/ping.jpg Graphic file (type jpg)
 <use pictures/ping.jpg>
-Package pdftex.def Info: pictures/ping.jpg  used on input line 312.
+Package pdftex.def Info: pictures/ping.jpg  used on input line 319.
 (pdftex.def)             Requested size: 14.22546pt x 14.22636pt.
  [9]
-Overfull \hbox (32.6404pt too wide) in paragraph at lines 332--333
+Overfull \hbox (32.6404pt too wide) in paragraph at lines 339--340
 []\T2A/cmr/m/it/12 Пусть $\OML/cmm/m/it/12 ^^X; ^^Q$ \T2A/cmr/m/it/12 --- слу-ч
 ай-ные ве-ли-чи-ны. То-гда мно-же-ство $[]$
  []
 
 
-LaTeX Warning: Command \CYRI invalid in math mode on input line 335.
+LaTeX Warning: Command \CYRI invalid in math mode on input line 342.
 
 Missing character: There is no И in font cmr12!
 
-Underfull \hbox (badness 1496) in paragraph at lines 334--338
+Underfull \hbox (badness 1496) in paragraph at lines 341--345
 \T2A/cmr/bx/n/12 Доказательство $[] \OT1/cmr/m/n/12 = [] []$\T2A/cmr/m/n/12 . З
 а-ме-тим, что
  []
 
 [10] [11]
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 392.
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 399.
 
  (/usr/share/texlive/texmf-dist/tex/latex/base/omscmr.fd
 File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <12> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 392.
-LaTeX Font Info:    Try loading font information for U+bbm on input line 414.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 399.
+LaTeX Font Info:    Try loading font information for U+bbm on input line 421.
 
 (/usr/share/texlive/texmf-dist/tex/latex/bbm-macros/ubbm.fd
 File: ubbm.fd 1999/03/15 V 1.2 Font definition for bbm font - TH
 ) [12]
-Overfull \hbox (3.05792pt too wide) detected at line 430
+Overfull \hbox (3.05792pt too wide) detected at line 437
 [] \OML/cmm/m/it/12 f\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 x\OT1/cmr/m/n/12 )\OML/c
 mm/m/it/12 ^^V\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 dx\OT1/cmr/m/n/12 ) = [][][] []
 \OML/cmm/m/it/12 ^^V[][] []\OT1/cmr/m/n/12 +\OML/cmm/m/it/12 n^^V\OT1/cmr/m/n/1
@@ -1230,54 +1400,45 @@ mm/m/it/12 ^^V\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 dx\OT1/cmr/m/n/12 ) = [][][] []
  []
 
 [13] [14]
+<pictures/kantor.png, id=73, 202.50656pt x 107.65219pt>
+File: pictures/kantor.png Graphic file (type png)
+<use pictures/kantor.png>
+Package pdftex.def Info: pictures/kantor.png  used on input line 502.
+(pdftex.def)             Requested size: 160.57169pt x 85.35826pt.
 
-! LaTeX Error: File `kantor' not found.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.495 ...m}{\includegraphics[height=30mm]{kantor}}
-                                                  
-I could not locate the file with any of these extensions:
-.pdf,.png,.jpg,.eps
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
+Overfull \hbox (103.66618pt too wide) in paragraph at lines 502--502
+[][] 
+ []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 488--501
+Underfull \hbox (badness 10000) in paragraph at lines 495--508
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 488--501
+Underfull \hbox (badness 10000) in paragraph at lines 495--508
 
  []
 
 [15]
-Underfull \hbox (badness 10000) in paragraph at lines 501--505
+Underfull \hbox (badness 10000) in paragraph at lines 508--512
 
  []
 
-[16]
-Overfull \hbox (1.93245pt too wide) detected at line 528
+[16 <./pictures/kantor.png>]
+Overfull \hbox (1.93245pt too wide) detected at line 535
 \U/msb/m/n/12 E\OML/cmm/m/it/12 ^^X \OT1/cmr/m/n/12 = [] \OML/cmm/m/it/12 ^^Xd\
 U/msb/m/n/12 P \OT1/cmr/m/n/12 = [][][] []\U/msb/m/n/12 P[][] []\OT1/cmr/m/n/12
  +\OML/cmm/m/it/12 n\U/msb/m/n/12 P\OT1/cmr/m/n/12 ([])[]
  []
 
-[17] [18]
-File: pictures/cat.jpg Graphic file (type jpg)
-<use pictures/cat.jpg>
-Package pdftex.def Info: pictures/cat.jpg  used on input line 622.
-(pdftex.def)             Requested size: 14.22595pt x 14.22636pt.
- [19]
+[17] [18] [19]
 File: pictures/ping.jpg Graphic file (type jpg)
 <use pictures/ping.jpg>
-Package pdftex.def Info: pictures/ping.jpg  used on input line 640.
+Package pdftex.def Info: pictures/ping.jpg  used on input line 636.
 (pdftex.def)             Requested size: 14.22546pt x 14.22636pt.
- [20]
-Overfull \hbox (2.01501pt too wide) detected at line 670
+
+Overfull \hbox (2.01501pt too wide) detected at line 666
 \OMS/cmsy/m/n/12 ,  \U/msb/m/n/12 P\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 A[]\OT1/cm
 r/m/n/12 ) = 0\OML/cmm/m/it/12 ; m \U/msa/m/n/12 > \OT1/cmr/m/n/12 1  \OMS/cmsy
 /m/n/12 ,  \U/msb/m/n/12 P\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 A[]\OT1/cmr/m/n/12 
@@ -1286,43 +1447,54 @@ r/m/n/12 ) = 0\OML/cmm/m/it/12 ; m \U/msa/m/n/12 > \OT1/cmr/m/n/12 1  \OMS/cmsy
 m/n/12 ,
  []
 
+[20]
 File: pictures/ping.jpg Graphic file (type jpg)
 <use pictures/ping.jpg>
-Package pdftex.def Info: pictures/ping.jpg  used on input line 675.
+Package pdftex.def Info: pictures/ping.jpg  used on input line 671.
 (pdftex.def)             Requested size: 14.22546pt x 14.22636pt.
-[21] (./TV&MS.aux) ) 
+ [21]
+Underfull \hbox (badness 10000) in paragraph at lines 822--823
+
+ []
+
+[22]
+File: pictures/ping.jpg Graphic file (type jpg)
+<use pictures/ping.jpg>
+Package pdftex.def Info: pictures/ping.jpg  used on input line 836.
+(pdftex.def)             Requested size: 14.22546pt x 14.22636pt.
+ [23] (./TV&MS.aux) ) 
 Here is how much of TeX's memory you used:
- 15450 strings out of 492982
- 306302 string characters out of 6134896
- 339283 words of memory out of 5000000
- 18655 multiletter control sequences out of 15000+600000
+ 26385 strings out of 492982
+ 652972 string characters out of 6134896
+ 807156 words of memory out of 5000000
+ 29457 multiletter control sequences out of 15000+600000
  19192 words of font info for 51 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 55i,14n,65p,1101b,541s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/share/texmf/fonts/enc/dvips/cm-super/cm-super-t2a.enc
-} </home/igudav/.texlive2017/texmf-var/fonts/pk/ljfour/public/bbm/bbm12.600pk><
-/usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/s
-hare/texlive/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmex8.pfb></usr/sha
-re/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/tex
-live/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/share/texlive/te
-xmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texlive/texmf-dis
-t/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts
-/type1/public/amsfonts/cm/cmr6.pfb></usr/share/texlive/texmf-dist/fonts/type1/p
-ublic/amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/am
-sfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts
-/cm/cmsy8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbol
-s/msam10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols
-/msbm10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/rsfs/rsfs10.pfb><
-/usr/share/texmf/fonts/type1/public/cm-super/sfbx1200.pfb></usr/share/texmf/fon
-ts/type1/public/cm-super/sfbx1440.pfb></usr/share/texmf/fonts/type1/public/cm-s
-uper/sfbx1728.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfbx2488.pfb></
-usr/share/texmf/fonts/type1/public/cm-super/sfrm0800.pfb></usr/share/texmf/font
-s/type1/public/cm-super/sfrm1200.pfb></usr/share/texmf/fonts/type1/public/cm-su
-per/sfti0800.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfti1200.pfb>
-Output written on TV&MS.pdf (21 pages, 528089 bytes).
+ 62i,14n,100p,1101b,1976s stack positions out of 5000i,500n,10000p,200000b,80000s
+{/usr/share/texmf/fonts/enc/dvips/cm-super/cm-super-t2a.en
+c} </home/igudav/.texlive2017/texmf-var/fonts/pk/ljfour/public/bbm/bbm12.600pk>
+</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/
+share/texlive/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmex8.pfb></usr/sh
+are/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/te
+xlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/share/texlive/t
+exmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texlive/texmf-di
+st/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/font
+s/type1/public/amsfonts/cm/cmr6.pfb></usr/share/texlive/texmf-dist/fonts/type1/
+public/amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/a
+msfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfont
+s/cm/cmsy8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbo
+ls/msam10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbol
+s/msbm10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/rsfs/rsfs10.pfb>
+</usr/share/texmf/fonts/type1/public/cm-super/sfbx1200.pfb></usr/share/texmf/fo
+nts/type1/public/cm-super/sfbx1440.pfb></usr/share/texmf/fonts/type1/public/cm-
+super/sfbx1728.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfbx2488.pfb><
+/usr/share/texmf/fonts/type1/public/cm-super/sfrm0800.pfb></usr/share/texmf/fon
+ts/type1/public/cm-super/sfrm1200.pfb></usr/share/texmf/fonts/type1/public/cm-s
+uper/sfti0800.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfti1200.pfb>
+Output written on TV&MS.pdf (23 pages, 545400 bytes).
 PDF statistics:
- 169 PDF objects out of 1000 (max. 8388607)
- 119 compressed objects within 2 object streams
+ 178 PDF objects out of 1000 (max. 8388607)
+ 124 compressed objects within 2 object streams
  0 named destinations out of 1000 (max. 500000)
- 28 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 33 words of extra memory for PDF output out of 10000 (max. 10000000)
 
