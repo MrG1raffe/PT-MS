@@ -38,16 +38,21 @@
 \counterwithin*{section}{part}
 
 \newcommand\Set[2]{\left\{ #1 \colon #2 \right\}}
+\newcommand\Sum[3]{\sum\limits_{#1 = #2}^{#3}}
 \newcommand\Pro{\mathbb{P}} % вероятность
 \newcommand\Ev{\mathscr{A}} % алгебра событий
 \newcommand\Bor{\mathscr{B}} % борелевская сигма-алгебра
 \newcommand\Real{\mathbb{R}} % вещественная прямая
+\newcommand\Int{\mathbb{Z}} % целые числа
+\newcommand\Nat{\mathbb{N}} % натуральные числа
 \newcommand\Expec{\mathbb{E}} % матожидание 
 \newcommand\Disp{\mathbb{D}}  % дисперсия
 \newcommand\Ind{\mathbbm{1}} % индикатор
 \newcommand\Med{{\rm med \,}} % медиана
 \newcommand\Cov{{\rm cov \,}} % ковариация
 \newcommand\Mod{{\rm mod \,}} % мода
+\newcommand\Pois{{\rm Pois \,}} 
+
 
 \begin{document}
 \tableofcontents
@@ -708,4 +713,181 @@ $$\Pro(|\xi - \Expec\xi| > \epsilon) \le \frac{\Disp\xi}{\epsilon^2}$$
 \begin{Proof}\\
 В неравенстве леммы возьмем $g(x) = x^2$.
 \end{Proof}
+
+\newpage
+\section{Испытания Бернулли}
+
+\begin{Def}
+Дискретная случайная величина $\xi$ имеет \underline{распределение Бернулли}, если
+$$ \Pro(\xi = x_1) = p,\ \Pro(\xi = x_2) = q = 1 - p, \quad x_1 \not= x_2$$
+\end{Def}
+
+\begin{Def}
+\underline{Схема Бернулли} --- последовательность испытаний, удовлетворяющих следующим условиям:
+\begin{enumerate}
+	\item Дихотомичность --- у каждого испытания два исхода, называемые <<успехом>> и <<неудачей>> или, сокращенно У/Н.
+	\item Независимость --- результаты испытаний являются независимыми событиями.
+	\item Однородность --- вероятности успеха в каждом испытании равны.
+\end{enumerate}
+\end{Def}
+
+Из определения следует, что одно испытание имеет распределение Бернулли. Элементарным исходом в схеме Бернулли из $n$ испытаний будет являться
+$$\omega = (x_1, x_2, \ldots, x_n),$$
+где $x_i$ --- результат испытания $i$. Пусть в элементарном исходе $k$ успехов. Тогда
+$$\Pro(\omega) = p^kq^{n-k}$$
+
+Покажем, что веорятность, введенная таким образом, удовлетворяет всем аксиомам вероятностной меры. Неочевидной здесь является только проверка нормировки, то есть надо доказать, что
+$$ \sum\limits_{\omega}\Pro(\omega) = 1$$
+Для этого просуммируем все исходы по числу успехов (обозначим $\mu_n$).
+$$ \sum\limits_{\omega}\Pro(\omega) = \sum\limits_{k = 0}^n\sum\limits_{\omega\colon\mu_n=k}\Pro(\omega) = \sum\limits_{k = 0}^n\sum\limits_{\omega\colon\mu_n=k}p^kq^{n-k} = 
+\sum\limits_{k = 0}^nC_n^kp^kq^{n-k} = (p+q)^n = 1$$
+
+Рассмотрим теперь некоторые важные распределения, связанные со схемой Бернулли.
+
+Уже рассмотренная величина $\mu_n$, равная числу успехов в $n$ испытаниях Бернулли, является случайной величиной с распределением
+$$\forall k \in \Int_+ \quad \Pro(\mu_n=k) = C_n^kp^kq^{n-k}$$
+Это следует из того, что исходов с $k$ успехами ровно $C_n^k$, а вероятность каждого равна $p^kq^{n-k}$.
+Такое распределение называется \underline{биномиальным} и обозначается $B(n,p)$.
+
+Рассимотрим случайные величины $X_i = \Ind(A_i)б \quad i = 1, \ldots, n$, где $A_i$ --- успех в $i$-м испытании. Каждая такая величина имеет распределение Бернулли.
+Тогда число успехов можно представить так:
+$$\mu_n = \sum\limits_{i=1}^nX_i$$
+
+Найдем матожидание и дисперсию $\mu_n$.
+$$\Expec\mu_n = \Expec\sum\limits_{i=1}^nX_i = \sum\limits_{i=1}^n\Expec X_i = \sum\limits_{i=1}^n(1p + 0 q) = np$$
+$$\Expec X_i^2 = 1p+0q = p$$
+$$\Disp X_i = \Expec X_i^2 - (\Expec X_i)^2 = p - p^2 = pq$$
+В силу независимости испытаний дисперсия линейна относительно сложения
+$$\Disp \mu_n = \Disp\sum\limits_{i=1}^n  X_i  =\sum\limits_{i=1}^n  \Disp X_i = \sum\limits_{i=1}^n pq = npq$$
+
+\begin{Th} [Бернулли]
+Для случайной величины с распределением $B(n,p)$
+$$\Pro(|\frac{\mu_n}{n} - p| \ge \epsilon) \le \frac{npq}{n^2\epsilon^2}$$
+\end{Th}
+\begin{Proof} \\
+Домножим обе части неравенства на $n$ и воспользуемся неравенством Чебышева:
+$$\Pro(|\mu_n - pn| \ge n\epsilon) \le \frac{\Disp(\mu_n)}{(n\epsilon)^2} = \frac{npq}{n^2\epsilon^2}$$
+\end{Proof}
+
+Пусть $f(x) \in C[0, 1]$.
+\begin{Def}
+\underline{Многочленом Бернштейна} называется функция 
+$$ B_n(x, f) = \Sum{k}{0}{n}C_n^kx^k(1-x)^{n-k}f(\frac{k}{n}), \quad x \in [0, 1]$$
+\end{Def}
+Заметим, что $B_n(x, f) = \Expec f(\frac{\mu_n}n),\quad  \mu_n \sim B(n, x)$. (запись $\xi \sim$ *destrname*  означает, что случайная величина $\xi$ имеет распределение *destrname*).
+
+\begin{St}
+$$B_n(x, f) \rightrightarrows f(x), \quad x \in [0,1]$$
+\end{St}
+\begin{Proof} \\
+Пользуясь тем, что $\sum\limits_{k = 0}^nC_n^kx^k(1-x)^{n-k} = 1$ получим
+$$|B_n(x, f) - f(x)| = |\sum\limits_{k = 0}^nC_n^kx^k(1-x)^{n-k}f(\frac{k}n) - \sum\limits_{k = 0}^nC_n^kx^k(1-x)^{n-k}f(x)| \le 
+\sum\limits_{k = 0}^nC_n^kx^k(1-x)^{n-k}|f(\frac{k}n) - f(x)|$$
+Разобьем данную сумму на две:
+$$\Sum{k}{0}{n} = \sum\limits_{|\frac{k}n - x| < \delta} + \sum\limits_{|\frac{k}n - x| \ge \delta}$$
+Выберем $\delta$ так, чтобы первая сумма была меньше $\frac{\epsilon}2$. Это всегда можно сделать, так как функция $f(x)$ непрерывна, а 
+$\sum\limits_{|\frac{k}n - x| < \delta}C_n^kx^k(1-x)^{n-k} \le 1$.
+Во второй сумме ограничим модуль числом $M = 2\sup\limits_{[0,1]} f(x)$ (1-я теорема Вейерштрасса), а к оставшейся сумме применим неравенство Чебышева, поскольку она равна вероятности 
+$\Pro(|\mu_n - nx| \ge n\delta)$. 
+$$\sum\limits_{|\frac{k}n - x| \ge \delta}\ldots \le 2M\sum\limits_{|\frac{k}n - x| \ge \delta}C_n^kx^k(1-x)^{n-k} \le 2M\frac1{n\delta^2}$$
+Выбором $n$ сделаем вторую сумму меньше $\frac{\epsilon}2$, доказав, тем самым, равномерную сходимость.
+\end{Proof}
+
+Пусть в схеме Бернулли с вероятностью успеха $0 < p \le 1$ величина $\eta$ равна номеру первого успеха. $\eta$ является случайной величиной, принимающей натуральные значения. Найдем распределение $\eta$: серия, в которой первый успех появляется в $k$-м испытании выглядит так: НН...НУ. Отсюда
+$$\forall k \in \Nat \quad \Pro(\eta = k) = (1-p)^{k-1}p = q^{k-1}p $$
+Так как $\Omega = \Set{\omega_k = \underbrace{0\ldots0}_k1}{k \in \Nat}$, то 
+$$\Sum{k}{1}{n}\Pro(\omega_k) = \Sum{k}{1}{n} p(1-p)^{k-1} = 1$$
+Такое распределение называется \underline{геометрическим с параметром $p$}.
+
+Пусть $\xi$ имеет геометрическое распределение с параметром $p$. Тогда
+$$\Expec\xi = \Sum{k}{1}{\infty}kp(1-p)^{k-1} = -p\Sum{k}{1}{\infty}\frac{d}{dp}(1-p)^k = -p \frac{d}{dp}(\frac{1-p}{p}) = \frac1{p}$$
+Аналогично, дифференцирую степенные ряды, получим диспресию
+$$\Disp\xi = \frac{q}{p^2}$$
+
+Пусть теперь $\theta$ --- число неудач до $r$-го успеха. Тогда
+$$\forall k \in\Int_0 \quad \Pro(\theta = k) = p^rq^kC_{k+r-1}^{k}$$
+Это следует из того, что всего испытаний было $r+k$, на последнем месте успех, а до него как-то располагаются $k$ неудач и $r-1$ успех.
+Такое распределение называется \underline{отрицательным биномиальным} с параметрами $r, p$.
+
+\newpage
+\section{Предельные теоремы}
+
+\begin{Th} [Пуассон]
+Пусть $\lambda = np$. Тогда при малых $p$ и больших $n$ можно использовать приближение
+$$\Pro(\mu_n = k) = C_n^kp^kq^{n-k} \approx \frac{e^{-\lambda}\lambda^k}{k!}$$
+\end{Th}
+\begin{Proof}
+Докажем индукцией по $k$. При $k = 0$
+$$\Pro(\mu_n = 0) = (1-p)^n = (1 - \frac{\lambda}{n})^n \longrightarrow e^{-\lambda} \quad (n \to \infty)$$
+$$\frac{\Pro(\mu_n = k)}{\Pro(\mu_n = k-1)} = \frac{n!}{k!(n-k)!}p^kq^{n-k} \frac{(k-1)!(n-k+1)!}{n!} \frac{1}{p^{k-1}q^{n-k+1}} = \frac{(n-k+1)p}{kq}$$
+$$\Pro(\mu_n = k) = \frac{(n-k+1)p}{kq}\Pro(\mu_n = k-1) = \frac{(n-k+1)\frac{\lambda}n}{k(1-\frac{\lambda}n)}\Pro(\mu_n = k-1)$$
+
+Воспользуемся предположением индукции для $k-1$.
+$$\Pro(\mu_n = k) \to \frac{(n-k+1)\frac{\lambda}n}{k(1-\frac{\lambda}n)} \frac{e^{-\lambda}\lambda^{k-1}}{(k-1)!} \longrightarrow \frac{e^{-\lambda}\lambda^{k}}{k!} (n \to \infty)$$
+\end{Proof}
+
+Следующая оценка формализует <<малость>> $p$ и <<величину>> $n$:
+$$\sup\limits_k |\Pro(\mu_n = k) - \frac{e^{-\lambda}\lambda^k}{k!}| \le 2np^2$$
+Таким образом, зная $n, p$ всегда можно оценить сверху погрешность аппроксимации.\\
+\begin{Why}
+При очень большом числе испытаний ни один нормальный компьютер не способен вычислить  $ C_n^kp^kq^{n-k}$, а уж тем более сложить их. Данная теорема позволяет сводить вычисление таких сложных вещей к вычислению экспонент.
+\end{Why}
+
+Распределение величины $\xi$ такое, что $\forall k \in \Int_+\quad  \Pro(\xi = k) =\frac{e^{-\lambda}\lambda^k}{k!}$, называется \underline{распределением Пуассона} 
+и обозначается $\Pois(\lambda)$
+
+Одно из приложений распределения Пуассона --- это пуассоновские потоки. Пусть во времени происходят некоторые события, которые мы фиксируем. $\lambda$ --- интенсивность потока --- показывает среднее число событий за единицу времени. Тогда число произошедших событий на отрезке $[0, t]$ равно $\xi_t\colon \Pro(\xi_t = k) = \frac{e^{-\lambda t}(\lambda t)^k}{k!}$.
+
+Свойства пуассоновского распределения. ($\xi \sim \Pois(\lambda)$)
+\begin{enumerate}
+	\item $\Expec\xi = \lambda$
+	\item $\Disp\xi = \lambda$
+	\item $\xi_i \sim \Pois(\lambda_i) \quad i = 1, \ldots, n \Rightarrow \Sum{i}{1}{n}\xi_i \sim \Pois(\Sum{i}{1}{n}\lambda_i)$
+\end{enumerate}
+
+\begin{St}
+Пусть независимые случайные величины $\xi_i \sim \Pois(\lambda_i), \quad i = 1, 2$. Тогда условное распределение $\xi_1$ при условии $\xi_1 + \xi_2 = n$ имеет биномиальное распределение с параметрами $n, \frac{\lambda_1}{\lambda_1 + \lambda_2}$, то есть
+$$\Pro(\xi_1 = k | \xi_1 + \xi_2 = n) = C_n^kp^k(1-p)^{n-k}, \quad p = \frac{\lambda_1}{\lambda_1 + \lambda_2}$$
+\end{St}
+\begin{Proof}
+$$\Pro(\xi_1 = k | \xi_1 + \xi_2 = n) = \frac{\Pro(\xi_1 = k, \xi_1 + \xi_2 = n}{\Pro(\xi_1 + \xi+2 = n)} = \frac{\Pro(\xi_1 = k, \xi_2 = n - k}{\Pro(\xi_1 + \xi+2 = n)}=$$
+В числителе воспользуемся независимостью $\xi_1, \xi_2$, а в знаменателе свойством 3 пуассоновского распределения:
+$$=\frac{e^{-\lambda_1}\frac{\lambda_1^k}{k!}e^{-\lambda_2}\frac{\lambda_2^{n-k}}{(n-k)!}}{e^{-(\lambda_1+\lambda_2)}\frac{(\lambda_1+\lambda_2)^n}{n!}} = 
+C_n^k(\frac{\lambda_1}{\lambda_1 + \lambda_2})^k(\frac{\lambda_2}{\lambda_1 + \lambda_2})^{n-k}$$
+\end{Proof}
+
+\begin{Th} [Муавра-Лапласа]
+Пусть $\sqrt{npq}$ велико. Тогда
+$$\Pro(\mu_n = k) = \Pro(\frac{\mu_n - np}{\sqrt{npq}} = \frac{k - np}{\sqrt{npq}}) = \frac{1}{\sqrt{2\pi}}e^{-\frac{x^2}2} + o(1), \quad x \equiv \frac{k - np}{\sqrt{npq}}$$
+\end{Th}
+\begin{Proof} не было и не должно быть.
+\end{Proof}
+
+Рассмотрим функции
+$$\phi(x) = \frac{1}{\sqrt{2\pi}}e^{-\frac{x^2}2}$$
+$$\Phi(x) = \int\limits_{-\infty}^x \frac{1}{\sqrt{2\pi}}e^{-\frac{u^2}2} du = \int\limits_{-\infty}^{x}\phi(u)du$$
+
+Заметим, что 
+$$\int\limits_{-\infty}^{+\infty} \phi(u)du = 1$$ 
+Это верно, так как данный интеграл сводится заменой $t = \frac{x}{\sqrt{2}}$ к известному интегралу Пуассона.
+
+Так как $\phi(x)$ неотрицательна, и интеграл от нее по всей прямой равен 1, она является плотностью некоторого абсолютно непрерывного распределения, которое называется \underline{стандартным нормальным распределением} и обозначается $N(0, 1)$.
+
+Пусть $\xi \sim N(0,1)$.
+$$\Expec\xi^k = \int\limits_{-\infty}^{+\infty}x^k\phi(x)dx$$
+$$e^{h\xi}=1 + h\xi + \frac{(h\xi)^2}{2!} + \ldots$$
+$$\Expec e^{h\xi} = 1 + h\Expec\xi + \frac{h^2}{2!}\Expec\xi^2 + \ldots \equiv \psi(h)$$
+Функция $\psi(h)$ называется \underline{производящей функцией моментов}.
+$$\psi(h) = \int\limits_{-\infty}^{+\infty}e^{hx}\phi(x)dx = \int\limits_{-\infty}^{+\infty}\frac{1}{\sqrt{2\pi}}e^{hx-\frac{x^2}2}dx = \frac{e^{\frac{h^2}2}}{\sqrt{2\pi}}\int\limits_{-\infty}^{+\infty}e^{-\frac{(x-h)^2}2}dx = e^{\frac{h^2}2}$$
+$$e^{\frac{h^2}2} = 1 + \frac{h^2}2 + \frac1{2!}(\frac{h^2}2)^2 + \ldots$$
+Приравнивая это равенство к предыдущему разложению получим, что все нечетные центральные моменты равны 0.
+$$\Expec\xi^{2n-1} = 0$$
+$$\frac{1}{n!2^n} = \frac{\Expec\xi^{2n}} \Rightarrow \Expec\xi^{2n} = \frac{(2n)!}{n!2^n} = \frac{2n(2n-1)\ldots n \ldots 1}{n!2^n} = (2n-1)!!$$
+
+Последняя формула позволяет очень быстро получить нужный момент, не считая интеграл по честям много раз.
+
+\begin{Th}[Интегральная теорема Муавра-Лапласа]
+Пусть $\sqrt{npq}$ велико. Тогда
+$$\Pro(m_1 \le \nu_n \le m_2) = \Pro(\frac{m_1 - np}{\sqrt{npq}} \le \frac{\mu_n - np}{\sqrt{npq}} \le \frac{m_2 - np}{\sqrt{npq}}) \approx \int\limits_{x_1}^{x_2}\phi(x)dx, \quad x1 \equiv \frac{m_1 - np}{\sqrt{npq}}, x2 \equiv\frac{m_2 - np}{\sqrt{npq}}$$
+\end{Th}
 \end{document}
