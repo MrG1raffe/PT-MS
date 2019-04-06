@@ -56,6 +56,7 @@
 \newcommand\Disp{\mathbb{D}}  % дисперсия
 \newcommand\Ind{\mathbbm{1}} % индикатор
 \newcommand\Med{{\rm med \,}} % медиана
+\newcommand\Norm{\mathcal{N}} % нормальное распределение
 \newcommand\xequiv[1]{\stackrel{\mathrm{ #1}}{\equiv}}
 
 
@@ -944,7 +945,7 @@ $$\{ \xi_n \} \xrightarrow{d} \xi, \text{если} \quad F_{\xi_n}(x) \rightarro
 \end{Wtf} 
 
 \begin{Ex}
-    Распределим $\{ \xi_k \}$ по Коши с параметрами $C(0, \gamma)$ и посмотрим, что будет происходить со среднимиарифмитическими.
+    Распределим $\{ \xi_k \}$ по Коши с параметрами $C(0, \gamma)$ и посмотрим, что будет происходить со средними арифмитическими.
     \[
         p_{\xi_k} (x) = \dfrac{1}{\pi \gamma \left( 1 + \left( \dfrac{x}{\gamma} \right) ^2 \right) }, \quad
         f(t) :=  \Expec e^{it\xi_k} = e^{-\gamma \left| t \right| }
@@ -969,5 +970,98 @@ $$\{ \xi_n \} \xrightarrow{d} \xi, \text{если} \quad F_{\xi_n}(x) \rightarro
     .\end{multline*}
     Таким образом, последовательность средних арифметических случайных величин, распределенный по Коши, не сходится по вероятности вообще ни к чему.
 \end{Ex} 
+
+\newpage
+\section{Центральная предельная теорема}
+
+С места в карьер:
+
+\begin{Def}
+    Последовательность случайных величин $\{ \xi_k \}$ \uline{удовлетворяет ЦПТ}, если $\exists \{ a_k \} \in \Real, \{ b_k \} > 0$, такие что 
+    \[
+        \dfrac{\xi_k - a_k}{b_k} \xrightarrow[]{d} \xi \sim \Norm(0, 1)
+    .\] 
+\end{Def}
+
+Разомнемся на чем-нибудь попроще.
+
+\begin{Th}
+    Пусть $\{ \xi_k \}$ "--- норсв с конечным матожиданием и конечной ненулевой дисперсией. Тогда $\{ \xi_k \}$ удовлетворяет ЦПТ, причем $a_n = \Expec S_n$,
+    a $b_n = \sqrt{\Disp S_n}$, где  $S_n = \sum\limits_{k=1}^{n} \xi_k$.
+\end{Th}
+
+\begin{Note}
+    Здесь распределение $\dfrac{\xi_k - \Expec \xi_k}{\sqrt{\Disp \xi_k}}$ сходится к стандартному нормальному не абы как, а очень даже равномерно по $x$ на всей действительной прямой.
+\end{Note} 
+
+\begin{Proof}
+    Без ограничения общности будем считать, что $\Expec \xi_k = 0$ и  $\Disp \xi_k = 1$.
+    Тогда 
+     \[
+         f(t) := \Expec e^{it\xi_k} = 1 + \cancelto{\text{\scriptsize{0}}}{ita} \quad - \dfrac{t^2}{2} + \overline{o} \left( \dfrac{1}{n} \right) 
+    .\]
+    \[
+        f_{\frac{S_n}{\sqrt{n}}} (t) = \Expec e^{it\frac{S_n}{\sqrt{n}}} = 
+        \left( f \left( \dfrac{t}{\sqrt{n}} \right) \right)^{n} = 
+        \left( 1 - \dfrac{t^2}{2n} + \overline{o} \left( \dfrac{1}{n} \right)  \right)^{n} 
+        \xrightarrow[n \rightarrow \infty]{} e^{-\frac{t^2}{2}}
+    .\] 
+    Таким образом, харфункция центрированной нормированной случайной величины сходится слабо к харфункции стандартного нормального распределения, а значит, центрированная нормарованная случайная величина сходится по распределению к $\Norm(0, 1)$.
+\end{Proof} 
+
+\begin{Why}
+    Если вам уже стало плохо, то переживать не стоит "--- дальше будет еще хуже
+\end{Why} 
+
+С этого момента положим:
+\begin{itemize}
+    \item Случайные величины $\{ \xi_k \}$ независимы и определены на одном вероятностном пространстве
+    \item $F_k(x) = \Pro (\xi_k < x)$
+    \item $S_n = \sum\limits_{k=1}^{n} \xi_k$
+    \item $a_k = \Expec \xi_k$, $A_n = \sum\limits_{k=1}^{n} a_k$ 
+    \item $b_k^2 = \Disp \xi_k$, $B_n^2 = \sum\limits_{k=1}^{n} b_k$
+\end{itemize} 
+
+\begin{Th}[Ляпунова]
+    Пусть $\mu_k^3 := \Expec \left| \xi_k - a_k \right|^3 < \infty, \quad
+    M_n^3 := \sum\limits_{k=1}^{n} \mu_k^3$. Пусть выполнено \uline{условие Ляпунова}:
+    \begin{equation}\label{Lyapunov}
+        \dfrac{M_n^3}{B_n^3} \xrightarrow[n \rightarrow \infty]{} 0
+    \end{equation}
+    Тогда $\{ \xi_k \}$ удовлетворяет ЦПТ.
+\end{Th}
+
+\begin{Th}[Линдеберга]
+    Пусть $\varepsilon > 0$. Тогда если  $a_k < \infty$, $b_k < \infty$ и выполнено \uline{условие Линдеберга}:
+    \begin{equation}\label{Lindeberg}
+        L_n(\varepsilon) = \dfrac{1}{B_n^2} \sum\limits_{k=1}^{n} 
+        \int\limits_{ \left| x - a_k \right| > \varepsilon B_n}^{}
+        \left( x - a_k \right)^2 dF_k(x) \xrightarrow[n \rightarrow \infty]{}
+        0,
+    \end{equation} 
+    То $\{ \xi_k \}$ удовлетворяет ЦПТ.
+\end{Th} 
+
+\begin{Note}
+    Если случайные величины одинаково распределены, то условие Линдеберга эквивалентно существованию дисперсии.
+\end{Note}
+
+\begin{Def}
+    $\{ \xi_k \} $ удовлетворяют \uline{условию Феллера}, если
+    \begin{equation}\label{Feller}
+        \forall \varepsilon > 0 \quad
+        \max\limits_{1 \leqslant k \leqslant n}
+        \Pro \left( \dfrac{ \left| \xi_k - a_k \right| }{B_n} \right) > \varepsilon
+        \xrightarrow[n \rightarrow \infty]{} 0. 
+    \end{equation}
+\end{Def} 
+
+\begin{Th}
+    \begin{cases}
+        \text{ЦПТ} \\
+        (\ref{Feller})
+    \end{cases}
+    \iff (\ref{Lindeberg}).
+\end{Th} 
 
 \end{document}

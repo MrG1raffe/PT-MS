@@ -1,5 +1,5 @@
 # Fdb version 3
-["pdflatex"] 1554538731 "TV&MS.tex" "TV&MS.pdf" "TV&MS" 1554538788
+["pdflatex"] 1554550586 "TV&MS.tex" "TV&MS.pdf" "TV&MS" 1554550748
   "/etc/texmf/web2c/texmf.cnf" 1550310996 475 c0e671620eb5563b2130f56340a5fde8 ""
   "/home/igudav/.texlive2017/texmf-var/fonts/pk/ljfour/public/bbm/bbm12.600pk" 1553268938 8424 b9a13a60a379f8a742d5fd959f51f6ec ""
   "/home/igudav/.texlive2017/texmf-var/fonts/tfm/lh/lh-t2a/labx1200.tfm" 1550316202 3308 eee81981029f67083258db36df06e523 ""
@@ -45,6 +45,7 @@
   "/usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb" 1480098733 32734 69e00a6b65cedb993666e42eedb3d48f ""
   "/usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb" 1480098733 32726 0a1aea6fcd6468ee2cf64d891f5c43c8 ""
   "/usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb" 1480098733 32569 5e5ddc8df908dea60932f3c484a54c0d ""
+  "/usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb" 1480098733 32587 1788b0c1c5b39540c96f5e42ccd6dae8 ""
   "/usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb" 1480098733 32626 4f5c1b83753b1dd3a97d1b399a005b4b ""
   "/usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmex8.pfb" 1480098733 30273 87a352d78b6810ae5cfdc68d2fb827b2 ""
   "/usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/latxfont/line10.pfb" 1480098733 11493 4f5ed183a47d3197cf8cd322325db6de ""
@@ -231,15 +232,15 @@
   "/usr/share/texmf/web2c/texmf.cnf" 1520210507 32485 c64754543d8ac501bea6e75e209ea521 ""
   "/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map" 1553268760 2700761 ac0584cc9514ab21918550a6948c4ee2 ""
   "/var/lib/texmf/web2c/pdftex/pdflatex.fmt" 1553268810 4126684 201f8a883d850b810d684652d8a4f339 ""
-  "TV&MS.aux" 1554538732 5569 6c0fadadaebb5a0f2ed5050ecb3f2185 ""
-  "TV&MS.tex" 1554538730 82892 5f53d818ca2b926fbb9c2365f0faf689 ""
-  "TV&MS.toc" 1554538732 4171 8d35b059826e2a05eff550324f9308d0 ""
+  "TV&MS.aux" 1554550588 6104 0424257b46a9a8b0fa9c30cdb91e7a8e ""
+  "TV&MS.tex" 1554550584 87564 2a405e71cdee19998079bf03b34fce68 ""
+  "TV&MS.toc" 1554550588 4593 7c4bfd40b8aa1ccebcf74a21d9a1c065 ""
   "pictures/cat.jpg" 1551093366 7413 6957208d0aca9bd51849c80e901a38c9 ""
   "pictures/cond_prob.jpg" 1551093366 7860 bf8dca460297b7e5a05102edd8ccd462 ""
   "pictures/kantor.png" 1553331206 4163 16e986ac478597177c91da399fc7b715 ""
   "pictures/ping.jpg" 1551093366 191645 965611331f531dd82544946d2cb82c1b ""
   (generated)
   "TV&MS.toc"
-  "TV&MS.aux"
-  "TV&MS.pdf"
   "TV&MS.log"
+  "TV&MS.pdf"
+  "TV&MS.aux"

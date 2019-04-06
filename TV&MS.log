@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2019.3.22)  6 APR 2019 11:18
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2019.3.22)  6 APR 2019 14:36
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -982,20 +982,20 @@ File: t2acmr.fd 2001/08/11 v1.0a Computer Modern Cyrillic font definitions
 ))
 \openout1 = `TV&MS.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 62.
-LaTeX Font Info:    ... okay on input line 62.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 62.
-LaTeX Font Info:    ... okay on input line 62.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 62.
-LaTeX Font Info:    ... okay on input line 62.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 62.
-LaTeX Font Info:    ... okay on input line 62.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 62.
-LaTeX Font Info:    ... okay on input line 62.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 62.
-LaTeX Font Info:    ... okay on input line 62.
-LaTeX Font Info:    Checking defaults for T2A/cmr/m/n on input line 62.
-LaTeX Font Info:    ... okay on input line 62.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 63.
+LaTeX Font Info:    ... okay on input line 63.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 63.
+LaTeX Font Info:    ... okay on input line 63.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 63.
+LaTeX Font Info:    ... okay on input line 63.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 63.
+LaTeX Font Info:    ... okay on input line 63.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 63.
+LaTeX Font Info:    ... okay on input line 63.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 63.
+LaTeX Font Info:    ... okay on input line 63.
+LaTeX Font Info:    Checking defaults for T2A/cmr/m/n on input line 63.
+LaTeX Font Info:    ... okay on input line 63.
  (/usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count169
@@ -1052,7 +1052,7 @@ File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Live
 )) ABD: EveryShipout initializing macros
 
 Package pgfplots Warning: running in backwards compatibility mode (unsuitable tick labels; missing features). Consider writing \pgfplotsset{compat=1.15} into your preamble.
- on input line 62.
+ on input line 63.
 
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: End \AtBeginDocument code.
@@ -1063,108 +1063,108 @@ Package caption Info: End \AtBeginDocument code.
  [1
 
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}] [2]
-LaTeX Font Info:    Try loading font information for U+rsfs on input line 82.
+LaTeX Font Info:    Try loading font information for U+rsfs on input line 83.
  (/usr/share/texlive/texmf-dist/tex/latex/jknapltx/ursfs.fd
 File: ursfs.fd 1998/03/24 rsfs font definition file (jk)
 )
-LaTeX Font Info:    Try loading font information for U+msa on input line 82.
+LaTeX Font Info:    Try loading font information for U+msa on input line 83.
  (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 82.
+LaTeX Font Info:    Try loading font information for U+msb on input line 83.
  (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 ) [3]
 <pictures/ping.jpg, id=30, 1204.5pt x 1204.5pt>
 File: pictures/ping.jpg Graphic file (type jpg)
 <use pictures/ping.jpg>
-Package pdftex.def Info: pictures/ping.jpg  used on input line 147.
+Package pdftex.def Info: pictures/ping.jpg  used on input line 148.
 (pdftex.def)             Requested size: 14.22546pt x 14.22636pt.
  [4 <./pictures/ping.jpg>]
 <pictures/cat.jpg, id=34, 184.69pt x 184.69pt>
 File: pictures/cat.jpg Graphic file (type jpg)
 <use pictures/cat.jpg>
-Package pdftex.def Info: pictures/cat.jpg  used on input line 191.
+Package pdftex.def Info: pictures/cat.jpg  used on input line 192.
 (pdftex.def)             Requested size: 14.22595pt x 14.22636pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 188--195
+Underfull \hbox (badness 10000) in paragraph at lines 189--196
 
  []
 
 [5 <./pictures/cat.jpg>]
-Underfull \hbox (badness 10000) in paragraph at lines 205--206
+Underfull \hbox (badness 10000) in paragraph at lines 206--207
 
  []
 
 <pictures/cond_prob.jpg, id=41, 216.05719pt x 152.06813pt>
 File: pictures/cond_prob.jpg Graphic file (type jpg)
 <use pictures/cond_prob.jpg>
-Package pdftex.def Info: pictures/cond_prob.jpg  used on input line 207.
+Package pdftex.def Info: pictures/cond_prob.jpg  used on input line 208.
 (pdftex.def)             Requested size: 121.278pt x 85.35826pt.
 
-Overfull \hbox (64.3725pt too wide) in paragraph at lines 207--207
+Overfull \hbox (64.3725pt too wide) in paragraph at lines 208--208
 [][] 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 207--212
+Underfull \hbox (badness 10000) in paragraph at lines 208--213
 
  []
 
 File: pictures/ping.jpg Graphic file (type jpg)
 <use pictures/ping.jpg>
-Package pdftex.def Info: pictures/ping.jpg  used on input line 217.
+Package pdftex.def Info: pictures/ping.jpg  used on input line 218.
 (pdftex.def)             Requested size: 14.22546pt x 14.22636pt.
 
-Overfull \hbox (21.8966pt too wide) in paragraph at lines 235--236
+Overfull \hbox (21.8966pt too wide) in paragraph at lines 236--237
 []\T2A/cmr/m/it/12 События $\OML/cmm/m/it/12 A[]; A[]; [] ; A[]$ \T2A/cmr/m/it/12 на-зы-ва-ют-ся $[]$,
  []
 
 [6 <./pictures/cond_prob.jpg>] [7]
-Underfull \hbox (badness 10000) in paragraph at lines 263--270
+Underfull \hbox (badness 10000) in paragraph at lines 264--271
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 271--280
+Underfull \hbox (badness 10000) in paragraph at lines 272--281
 
  []
 
 [8]
 File: pictures/ping.jpg Graphic file (type jpg)
 <use pictures/ping.jpg>
-Package pdftex.def Info: pictures/ping.jpg  used on input line 301.
+Package pdftex.def Info: pictures/ping.jpg  used on input line 302.
 (pdftex.def)             Requested size: 14.22546pt x 14.22636pt.
 File: pictures/ping.jpg Graphic file (type jpg)
 <use pictures/ping.jpg>
-Package pdftex.def Info: pictures/ping.jpg  used on input line 321.
+Package pdftex.def Info: pictures/ping.jpg  used on input line 322.
 (pdftex.def)             Requested size: 14.22546pt x 14.22636pt.
  [9]
-Overfull \hbox (32.6404pt too wide) in paragraph at lines 341--342
+Overfull \hbox (32.6404pt too wide) in paragraph at lines 342--343
 []\T2A/cmr/m/it/12 Пусть $\OML/cmm/m/it/12 ^^X; ^^Q$ \T2A/cmr/m/it/12 --- слу-чай-ные ве-ли-чи-ны. То-гда мно-же-ство $[]$
  []
 
 
-LaTeX Warning: Command \CYRI invalid in math mode on input line 344.
+LaTeX Warning: Command \CYRI invalid in math mode on input line 345.
 
 Missing character: There is no И in font cmr12!
 
-Underfull \hbox (badness 1496) in paragraph at lines 343--347
+Underfull \hbox (badness 1496) in paragraph at lines 344--348
 \T2A/cmr/bx/n/12 Доказательство $[] \OT1/cmr/m/n/12 = [] []$\T2A/cmr/m/n/12 . За-ме-тим, что
  []
 
 [10] [11]
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 401.
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 402.
  (/usr/share/texlive/texmf-dist/tex/latex/base/omscmr.fd
 File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <12> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 401.
-LaTeX Font Info:    Try loading font information for U+bbm on input line 423.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 402.
+LaTeX Font Info:    Try loading font information for U+bbm on input line 424.
  (/usr/share/texlive/texmf-dist/tex/latex/bbm-macros/ubbm.fd
 File: ubbm.fd 1999/03/15 V 1.2 Font definition for bbm font - TH
 ) [12]
-Overfull \hbox (3.05792pt too wide) detected at line 439
+Overfull \hbox (3.05792pt too wide) detected at line 440
 [] \OML/cmm/m/it/12 f\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 x\OT1/cmr/m/n/12 )\OML/cmm/m/it/12 ^^V\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 dx\OT1/cmr/m/n/12 ) = [][][] []\OML/cmm/m/it/12 ^^V[][] []\OT1/cmr/m/n/12 +\OML/cmm/m/it/12 n^^V\OT1/cmr/m/n/12 ([])[]
  []
 
@@ -1172,73 +1172,73 @@ Overfull \hbox (3.05792pt too wide) detected at line 439
 <pictures/kantor.png, id=73, 202.50656pt x 107.65219pt>
 File: pictures/kantor.png Graphic file (type png)
 <use pictures/kantor.png>
-Package pdftex.def Info: pictures/kantor.png  used on input line 504.
+Package pdftex.def Info: pictures/kantor.png  used on input line 505.
 (pdftex.def)             Requested size: 160.57169pt x 85.35826pt.
 
-Overfull \hbox (103.66618pt too wide) in paragraph at lines 504--504
+Overfull \hbox (103.66618pt too wide) in paragraph at lines 505--505
 [][] 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 497--510
+Underfull \hbox (badness 10000) in paragraph at lines 498--511
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 497--510
+Underfull \hbox (badness 10000) in paragraph at lines 498--511
 
  []
 
 [15]
-Underfull \hbox (badness 10000) in paragraph at lines 510--514
+Underfull \hbox (badness 10000) in paragraph at lines 511--515
 
  []
 
 [16 <./pictures/kantor.png>]
-Overfull \hbox (1.93245pt too wide) detected at line 537
+Overfull \hbox (1.93245pt too wide) detected at line 538
 \U/msb/m/n/12 E\OML/cmm/m/it/12 ^^X \OT1/cmr/m/n/12 = [] \OML/cmm/m/it/12 ^^Xd\U/msb/m/n/12 P \OT1/cmr/m/n/12 = [][][] []\U/msb/m/n/12 P[][] []\OT1/cmr/m/n/12 +\OML/cmm/m/it/12 n\U/msb/m/n/12 P\OT1/cmr/m/n/12 ([])[]
  []
 
 [17] [18] [19]
 File: pictures/ping.jpg Graphic file (type jpg)
 <use pictures/ping.jpg>
-Package pdftex.def Info: pictures/ping.jpg  used on input line 638.
+Package pdftex.def Info: pictures/ping.jpg  used on input line 639.
 (pdftex.def)             Requested size: 14.22546pt x 14.22636pt.
 
-Overfull \hbox (2.01501pt too wide) detected at line 668
+Overfull \hbox (2.01501pt too wide) detected at line 669
 \OMS/cmsy/m/n/12 ,  \U/msb/m/n/12 P\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 A[]\OT1/cmr/m/n/12 ) = 0\OML/cmm/m/it/12 ; m \U/msa/m/n/12 > \OT1/cmr/m/n/12 1  \OMS/cmsy/m/n/12 ,  \U/msb/m/n/12 P\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 A[]\OT1/cmr/m/n/12 ) = 0\OML/cmm/m/it/12 ; " > \OT1/cmr/m/n/12 0  \OMS/cmsy/m/n/12 ,  \U/msb/m/n/12 P [] [] \OT1/cmr/m/n/12 0\OML/cmm/m/it/12 ; " > \OT1/cmr/m/n/12 0  \OMS/cmsy/m/n/12 ,
  []
 
 [20]
 File: pictures/ping.jpg Graphic file (type jpg)
 <use pictures/ping.jpg>
-Package pdftex.def Info: pictures/ping.jpg  used on input line 673.
+Package pdftex.def Info: pictures/ping.jpg  used on input line 674.
 (pdftex.def)             Requested size: 14.22546pt x 14.22636pt.
  [21]
-Underfull \hbox (badness 10000) in paragraph at lines 824--825
+Underfull \hbox (badness 10000) in paragraph at lines 825--826
 
  []
 
 [22]
 File: pictures/ping.jpg Graphic file (type jpg)
 <use pictures/ping.jpg>
-Package pdftex.def Info: pictures/ping.jpg  used on input line 838.
+Package pdftex.def Info: pictures/ping.jpg  used on input line 839.
 (pdftex.def)             Requested size: 14.22546pt x 14.22636pt.
  [23]
-Overfull \hbox (13.35532pt too wide) in paragraph at lines 910--913
+Overfull \hbox (13.35532pt too wide) in paragraph at lines 911--914
 []\T2A/cmr/m/it/12 Пусть $\OMS/cmsy/m/n/12 f\OML/cmm/m/it/12 ^^X[]\OMS/cmsy/m/n/12 g$ \T2A/cmr/m/it/12 ^^V по-сле-до-ва-тель-ность некор-
  []
 
 [24]
 File: pictures/ping.jpg Graphic file (type jpg)
 <use pictures/ping.jpg>
-Package pdftex.def Info: pictures/ping.jpg  used on input line 942.
+Package pdftex.def Info: pictures/ping.jpg  used on input line 943.
 (pdftex.def)             Requested size: 14.22546pt x 14.22636pt.
 
-./TV&MS.tex:969: Undefined control sequence.
+./TV&MS.tex:970: Undefined control sequence.
 <argument> ...}{\gamma n} \right ) \right |\limis 
                                                   _{n(a+\varepsilon )}^{+\in...
-l.969     .\end{multline*}
+l.970     .\end{multline*}
                           
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -1246,10 +1246,10 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-./TV&MS.tex:969: Undefined control sequence.
+./TV&MS.tex:970: Undefined control sequence.
 <argument> ...}{\gamma n} \right ) \right |\limis 
                                                   _{-\infty }^{n(a - \vareps...
-l.969     .\end{multline*}
+l.970     .\end{multline*}
                           
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -1257,10 +1257,10 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-./TV&MS.tex:969: Undefined control sequence.
+./TV&MS.tex:970: Undefined control sequence.
 <argument> ...}{\gamma n} \right ) \right |\limis 
                                                   _{n(a+\varepsilon )}^{+\in...
-l.969     .\end{multline*}
+l.970     .\end{multline*}
                           
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -1268,10 +1268,10 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-./TV&MS.tex:969: Undefined control sequence.
+./TV&MS.tex:970: Undefined control sequence.
 <argument> ...}{\gamma n} \right ) \right |\limis 
                                                   _{-\infty }^{n(a - \vareps...
-l.969     .\end{multline*}
+l.970     .\end{multline*}
                           
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -1280,24 +1280,104 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 
-Overfull \hbox (48.59894pt too wide) detected at line 969
+Overfull \hbox (48.59894pt too wide) detected at line 970
  []$[]  \U/msb/m/n/12 P [] \OT1/cmr/m/n/12 = [] \OML/cmm/m/it/12 p\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 x\OT1/cmr/m/n/12 )\OML/cmm/m/it/12 dx \OT1/cmr/m/n/12 + [] \OML/cmm/m/it/12 p\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 x\OT1/cmr/m/n/12 )\OML/cmm/m/it/12 dx \OT1/cmr/m/n/12 = [] [][] + [] [][] =$ 
  []
 
-[25] [26] (./TV&MS.aux) ) 
+[25] [26]
+File: pictures/cat.jpg Graphic file (type jpg)
+<use pictures/cat.jpg>
+Package pdftex.def Info: pictures/cat.jpg  used on input line 1012.
+(pdftex.def)             Requested size: 14.22595pt x 14.22636pt.
+ [27]
+./TV&MS.tex:1060: Missing $ inserted.
+<inserted text> 
+                $
+l.1060     \begin{cases}
+                        
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+./TV&MS.tex:1063: Missing $ inserted.
+<inserted text> 
+                $
+l.1063     \end{cases}
+                      
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+./TV&MS.tex:1064: Missing $ inserted.
+<inserted text> 
+                $
+l.1064     \iff
+                (\ref{Lindeberg}).
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+
+./TV&MS.tex:1065: LaTeX Error: Command \end{Th} invalid in math mode.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.1065 \end{Th}
+               
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+./TV&MS.tex:1065: LaTeX Error: Something's wrong--perhaps a missing \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.1065 \end{Th}
+               
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+./TV&MS.tex:1065: LaTeX Error: Something's wrong--perhaps a missing \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.1065 \end{Th}
+               
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+./TV&MS.tex:1065: Missing $ inserted.
+<inserted text> 
+                $
+l.1065 \end{Th}
+               
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+[28] (./TV&MS.aux) ) 
 Here is how much of TeX's memory you used:
- 26417 strings out of 492982
- 653412 string characters out of 6134896
- 806996 words of memory out of 5000000
- 29485 multiletter control sequences out of 15000+600000
+ 26421 strings out of 492982
+ 653445 string characters out of 6134896
+ 807038 words of memory out of 5000000
+ 29489 multiletter control sequences out of 15000+600000
  19192 words of font info for 51 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  62i,21n,100p,1101b,1976s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/share/texmf/fonts/enc/dvips/cm-super/cm-super-t2a.enc} </home/igudav/.texlive2017/texmf-var/fonts/pk/ljfour/public/bbm/bbm12.600pk></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmex8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/latxfont/line10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/rsfs/rsfs10.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfbx1200.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfbx1440.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfbx1728.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfbx2488.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm0800.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm1200.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfti0800.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfti1200.pfb>
-Output written on TV&MS.pdf (26 pages, 564226 bytes).
+{/usr/share/texmf/fonts/enc/dvips/cm-super/cm-super-t2a.enc} </home/igudav/.texlive2017/texmf-var/fonts/pk/ljfour/public/bbm/bbm12.600pk></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmex8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/latxfont/line10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/rsfs/rsfs10.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfbx1200.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfbx1440.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfbx1728.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfbx2488.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm0800.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm1200.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfti0800.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfti1200.pfb>
+Output written on TV&MS.pdf (28 pages, 581376 bytes).
 PDF statistics:
- 192 PDF objects out of 1000 (max. 8388607)
- 134 compressed objects within 2 object streams
+ 202 PDF objects out of 1000 (max. 8388607)
+ 141 compressed objects within 2 object streams
  0 named destinations out of 1000 (max. 500000)
  33 words of extra memory for PDF output out of 10000 (max. 10000000)
 
