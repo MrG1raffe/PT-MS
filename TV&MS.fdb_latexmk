@@ -1,5 +1,5 @@
 # Fdb version 3
-["pdflatex"] 1554550586 "TV&MS.tex" "TV&MS.pdf" "TV&MS" 1554550748
+["pdflatex"] 1555064327 "TV&MS.tex" "TV&MS.pdf" "TV&MS" 1555064344
   "/etc/texmf/web2c/texmf.cnf" 1550310996 475 c0e671620eb5563b2130f56340a5fde8 ""
   "/home/igudav/.texlive2017/texmf-var/fonts/pk/ljfour/public/bbm/bbm12.600pk" 1553268938 8424 b9a13a60a379f8a742d5fd959f51f6ec ""
   "/home/igudav/.texlive2017/texmf-var/fonts/tfm/lh/lh-t2a/labx1200.tfm" 1550316202 3308 eee81981029f67083258db36df06e523 ""
@@ -232,9 +232,9 @@
   "/usr/share/texmf/web2c/texmf.cnf" 1520210507 32485 c64754543d8ac501bea6e75e209ea521 ""
   "/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map" 1553268760 2700761 ac0584cc9514ab21918550a6948c4ee2 ""
   "/var/lib/texmf/web2c/pdftex/pdflatex.fmt" 1553268810 4126684 201f8a883d850b810d684652d8a4f339 ""
-  "TV&MS.aux" 1554550588 6104 0424257b46a9a8b0fa9c30cdb91e7a8e ""
-  "TV&MS.tex" 1554550584 87564 2a405e71cdee19998079bf03b34fce68 ""
-  "TV&MS.toc" 1554550588 4593 7c4bfd40b8aa1ccebcf74a21d9a1c065 ""
+  "TV&MS.aux" 1555064329 6104 0424257b46a9a8b0fa9c30cdb91e7a8e ""
+  "TV&MS.tex" 1555064327 90311 e5c85ceefa9870b5368ebed6ed65047f ""
+  "TV&MS.toc" 1555064329 4593 7c4bfd40b8aa1ccebcf74a21d9a1c065 ""
   "pictures/cat.jpg" 1551093366 7413 6957208d0aca9bd51849c80e901a38c9 ""
   "pictures/cond_prob.jpg" 1551093366 7860 bf8dca460297b7e5a05102edd8ccd462 ""
   "pictures/kantor.png" 1553331206 4163 16e986ac478597177c91da399fc7b715 ""
