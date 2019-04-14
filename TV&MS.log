@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6930 64-bit) (preloaded format=pdflatex 2019.1.15)  6 APR 2019 16:53
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6930 64-bit) (preloaded format=pdflatex 2019.1.15)  14 APR 2019 17:09
 entering extended mode
 **./TV&MS.tex
 (TV&MS.tex
@@ -742,45 +742,53 @@ msy/m/n/12  [] \OML/cmm/m/it/12 \OT1/cmr/m/n/12 (\OML/cmm/m/it/12 x\OT1/cmr/m
 /it/12 ; x\OT1/cmr/m/n/12 2 \OMS/cmsy/m/n/12  []
  []
 
-[27] (TV&MS.aux) ) 
+[27] [28]
+Overfull \hbox (54.90862pt too wide) in paragraph at lines 939--941
+\T2A/cmr/m/n/12 ��-����-�� � ��-��-��-��-���, ��-���-�� $[] \OML/cmm/m/it/12 F[
+]\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 x\OT1/cmr/m/n/12 ) = \OML/cmm/m/it/12 F[]\OT
+1/cmr/m/n/12 (\OML/cmm/m/it/12 x[]; [] ; x[]; x[]; [] ; x[]\OT1/cmr/m/n/12 )$\T
+2A/cmr/m/n/12 . 
+ []
+
+[29] [30] (TV&MS.aux) ) 
 Here is how much of TeX's memory you used:
- 3680 strings out of 492946
- 49836 string characters out of 3122270
+ 3692 strings out of 492946
+ 49951 string characters out of 3122270
  121803 words of memory out of 3000000
- 7480 multiletter control sequences out of 15000+200000
- 15732 words of font info for 46 fonts, out of 3000000 for 9000
+ 7487 multiletter control sequences out of 15000+200000
+ 18278 words of font info for 53 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
  41i,10n,30p,1103b,200s stack positions out of 5000i,500n,10000p,200000b,50000s
- <C:\Users\Дмитрий\AppData\Local\MiKTeX\2.9\fonts/pk/l
-jfour/public/bbm/dpi600\bbm12.pk> <C:\Users\Дмитрий\AppData\Local\MiKTeX
-\2.9\fonts/pk/ljfour/lh/lh-t2a/dpi600\lati1200.pk> <C:\Users\Дмитрий\App
-Data\Local\MiKTeX\2.9\fonts/pk/ljfour/lh/lh-t2a/dpi600\labx2488.pk> <C:\Users\�
-�митрий\AppData\Local\MiKTeX\2.9\fonts/pk/ljfour/lh/lh-t2a/dpi600\larm120
-0.pk> <C:\Users\Дмитрий\AppData\Local\MiKTeX\2.9\fonts/pk/ljfour/lh/lh-t
-2a/dpi600\labx1200.pk> <C:\Users\Дмитрий\AppData\Local\MiKTeX\2.9\fonts/
-pk/ljfour/lh/lh-t2a/dpi600\labx1440.pk> <C:\Users\Дмитрий\AppData\Local\
-MiKTeX\2.9\fonts/pk/ljfour/lh/lh-t2a/dpi600\labx1728.pk><C:/Users/Дмитри�
-�/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmex10.pfb><
-C:/Users/Дмитрий/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/am
-sfonts/cmextra/cmex8.pfb><C:/Users/Дмитрий/AppData/Local/Programs/MiKTeX
- 2.9/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Users/Дмитрий/AppData
-/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi6.pfb><C:/Users/�
-�митрий/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/
-cmmi8.pfb><C:/Users/Дмитрий/AppData/Local/Programs/MiKTeX 2.9/fonts/type
-1/public/amsfonts/cm/cmr12.pfb><C:/Users/Дмитрий/AppData/Local/Programs/
-MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr6.pfb><C:/Users/Дмитрий/App
-Data/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/User
-s/Дмитрий/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/
-cm/cmsy10.pfb><C:/Users/Дмитрий/AppData/Local/Programs/MiKTeX 2.9/fonts/
-type1/public/amsfonts/cm/cmsy6.pfb><C:/Users/Дмитрий/AppData/Local/Progr
-ams/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Users/Дмитри�
-�/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/symbols/msam10.
+ <C:\Users\Дмитрий\AppData\Local\MiKTeX\2.9\fonts
+/pk/ljfour/public/bbm/dpi600\bbm12.pk> <C:\Users\Дмитрий\AppData\Local\M
+iKTeX\2.9\fonts/pk/ljfour/lh/lh-t2a/dpi600\lati1200.pk> <C:\Users\Дмитри�
+�\AppData\Local\MiKTeX\2.9\fonts/pk/ljfour/lh/lh-t2a/dpi600\labx2488.pk> <C:\Us
+ers\Дмитрий\AppData\Local\MiKTeX\2.9\fonts/pk/ljfour/lh/lh-t2a/dpi600\la
+rm1200.pk> <C:\Users\Дмитрий\AppData\Local\MiKTeX\2.9\fonts/pk/ljfour/lh
+/lh-t2a/dpi600\labx1200.pk> <C:\Users\Дмитрий\AppData\Local\MiKTeX\2.9\f
+onts/pk/ljfour/lh/lh-t2a/dpi600\labx1440.pk> <C:\Users\Дмитрий\AppData\L
+ocal\MiKTeX\2.9\fonts/pk/ljfour/lh/lh-t2a/dpi600\labx1728.pk><C:/Users/Дмит
+рий/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmex10.
 pfb><C:/Users/Дмитрий/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/publ
-ic/amsfonts/symbols/msbm10.pfb><C:/Users/Дмитрий/AppData/Local/Programs/
-MiKTeX 2.9/fonts/type1/public/rsfs/rsfs10.pfb>
-Output written on TV&MS.pdf (27 pages, 543796 bytes).
+ic/amsfonts/cmextra/cmex8.pfb><C:/Users/Дмитрий/AppData/Local/Programs/M
+iKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Users/Дмитрий/Ap
+pData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi6.pfb><C:/Us
+ers/Дмитрий/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfont
+s/cm/cmmi8.pfb><C:/Users/Дмитрий/AppData/Local/Programs/MiKTeX 2.9/fonts
+/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/Дмитрий/AppData/Local/Prog
+rams/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr6.pfb><C:/Users/Дмитри�
+�/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:
+/Users/Дмитрий/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsf
+onts/cm/cmsy10.pfb><C:/Users/Дмитрий/AppData/Local/Programs/MiKTeX 2.9/f
+onts/type1/public/amsfonts/cm/cmsy6.pfb><C:/Users/Дмитрий/AppData/Local/
+Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Users/Дмит
+рий/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/symbols/ms
+am10.pfb><C:/Users/Дмитрий/AppData/Local/Programs/MiKTeX 2.9/fonts/type1
+/public/amsfonts/symbols/msbm10.pfb><C:/Users/Дмитрий/AppData/Local/Prog
+rams/MiKTeX 2.9/fonts/type1/public/rsfs/rsfs10.pfb>
+Output written on TV&MS.pdf (30 pages, 558252 bytes).
 PDF statistics:
- 460 PDF objects out of 1000 (max. 8388607)
+ 476 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  21 words of extra memory for PDF output out of 10000 (max. 10000000)
 
