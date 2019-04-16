@@ -8,6 +8,7 @@
 \usepackage{bbm} % для индикатора
 \usepackage{chngcntr} % без этого пакета у меня не робит counterwithin
 \usepackage{ulem} % нужен для \uline, которая умеет переносить подчеркнутый текст
+\usepackage{subfiles} % по-царски юзаем разбивку на файлы: с возможностью компиляции каждого файла по отдельности и с автоматической преамбулой
 \usepackage{cancel}
 \usepackage{tikz}  
 \usepackage{pb-diagram}
@@ -16,10 +17,7 @@
 \usetikzlibrary{arrows,decorations.pathmorphing,backgrounds,positioning,fit,petri}
 \usepgflibrary{arrows.meta}
 \usetikzlibrary{arrows.meta}
-\graphicspath{{pictures/}}
-\DeclareGraphicsExtensions{.pdf,.png,.jpg}
-
-\graphicspath{{pictures/}}
+\graphicspath{{pictures/}{../pictures/}} % один сработает для основоного, другой для subfiles
 \DeclareGraphicsExtensions{.pdf,.png,.jpg}
 
 \textheight=24cm
@@ -82,37 +80,39 @@
 }
 \newpage
 
-\input "inputs/prob space.tex"
+\subfile{inputs/prob_space.tex}
 
-\input "inputs/cond prob.tex"
+\subfile{inputs/cond_prob.tex}
 
-\input "inputs/bayes.tex"
+\subfile{inputs/bayes.tex}
 
-\input "inputs/rnd var.tex"
+\subfile{inputs/rnd_var.tex}
 
-\input "inputs/lebesgue.tex"
+\subfile{inputs/lebesgue.tex}
 
-\input "inputs/distr.tex"
+\subfile{inputs/distr.tex}
 
-\input "inputs/characteristics.tex"
+\subfile{inputs/characteristics.tex}
 
-\input "inputs/nezavis.tex"
+\subfile{inputs/nezavis.tex}
 
-\input "inputs/nerav.tex"
+\subfile{inputs/nerav.tex}
 
-\input "inputs/bernulli.tex"
+\subfile{inputs/bernulli.tex}
 
-\input "inputs/lim th.tex"
+\subfile{inputs/lim_th.tex}
 
-\input "inputs/vec.tex"
+\subfile{inputs/vec.tex}
 
-\input "inputs/distr of funcs.tex"
+\subfile{inputs/charfunc.tex}
 
-\input "inputs/types of lims.tex"
+\subfile{inputs/distr_of_funcs.tex}
 
-\input "inputs/zbch.tex"
+\subfile{inputs/types_of_lims.tex}
 
-\input "inputs/cpt.tex"
+\subfile{inputs/zbch.tex}
+
+\subfile{inputs/cpt.tex}
 
 
 

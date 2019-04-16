@@ -1,3 +1,6 @@
+\documentclass[../TV&MS.tex]{subfiles}
+\begin{document}
+    
 \section{Закон больших чисел}
 В этой части рассмотрим закон больших чисел. Причем сначала скажем, как он формулируется, а потом подоказываем его для различных исходных.
 
@@ -96,8 +99,8 @@
     Пусть $\Pro \left( \left| \dfrac{S_n}{n} - a \right| \geqslant \varepsilon \right) \rightarrow 0$. Тогда:
     \begin{multline*}
         \Pro \left( \left| \dfrac{S_n}{n} - a \right| \geqslant \varepsilon \right) = \int\limits_{n(a+\varepsilon)}^{+\infty} p(x)dx + \int\limits_{-\infty}^{n(a - \varepsilon)} p(x)dx = 
-        \dfrac{1}{\pi} \left. \arctg \left( \dfrac{x}{\gamma n} \right) \right|\limits_{n(a+\varepsilon)}^{+\infty} + 
-        \dfrac{1}{\pi} \left. \arctg \left( \dfrac{x}{\gamma n} \right) \right|\limits_{-\infty}^{n(a - \varepsilon)} = \\
+        \dfrac{1}{\pi} \left. \arctg \left( \dfrac{x}{\gamma n} \right) \right|_{n(a+\varepsilon)}^{+\infty} + 
+        \dfrac{1}{\pi} \left. \arctg \left( \dfrac{x}{\gamma n} \right) \right|_{-\infty}^{n(a - \varepsilon)} = \\
         = \dfrac{1}{\pi} \left( \arctg \left( \dfrac{a - \varepsilon}{\gamma} \right) - \arctg \left( \dfrac{a + \varepsilon}{\gamma} \right)  \right) 
         \xcancel{ \xrightarrow[n \rightarrow \infty]{}} \ 0
     .\end{multline*}
@@ -106,3 +109,5 @@
 
 \newpage
 
+
+\end{document}

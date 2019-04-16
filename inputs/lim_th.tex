@@ -1,0 +1,115 @@
+\documentclass[../TV&MS.tex]{subfiles}
+\begin{document}
+    
+\section{Предельные теоремы}
+
+\begin{Th} [Пуассон]
+Пусть $\lambda = np$. Тогда при малых $p$ и больших $n$ можно использовать приближение
+$$\Pro(\mu_n = k) = C_n^kp^kq^{n-k} \approx \frac{e^{-\lambda}\lambda^k}{k!}$$
+\end{Th}
+\begin{Proof}
+Докажем индукцией по $k$. При $k = 0$
+$$\Pro(\mu_n = 0) = (1-p)^n = (1 - \frac{\lambda}{n})^n \longrightarrow e^{-\lambda} \quad (n \to \infty)$$
+$$\frac{\Pro(\mu_n = k)}{\Pro(\mu_n = k-1)} = \frac{n!}{k!(n-k)!}p^kq^{n-k} \frac{(k-1)!(n-k+1)!}{n!} \frac{1}{p^{k-1}q^{n-k+1}} = \frac{(n-k+1)p}{kq}$$
+$$\Pro(\mu_n = k) = \frac{(n-k+1)p}{kq}\Pro(\mu_n = k-1) = \frac{(n-k+1)\frac{\lambda}n}{k(1-\frac{\lambda}n)}\Pro(\mu_n = k-1)$$
+
+Воспользуемся предположением индукции для $k-1$.
+$$\Pro(\mu_n = k) \to \frac{(n-k+1)\frac{\lambda}n}{k(1-\frac{\lambda}n)} \frac{e^{-\lambda}\lambda^{k-1}}{(k-1)!} \longrightarrow \frac{e^{-\lambda}\lambda^{k}}{k!} (n \to \infty)$$
+\end{Proof}
+
+Следующая оценка формализует <<малость>> $p$ и <<величину>> $n$:
+$$\sup\limits_k |\Pro(\mu_n = k) - \frac{e^{-\lambda}\lambda^k}{k!}| \le 2np^2$$
+Таким образом, зная $n, p$ всегда можно оценить сверху погрешность аппроксимации.\\
+\begin{Why}
+При очень большом числе испытаний ни один нормальный компьютер не способен вычислить  $ C_n^kp^kq^{n-k}$, а уж тем более сложить их. Данная теорема позволяет сводить вычисление таких сложных вещей к вычислению экспонент.
+\end{Why}
+
+Распределение величины $\xi$ такое, что $\forall k \in \Int_+\quad  \Pro(\xi = k) =\frac{e^{-\lambda}\lambda^k}{k!}$, называется \underline{распределением Пуассона} 
+и обозначается $\Pois(\lambda)$
+
+Одно из приложений распределения Пуассона --- это пуассоновские потоки. Пусть во времени происходят некоторые события, которые мы фиксируем. $\lambda$ --- интенсивность потока --- показывает среднее число событий за единицу времени. Тогда число произошедших событий на отрезке $[0, t]$ равно $\xi_t\colon \Pro(\xi_t = k) = \frac{e^{-\lambda t}(\lambda t)^k}{k!}$.
+
+Свойства пуассоновского распределения. ($\xi \sim \Pois(\lambda)$)
+\begin{enumerate}
+	\item $\Expec\xi = \lambda$
+	\item $\Disp\xi = \lambda$
+	\item $\xi_i \sim \Pois(\lambda_i) \quad i = 1, \ldots, n \Rightarrow \Sum{i}{1}{n}\xi_i \sim \Pois(\Sum{i}{1}{n}\lambda_i)$
+\end{enumerate}
+
+\begin{St}
+Пусть независимые случайные величины $\xi_i \sim \Pois(\lambda_i), \quad i = 1, 2$. Тогда условное распределение $\xi_1$ при условии $\xi_1 + \xi_2 = n$ имеет биномиальное распределение с параметрами $n, \frac{\lambda_1}{\lambda_1 + \lambda_2}$, то есть
+$$\Pro(\xi_1 = k | \xi_1 + \xi_2 = n) = C_n^kp^k(1-p)^{n-k}, \quad p = \frac{\lambda_1}{\lambda_1 + \lambda_2}$$
+\end{St}
+\begin{Proof}
+$$\Pro(\xi_1 = k | \xi_1 + \xi_2 = n) = \frac{\Pro(\xi_1 = k, \xi_1 + \xi_2 = n}{\Pro(\xi_1 + \xi+2 = n)} = \frac{\Pro(\xi_1 = k, \xi_2 = n - k}{\Pro(\xi_1 + \xi+2 = n)}=$$
+В числителе воспользуемся независимостью $\xi_1, \xi_2$, а в знаменателе свойством 3 пуассоновского распределения:
+$$=\frac{e^{-\lambda_1}\frac{\lambda_1^k}{k!}e^{-\lambda_2}\frac{\lambda_2^{n-k}}{(n-k)!}}{e^{-(\lambda_1+\lambda_2)}\frac{(\lambda_1+\lambda_2)^n}{n!}} = 
+C_n^k(\frac{\lambda_1}{\lambda_1 + \lambda_2})^k(\frac{\lambda_2}{\lambda_1 + \lambda_2})^{n-k}$$
+\end{Proof}
+
+\begin{Th} [Муавра-Лапласа]
+Пусть $\sqrt{npq}$ велико. Тогда
+$$\Pro(\mu_n = k) = \Pro(\frac{\mu_n - np}{\sqrt{npq}} = \frac{k - np}{\sqrt{npq}}) = \frac{1}{\sqrt{2\pi}}e^{-\frac{x^2}2} + o(1), \quad x \equiv \frac{k - np}{\sqrt{npq}}$$
+\end{Th}
+\begin{Proof} не было и не должно быть.
+\end{Proof}
+
+Рассмотрим функции
+$$\phi(x) = \frac{1}{\sqrt{2\pi}}e^{-\frac{x^2}2}$$
+$$\Phi(x) = \int\limits_{-\infty}^x \frac{1}{\sqrt{2\pi}}e^{-\frac{u^2}2} du = \int\limits_{-\infty}^{x}\phi(u)du$$
+
+Заметим, что 
+$$\int\limits_{-\infty}^{+\infty} \phi(u)du = 1$$ 
+Это верно, так как данный интеграл сводится заменой $t = \frac{x}{\sqrt{2}}$ к известному интегралу Пуассона.
+
+Так как $\phi(x)$ неотрицательна, и интеграл от нее по всей прямой равен 1, она является плотностью некоторого абсолютно непрерывного распределения, которое называется \underline{стандартным нормальным распределением} и обозначается $N(0, 1)$.
+
+Пусть $\xi \sim N(0,1)$.
+$$\Expec\xi^k = \int\limits_{-\infty}^{+\infty}x^k\phi(x)dx$$
+$$e^{h\xi}=1 + h\xi + \frac{(h\xi)^2}{2!} + \ldots$$
+$$\Expec e^{h\xi} = 1 + h\Expec\xi + \frac{h^2}{2!}\Expec\xi^2 + \ldots \equiv \psi(h)$$
+Функция $\psi(h)$ называется \underline{производящей функцией моментов}.
+$$\psi(h) = \int\limits_{-\infty}^{+\infty}e^{hx}\phi(x)dx = \int\limits_{-\infty}^{+\infty}\frac{1}{\sqrt{2\pi}}e^{hx-\frac{x^2}2}dx = \frac{e^{\frac{h^2}2}}{\sqrt{2\pi}}\int\limits_{-\infty}^{+\infty}e^{-\frac{(x-h)^2}2}dx = e^{\frac{h^2}2}$$
+$$e^{\frac{h^2}2} = 1 + \frac{h^2}2 + \frac1{2!}(\frac{h^2}2)^2 + \ldots$$
+Приравнивая это равенство к предыдущему разложению получим, что все нечетные центральные моменты равны 0.
+$$\Expec\xi^{2n-1} = 0$$
+$$\frac{1}{n!2^n} = \frac{\Expec\xi^{2n}}{(2n)!} \Rightarrow \Expec\xi^{2n} = \frac{(2n)!}{n!2^n} = \frac{2n(2n-1)\ldots n \ldots 1}{n!2^n} = (2n-1)!!$$
+
+Последняя формула позволяет очень быстро получить нужный момент, не считая интеграл по честям много раз.
+
+\begin{Th}[Интегральная теорема Муавра-Лапласа]
+Пусть $\sqrt{npq}$ велико. Тогда
+$$\Pro(m_1 \le \nu_n \le m_2) = \Pro(\frac{m_1 - np}{\sqrt{npq}} \le \frac{\mu_n - np}{\sqrt{npq}} \le \frac{m_2 - np}{\sqrt{npq}}) \approx \int\limits_{x_1}^{x_2}\phi(x)dx, \quad x1 \equiv \frac{m_1 - np}{\sqrt{npq}}, x2 \equiv\frac{m_2 - np}{\sqrt{npq}}$$
+\end{Th}
+
+С данной теоремой связана <<Задача о докторе Споке>>. (Добавить ссылку)
+
+Рассмотрим теперь случайную величину $\xi$ с геометрическим распределением. Поскольку $\Expec\xi = \frac1p$, 
+$$p\xi=\frac{\xi}{\Expec\xi}$$
+
+При стремлении вероятности успеха к нулю, номер первого успеха будет стремиться к бесконечности, как и матожидание $\xi$. Однако их отношение будет иметь конечный предел:
+$$\forall x > 0 \quad \Pro(p\xi > x) = \Pro(\xi > \frac{\xi}p) = \Sum{k}{[\frac{x}{p}] + 1}{\infty}p(1-p)^{k-1} = \frac{p(1-p)^{[\frac{x}p]}}p = (1-p)^{[\frac{x}p]}$$ 
+$$\lim\limits_{p \to 0} \Pro(p\xi > x) = \lim\limits_{p \to 0}(1-p)^{[\frac{x}p]} = e^{-x}$$
+В последнем переходе от дробной части можно избавиться, так как она не вносит никакого вклада в предел.
+Итак, получили, что
+$$\lim\limits_{p \to 0} \Pro(p\xi < x) = 1 - e^{-x}$$
+
+Это частный случай \underline{показательного} (экспоненциального) распределения. В общем случае оно выглядит так:
+$$F(x) = 1 - e^{-\lambda x}$$
+$$p(x) = \lambda e^{-\lambda x}$$
+Матожидание случайной величины, распределенной показательно, имеет вид
+$$\int\limits_0^{\infty} x\lambda e^{-\lambda x}dx = \frac1{\lambda}$$
+
+Показательно распределение обладает интересным свойством: свойством отсутвия последействия (или отсутствия памяти). Предположим, что вы ждете автобус на 
+остановке, а время между автобусами $\xi$ имеет показательное распределение. Тогда вероятность того, что вы прождете автобус еще $t$ никак не зависит от того, 
+как долго ($\tau$) вы уже ждете. Формализуем это:
+$$ \Pro(\xi > t + \tau | \xi > \tau) = \Pro(\xi > t)$$
+По определению условной вероятности
+$$\Pro(\xi > t + \tau | \xi > \tau) = \frac{\Pro(\xi > t + \tau, \xi > \tau)}{\Pro(\xi > \tau)} = \frac{\Pro(\xi > t + \tau)}{\Pro(\xi > \tau)} = \frac{e^{-\lambda(t+\tau)}}{e^{-\lambda \tau}} = e^{-\lambda t}$$
+
+Показательное распределение является единственным обладающим таким свойством в классе абсолютно непрерывных распределений. В классе дискретных распределений таким свойством обладает только геометрическое распределение.
+
+\newpage
+
+
+\end{document}
