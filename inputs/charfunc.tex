@@ -3,7 +3,161 @@
 \begin{document}
 \section{Характеристические функции}
 
+Введем еще какие-нибудь понятия, которые что-то там нам облегчат (наверное).
 
+\begin{Def}
+    Пусть $\xi$ "---~случайная величина. Тогда будем говорить, что $f_\xi \left( x \right) $ "---~\uline{характеристическая функция $\xi$}, если:
+    \[
+        f_\xi(t) = \Expec e^{it\xi}
+    .\] 
+\end{Def} 
+
+Поясним раз.  $\Expec e^{it\xi}$, чтобы не сломать мозг раньше времени, понимаем в смысле
+$\Expec e^{it\xi} = \Expec \cos{t\xi} + i\Expec \sin{t\xi}$.
+
+Поясним два. Если $\xi$ "---~дискретная случайная величина, то она задается рядом
+распределения $\Pro(\xi = x_k)$, тогда  $f_\xi(t) = \sum\limits_{k}^{} e^{itx_k} \Pro(\xi = x_k)$. Если же $\xi$"---~абсолютно непрерывная случайная величина, 
+то  $f_\xi(t) = \int\limits_{}^{} e^{itx} dF_\xi(x)$, где $F_\xi(x)$"---~функция распределения $\xi$, а интеграл как всегда берется по всему пространству, да еще и Лебегов.
+
+Теперь немного поковыряем свойства харфункции и посмотрим примерчики.
+
+Свойства (под $f(t)$ подразумевается $f_\xi(t)$ для какой-то случайной величины $\xi$:
+
+\begin{enumerate}
+    \item $ \left| f(t) \right| \leqslant 1 $.
+    \item $f(0) = 1$.
+    \item $f(-t) = \overline{f(t)}$ 
+    \item $\forall t \in \Real \quad f_\xi(t) \in \Real \iff$  $\xi$ распределена симметрично (тривиальное следствие из предыдущего).
+    \item\label{ravnepr} $f(t)$ равномерно непрерывна на $\Real$.
+    \item Если $\eta = a\xi + b$, то $f_\eta(t) = e^{itb}f_\xi(at)$.
+    \item\label{nez} Если $\xi_1,  \ldots , \xi_n$"---~независимые случайные величины, и 
+    $\eta = \xi_1 +  \ldots + \xi_n$, то $f_\eta(x) = \prod\limits_{k=1}^{n} 
+    f_{\xi_k}(x)$.
+    \item\label{moments} Если $\Expec \left|\xi^k\right| < \infty$, то 
+    $\Expec \xi^k = i^k f^{(k)}_\xi(0)$.
+    Если $k$ четно, то верно и обратное утверждение.
+\end{enumerate}
+
+Теперь докажем некоторые утверждения.
+
+\begin{Proof} \eqref{ravnepr}
+\begin{multline*}
+    \bigl| f(t + h) - f(t) \bigr| = 
+    \left| \int\limits_{-\infty}^{\infty} e^{i(t+h)x}dF(x) + 
+    \int\limits_{-\infty}^{\infty} e^{itx}dF(x) \right| \leqslant
+    \int\limits_{-\infty}^{\infty} \Bigl| e^{itx} \left( e^{ith} + 1 \right)  \Bigr| dF(x) \leqslant \\
+    \leqslant \int\limits_{-\infty}^{\infty} \Bigl| e^{ihx} - 1 \Bigr| dF(x) =
+    \underbrace{\int\limits_{|x| \leqslant M}^{} \left| e^{ith} - 1 \right| dF(x)}_{I_1} + 
+    \underbrace{\int\limits_{|x| > M}^{} \left| e^{ith}-1 \right|dF(x)}_{I_2} 
+.\end{multline*}
+Оценим теперь интегралы $I_1$ и $I_2$.
+Функция, неепрерывная на компакте равномерно непрерывна на нем, а значит
+$\forall \varepsilon > 0 \quad \exists h$, такой что $I_1 < \dfrac{\varepsilon}{2}$.
+Для второго интеграла имеем: $ \left| e^{ith} - 1 \right|\leqslant 2 \implies
+I_2 \leqslant 2\Pro \left( \left| \xi \right| > M \right) < \dfrac{\varepsilon}{2}$ за счет выбора $M$.
+\end{Proof} 
+
+\begin{Proof} \eqref{nez}
+
+Воспользуемся независимостью случайных величин, чтобы разбить одно большое матожидание на много маленьких.
+    $$
+        f_{\xi_1 +  \ldots + \xi_n} =
+        \Expec e^{it(\xi_1 + \ldots + \xi_n)} = 
+        \Expec \left( e^{it\xi_1} \ldots e^{it\xi_n} \right) =
+        \Expec e^{it\xi_1}  \ldots \Expec e^{it\xi_n} =
+        \prod\limits_{k=1}^{n} f_{\xi_k}(x)
+    .$$ 
+\end{Proof} 
+
+\begin{Proof} \eqref{moments}
+
+    Первую производную посчитаем по определению:
+    \[
+        f_\xi'(t) = \lim\limits_{h \rightarrow 0} \frac{f_\xi(t + h) - f_\xi(t)}{h}=
+        \lim\limits_{h \rightarrow 0} \int\limits_{-\infty}^{\infty} e^{ixt} \frac{e^{ixh} - 1}{h} dF_\xi(x) = \ldots 
+    \]
+    Тут у нас $\dfrac{e^{ixh} - 1}{h} \leqslant \left| x \right|$,
+    поэтому интеграл сходится равномерно (признак Вейерштрасса),
+    и мы можем поменять местами предел и интеграл и ничего нам за это не будет:
+    \[
+        \ldots = \int\limits_{-\infty}^{\infty} e^{ixt} 
+        \lim\limits_{h \rightarrow 0} \frac{e^{ixh} - 1}{h} dF_\xi(x) = \ldots
+    \] 
+    Теперь надо присатльно посмотреть на последнее подынтегральное выражение и заметить там 3-ий замечательный предел:
+    \[
+        \frac{e^{ixh} - 1}{h} \xrightarrow[h \rightarrow 0]{} ix
+    .\] 
+    Тогда продолжаем:
+    \[
+        \ldots = i \int\limits_{-\infty}^{\infty} xe^{itx}dF_\xi(x)
+    .\]
+    При $t = 0 \  e^{itx} = 1$, поэтому
+    \[
+        f_\xi'(0) = i \int\limits_{-\infty}^{\infty} xdF(x) = i \Expec \xi
+    .\]
+    По индукции показываем справедливость для производных старших порядков.
+    Обратное утверждение для четных $k$ доказывать не будем. Но там немного полопиталить и доказать это все безобразие по индукции. Можно залезть в Ширяева и удовлетворить свое любопытство.
+\end{Proof}
+
+\begin{Why}
+    Мяу. Если $\Expec \left| \xi \right|^n < \infty$, то мы можем записать харфункцию в виде суммы:
+    \[
+        f_\xi(t) = \sum\limits_{k=0}^{n} \frac{t^k}{k!}f_\xi^{(k)}(0) +\overline{o}(t^{k}) =
+        1 + \sum\limits_{k=1}^{n} \frac{(it)^k}{k!} \Expec \xi^k + \overline{o}(t^{k}) 
+    .\]
+    Довольно удобно считать моменты, если мы уверены в их существовании.
+\end{Why} 
+
+Теперь рассмотрим некоторые примеры:
+
+\begin{Ex}
+    Найдем характеристическую функцию для стандартного нармального распределения $\Norm(0, 1)$
+    с плотностью $p(x) = \dfrac{1}{\sqrt{2\pi}} e^{\frac{-x^2}{2}}$.
+    \begin{multline*}
+        f(t) = \Expec e^{it\xi} = 
+        \frac{1}{\sqrt{2\pi}}\int\limits_{-\infty}^{\infty} e^{itx} e^{\frac{-x^2}{2}} dx =
+        \frac{1}{\sqrt{2\pi}} \int\limits_{-\infty}^{\infty} 
+        e^{-\frac{1}{2}(x - it)^2} e^{-\frac{t^2}{2}}dx = \\
+        = \frac{1}{\sqrt{2\pi}} e^{-\frac{t^2}{2}} \int\limits_{-\infty}^{\infty}  e^{-\frac{1}{2}(x - it)^2}d(x - it) =
+        e^{-\frac{t^2}{2}}
+    .\end{multline*}
+\end{Ex}
+
+\begin{Ex}
+    Вот представь ситуацию: входишь ты в хату, а тебе пахан кидает под ноги
+    кидает $\cos t^2$ и говорит: "а найди-ка нам случайную величину, для 
+    которой это выражение будет харфункцией". Тут главное "--- не зашквариться
+    и по поянитям пояснить, что если бы $\cos t^2$ была бы харфункцией, то по
+    свойству~\eqref{ravnepr} она была бы равномерно непрерывной на $\Real$,
+    а это не так: если $t_1^2 = 2\pi k - \dfrac{\pi}{2}$, а $t_2^2 = 2\pi k$,
+    то $\cos t_2^2 - \cos t_1^2 = 1$, а
+    \[
+        % \vphantom чтобы выровнять знаки корня по высоте
+        t_2 - t_1 =\sqrt{\vphantom{\frac{\pi}{2}} 2\pi k} - \sqrt{2\pi k - \frac{\pi}{2} } = 
+        \frac{\frac{\pi}{2}}{\sqrt{\vphantom{\frac{\pi}{2}} 2\pi k} + \sqrt{2\pi k - \frac{\pi}{2} }}
+        \xrightarrow[k \rightarrow \infty]{} 0 
+    .\]
+    То есть для любого наперед заданного $\delta > 0$ мы можем найти $k$
+    достаточно большое, чтобы разность между $t_1$ и $t_2$ была меньше
+    $\delta$, а $\cos t_2^2 - \cos t_1^2 = 1$, что противоречит условию 
+    равномерной непрерывности.
+\end{Ex}
+
+\begin{Ex}
+    А теперь найдем случайную величину $\xi$, такую что $\Expec e^{it\xi} = \cos t$.
+    Для этого вспомним, что если $\xi$ "--- дискретная св, то 
+    $\Expec g(\xi) = \sum\limits_{k} g(k) \Pro \left( \xi = k \right)  $
+    \[
+        \cos t = \frac{1}{2} \left( e^{it} + e^{-it} \right)
+        \implies \xi = 
+        \left\{
+            \begin{aligned}
+                -1 &, \quad \Pro\left(\xi = -1\right) = \frac{1}{2} \\
+                1 &, \quad \Pro \left( \xi = 1 \right) = \frac{1}{2}
+            \end{aligned}
+        \right. 
+    .\] 
+\end{Ex} 
 
 \newpage
 \end{document}
