@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6930 64-bit) (preloaded format=pdflatex 2019.1.15)  14 APR 2019 17:46
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6930 64-bit) (preloaded format=pdflatex 2019.1.15)  9 JUN 2019 11:44
 entering extended mode
 **./TV&MS.tex
 (TV&MS.tex
@@ -1410,7 +1410,7 @@ Here is how much of TeX's memory you used:
  29930 multiletter control sequences out of 15000+200000
  20132 words of font info for 56 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 62i,21n,100p,1103b,2053s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 62i,21n,100p,1107b,2053s stack positions out of 5000i,500n,10000p,200000b,50000s
  <C:\Users\Дмитрий\AppData\Local\MiKTeX\2.9\fonts
 /pk/ljfour/lh/lh-t2a/dpi600\larm0800.pk> <C:\Users\Дмитрий\AppData\Local
 \MiKTeX\2.9\fonts/pk/ljfour/lh/lh-t2a/dpi600\lati0800.pk> <C:\Users\Дмитр�
@@ -1442,7 +1442,7 @@ cal/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/symbols/msam10.pfb><C:/User
 s/Дмитрий/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/
 symbols/msbm10.pfb><C:/Users/Дмитрий/AppData/Local/Programs/MiKTeX 2.9/f
 onts/type1/public/rsfs/rsfs10.pfb>
-Output written on TV&MS.pdf (41 pages, 624100 bytes).
+Output written on TV&MS.pdf (41 pages, 624066 bytes).
 PDF statistics:
  557 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
