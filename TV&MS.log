@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6930 64-bit) (preloaded format=pdflatex 2019.1.15)  9 JUN 2019 11:44
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6930 64-bit) (preloaded format=pdflatex 2019.1.15)  12 JUN 2019 21:22
 entering extended mode
 **./TV&MS.tex
 (TV&MS.tex
@@ -1264,7 +1264,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 709--710
  []
 
 
-Overfull \hbox (59.51785pt too wide) detected at line 710
+Overfull \hbox (67.51787pt too wide) detected at line 710
 \U/msb/m/n/12 E\OML/cmm/m/it/12 g\OT1/cmr/m/n/12 (\OMS/cmsy/m/n/12 j\OML/cmm/m/
 it/12 \OMS/cmsy/m/n/12 j\OT1/cmr/m/n/12 ) = \U/msb/m/n/12 E\OML/cmm/m/it/12 g\
 OT1/cmr/m/n/12 (\OMS/cmsy/m/n/12 j\OML/cmm/m/it/12 \OMS/cmsy/m/n/12 j\OT1/cmr/
@@ -1277,11 +1277,11 @@ S/cmsy/m/n/12 j  \OML/cmm/m/it/12 x\OT1/cmr/m/n/12 ) + \U/msb/m/n/12 E\OML/cmm
 mm/m/it/12 \OMS/cmsy/m/n/12 j\OT1/cmr/m/n/12 )\U/bbm/m/n/12 1\OT1/cmr/m/n/12 (
 \OMS/cmsy/m/n/12 j\OML/cmm/m/it/12 \OMS/cmsy/m/n/12 j  \OML/cmm/m/it/12 x\OT1
 /cmr/m/n/12 ) \OMS/cmsy/m/n/12  \OML/cmm/m/it/12 g\OT1/cmr/m/n/12 (\OML/cmm/m/
-it/12 x\OT1/cmr/m/n/12 )\U/bbm/m/n/12 1\OT1/cmr/m/n/12 (\OMS/cmsy/m/n/12 j\OML/
-cmm/m/it/12 \OMS/cmsy/m/n/12 j  \OML/cmm/m/it/12 x\OT1/cmr/m/n/12 ) = \OML/cm
-m/m/it/12 g\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 x\OT1/cmr/m/n/12 )\U/msb/m/n/12 P\
-OT1/cmr/m/n/12 (\OMS/cmsy/m/n/12 j\OML/cmm/m/it/12 \OMS/cmsy/m/n/12 j \OML/cmm
-/m/it/12 > x\OT1/cmr/m/n/12 )
+it/12 x\OT1/cmr/m/n/12 )\U/msb/m/n/12 E\U/bbm/m/n/12 1\OT1/cmr/m/n/12 (\OMS/cms
+y/m/n/12 j\OML/cmm/m/it/12 \OMS/cmsy/m/n/12 j  \OML/cmm/m/it/12 x\OT1/cmr/m/n
+/12 ) = \OML/cmm/m/it/12 g\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 x\OT1/cmr/m/n/12 )\
+U/msb/m/n/12 P\OT1/cmr/m/n/12 (\OMS/cmsy/m/n/12 j\OML/cmm/m/it/12 \OMS/cmsy/m/
+n/12 j \OML/cmm/m/it/12 > x\OT1/cmr/m/n/12 )
  []
 
 [21]
@@ -1315,9 +1315,9 @@ File: pictures/cat.jpg Graphic file (type jpg)
 Package pdftex.def Info: pictures/cat.jpg  used on input line 847.
 (pdftex.def)             Requested size: 14.22595pt x 14.22636pt.
  [25] [26]
-Overfull \hbox (66.9302pt too wide) detected at line 906
+Overfull \hbox (68.19409pt too wide) detected at line 906
 \U/msb/m/n/12 P\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 m[] \OMS/cmsy/m/n/12  \OML/cm
-m/m/it/12 [] \OMS/cmsy/m/n/12  \OML/cmm/m/it/12 m[]\OT1/cmr/m/n/12 ) = \U/msb
+m/m/it/12 [] \OMS/cmsy/m/n/12  \OML/cmm/m/it/12 m[]\OT1/cmr/m/n/12 ) = \U/msb
 /m/n/12 P\OT1/cmr/m/n/12 ([] \OMS/cmsy/m/n/12  []  []\OT1/cmr/m/n/12 ) \OMS/c
 msy/m/n/12  [] \OML/cmm/m/it/12 \OT1/cmr/m/n/12 (\OML/cmm/m/it/12 x\OT1/cmr/m
 /n/12 )\OML/cmm/m/it/12 dx;  x\OT1/cmr/m/n/12 1 \OMS/cmsy/m/n/12  []\OML/cmm/m
@@ -1442,7 +1442,7 @@ cal/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/symbols/msam10.pfb><C:/User
 s/Дмитрий/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/
 symbols/msbm10.pfb><C:/Users/Дмитрий/AppData/Local/Programs/MiKTeX 2.9/f
 onts/type1/public/rsfs/rsfs10.pfb>
-Output written on TV&MS.pdf (41 pages, 624066 bytes).
+Output written on TV&MS.pdf (41 pages, 623998 bytes).
 PDF statistics:
  557 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)

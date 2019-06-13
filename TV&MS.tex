@@ -707,7 +707,7 @@ $$\rho(\xi, \eta) = \frac{\Cov(\xi, \eta)}{\sqrt{\Disp\xi\Disp\eta}}$$
 $$\Pro(|\xi| > x) \le \frac{\Expec g(|\xi|)}{g(x)}$$
 \end{Lem}
 \begin{Proof} \\
-$$\Expec g(|\xi|) = \Expec g(|\xi|) \Ind(|\xi| \ge x) + \Expec g(|\xi|) \Ind(|\xi| < x) \ge \Expec g(|\xi|) \Ind(|\xi| \ge x) \ge g(x)\Ind(|\xi| \ge x) = g(x)\Pro(|\xi| > x)$$
+$$\Expec g(|\xi|) = \Expec g(|\xi|) \Ind(|\xi| \ge x) + \Expec g(|\xi|) \Ind(|\xi| < x) \ge \Expec g(|\xi|) \Ind(|\xi| \ge x) \ge g(x)\Expec\Ind(|\xi| \ge x) = g(x)\Pro(|\xi| > x)$$
 Здесь мы воспользовались представлением $1 = \Ind(A) + \Ind(\overline{A})$, затем неотрицательностью функции и, следовательно, ее матожидания. Далее использовалась монотонность функции, и в последнем переходе тождество $\Expec \Ind(A) = 1 \Pro(A) + 0 \Pro(\overline{A}) = \Pro(A)$
 \end{Proof}
 
@@ -760,9 +760,9 @@ $$ \sum\limits_{\omega}\Pro(\omega) = \sum\limits_{k = 0}^n\sum\limits_{\omega\c
 Рассмотрим теперь некоторые важные распределения, связанные со схемой Бернулли.
 
 Уже рассмотренная величина $\mu_n$, равная числу успехов в $n$ испытаниях Бернулли, является случайной величиной с распределением
-$$\forall k \in \Int_+ \quad \Pro(\mu_n=k) = C_n^kp^kq^{n-k}$$
+$$\forall k = 0, 1, \ldots, n \quad \Pro(\mu_n=k) = C_n^kp^kq^{n-k}$$
 Это следует из того, что исходов с $k$ успехами ровно $C_n^k$, а вероятность каждого равна $p^kq^{n-k}$.
-Такое распределение называется \underline{биномиальным} и обозначается $B(n,p)$.
+Такое распределение называется \underline{биномиальным} и обозначается $Bi(n,p)$.
 
 Рассимотрим случайные величины $X_i = \Ind(A_i)б \quad i = 1, \ldots, n$, где $A_i$ --- успех в $i$-м испытании. Каждая такая величина имеет распределение Бернулли.
 Тогда число успехов можно представить так:
@@ -776,7 +776,7 @@ $$\Disp X_i = \Expec X_i^2 - (\Expec X_i)^2 = p - p^2 = pq$$
 $$\Disp \mu_n = \Disp\sum\limits_{i=1}^n  X_i  =\sum\limits_{i=1}^n  \Disp X_i = \sum\limits_{i=1}^n pq = npq$$
 
 \begin{Th} [Бернулли]
-Для случайной величины с распределением $B(n,p)$
+Для случайной величины с распределением $Bi(n,p)$
 $$\Pro(|\frac{\mu_n}{n} - p| \ge \epsilon) \le \frac{npq}{n^2\epsilon^2}$$
 \end{Th}
 \begin{Proof} \\
@@ -789,7 +789,7 @@ $$\Pro(|\mu_n - pn| \ge n\epsilon) \le \frac{\Disp(\mu_n)}{(n\epsilon)^2} = \fra
 \underline{Многочленом Бернштейна} называется функция 
 $$ B_n(x, f) = \Sum{k}{0}{n}C_n^kx^k(1-x)^{n-k}f(\frac{k}{n}), \quad x \in [0, 1]$$
 \end{Def}
-Заметим, что $B_n(x, f) = \Expec f(\frac{\mu_n}n),\quad  \mu_n \sim B(n, x)$. (запись $\xi \sim$ *destrname*  означает, что случайная величина $\xi$ имеет распределение *destrname*).
+Заметим, что $B_n(x, f) = \Expec f(\frac{\mu_n}n),\quad  \mu_n \sim Bi(n, x)$. (запись $\xi \sim$ *destrname*  означает, что случайная величина $\xi$ имеет распределение *destrname*).
 
 \begin{St}
 $$B_n(x, f) \rightrightarrows f(x), \quad x \in [0,1]$$
@@ -816,7 +816,7 @@ $$\Sum{k}{1}{n}\Pro(\omega_k) = \Sum{k}{1}{n} p(1-p)^{k-1} = 1$$
 
 Пусть $\xi$ имеет геометрическое распределение с параметром $p$. Тогда
 $$\Expec\xi = \Sum{k}{1}{\infty}kp(1-p)^{k-1} = -p\Sum{k}{1}{\infty}\frac{d}{dp}(1-p)^k = -p \frac{d}{dp}(\frac{1-p}{p}) = \frac1{p}$$
-Аналогично, дифференцирую степенные ряды, получим диспресию
+Аналогично, дифференцируя степенные ряды, получим диспресию
 $$\Disp\xi = \frac{q}{p^2}$$
 
 Пусть теперь $\theta$ --- число неудач до $r$-го успеха. Тогда
@@ -903,7 +903,7 @@ $$\frac{1}{n!2^n} = \frac{\Expec\xi^{2n}}{(2n)!} \Rightarrow \Expec\xi^{2n} = \f
 
 \begin{Th}[Интегральная теорема Муавра-Лапласа]
 Пусть $\sqrt{npq}$ велико. Тогда
-$$\Pro(m_1 \le \nu_n \le m_2) = \Pro(\frac{m_1 - np}{\sqrt{npq}} \le \frac{\mu_n - np}{\sqrt{npq}} \le \frac{m_2 - np}{\sqrt{npq}}) \approx \int\limits_{x_1}^{x_2}\phi(x)dx, \quad x1 \equiv \frac{m_1 - np}{\sqrt{npq}}, x2 \equiv\frac{m_2 - np}{\sqrt{npq}}$$
+$$\Pro(m_1 \le \mu_n \le m_2) = \Pro(\frac{m_1 - np}{\sqrt{npq}} \le \frac{\mu_n - np}{\sqrt{npq}} \le \frac{m_2 - np}{\sqrt{npq}}) \approx \int\limits_{x_1}^{x_2}\phi(x)dx, \quad x1 \equiv \frac{m_1 - np}{\sqrt{npq}}, x2 \equiv\frac{m_2 - np}{\sqrt{npq}}$$
 \end{Th}
 
 С данной теоремой связана <<Задача о докторе Споке>>. (Добавить ссылку)
@@ -912,7 +912,7 @@ $$\Pro(m_1 \le \nu_n \le m_2) = \Pro(\frac{m_1 - np}{\sqrt{npq}} \le \frac{\mu_n
 $$p\xi=\frac{\xi}{\Expec\xi}$$
 
 При стремлении вероятности успеха к нулю, номер первого успеха будет стремиться к бесконечности, как и матожидание $\xi$. Однако их отношение будет иметь конечный предел:
-$$\forall x > 0 \quad \Pro(p\xi > x) = \Pro(\xi > \frac{\xi}p) = \Sum{k}{[\frac{x}{p}] + 1}{\infty}p(1-p)^{k-1} = \frac{p(1-p)^{[\frac{x}p]}}p = (1-p)^{[\frac{x}p]}$$ 
+$$\forall x > 0 \quad \Pro(p\xi > x) = \Pro(\xi > \frac{x}p) = \Sum{k}{[\frac{x}{p}] + 1}{\infty}p(1-p)^{k-1} = \frac{p(1-p)^{[\frac{x}p]}}p = (1-p)^{[\frac{x}p]}$$ 
 $$\lim\limits_{p \to 0} \Pro(p\xi > x) = \lim\limits_{p \to 0}(1-p)^{[\frac{x}p]} = e^{-x}$$
 В последнем переходе от дробной части можно избавиться, так как она не вносит никакого вклада в предел.
 Итак, получили, что
@@ -931,7 +931,7 @@ $$ \Pro(\xi > t + \tau | \xi > \tau) = \Pro(\xi > t)$$
 По определению условной вероятности
 $$\Pro(\xi > t + \tau | \xi > \tau) = \frac{\Pro(\xi > t + \tau, \xi > \tau)}{\Pro(\xi > \tau)} = \frac{\Pro(\xi > t + \tau)}{\Pro(\xi > \tau)} = \frac{e^{-\lambda(t+\tau)}}{e^{-\lambda \tau}} = e^{-\lambda t}$$
 
-Показательное распределение является единственным обладающим таким свойством в классе абсолютно непрерывных распределений. В классе дискретных распределений таким свойством обладает только геометрическое распределение.
+Показательное распределение является единственным обладающим таким свойством в классе абсолютно непрерывных распределений. В классе дискретных распределений таким свойством обладает только геометрическое распределение (введенное как число неудач до первого успеха).
 
 \newpage
 \section{Векторные случайные величины}
