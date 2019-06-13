@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6930 64-bit) (preloaded format=pdflatex 2019.1.15)  12 JUN 2019 21:22
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6930 64-bit) (preloaded format=pdflatex 2019.1.15)  13 JUN 2019 17:49
 entering extended mode
 **./TV&MS.tex
 (TV&MS.tex
@@ -1363,51 +1363,62 @@ File: pictures/ping.jpg Graphic file (type jpg)
 Package pdftex.def Info: pictures/ping.jpg  used on input line 1251.
 (pdftex.def)             Requested size: 14.22546pt x 14.22636pt.
  [35]
-Overfull \hbox (1.44719pt too wide) in paragraph at lines 1297--1298
+Overfull \hbox (7.38301pt too wide) in paragraph at lines 1333--1335
+[]$\OML/cmm/m/it/12 f\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 t\OT1/cmr/m/n/12 )$ \T2A
+/cmr/m/it/12 яв-ля-ет-ся ха-рак-те-ри-сти-че-ской функ-
+ []
+
+[36] [37]
+File: pictures/cat.jpg Graphic file (type jpg)
+<use pictures/cat.jpg>
+Package pdftex.def Info: pictures/cat.jpg  used on input line 1404.
+(pdftex.def)             Requested size: 14.22595pt x 14.22636pt.
+ [38] [39]
+Overfull \hbox (1.44719pt too wide) in paragraph at lines 1483--1484
 []\T2A/cmr/m/it/12 Если $\OMS/cmsy/m/n/12 f\OML/cmm/m/it/12 []\OMS/cmsy/m/n/12
  g$ \T2A/cmr/m/it/12  неза-ви-си-мые оди-на-ко-во рас-
  []
 
 
-Overfull \hbox (20.10367pt too wide) in paragraph at lines 1323--1326
+Overfull \hbox (20.10367pt too wide) in paragraph at lines 1509--1512
 []\T2A/cmr/m/it/12 Пусть $\OMS/cmsy/m/n/12 f\OML/cmm/m/it/12 []\OMS/cmsy/m/n/1
 2 g$ \T2A/cmr/m/it/12  по-сле-до-ва-тель-ность некор-
  []
 
-[36]
-Overfull \hbox (3.6114pt too wide) in paragraph at lines 1344--1345
+[40]
+Overfull \hbox (3.6114pt too wide) in paragraph at lines 1530--1531
 []\T2A/cmr/m/it/12 Если $\OMS/cmsy/m/n/12 f\OML/cmm/m/it/12 []\OMS/cmsy/m/n/12
  g$ \T2A/cmr/m/it/12 
  []
 
 File: pictures/ping.jpg Graphic file (type jpg)
 <use pictures/ping.jpg>
-Package pdftex.def Info: pictures/ping.jpg  used on input line 1355.
+Package pdftex.def Info: pictures/ping.jpg  used on input line 1541.
 (pdftex.def)             Requested size: 14.22546pt x 14.22636pt.
 
-Overfull \hbox (48.59894pt too wide) detected at line 1382
+Overfull \hbox (48.59894pt too wide) detected at line 1568
  []$[]  \U/msb/m/n/12 P [] \OT1/cmr/m/n/12 = [] \OML/cmm/m/it/12 p\OT1/cmr/m/n/
 12 (\OML/cmm/m/it/12 x\OT1/cmr/m/n/12 )\OML/cmm/m/it/12 dx \OT1/cmr/m/n/12 + []
  \OML/cmm/m/it/12 p\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 x\OT1/cmr/m/n/12 )\OML/cmm
 /m/it/12 dx \OT1/cmr/m/n/12 = [] [][] + [] [][] =$ 
  []
 
-[37] [38]
+[41] [42]
 File: pictures/cat.jpg Graphic file (type jpg)
 <use pictures/cat.jpg>
-Package pdftex.def Info: pictures/cat.jpg  used on input line 1424.
+Package pdftex.def Info: pictures/cat.jpg  used on input line 1610.
 (pdftex.def)             Requested size: 14.22595pt x 14.22636pt.
- [39]
-Overfull \hbox (26.3511pt too wide) in paragraph at lines 1512--1514
+ [43]
+Overfull \hbox (26.3511pt too wide) in paragraph at lines 1698--1700
 []$[] [] \U/msa/m/n/12 6 \OML/cmm/m/it/12 C[]$\T2A/cmr/m/it/12 . 
  []
 
-[40] [41] (TV&MS.aux) ) 
+[44] [45] (TV&MS.aux) ) 
 Here is how much of TeX's memory you used:
- 26530 strings out of 492946
- 671469 string characters out of 3122270
- 821334 words of memory out of 3000000
- 29930 multiletter control sequences out of 15000+200000
+ 26533 strings out of 492946
+ 671492 string characters out of 3122270
+ 821361 words of memory out of 3000000
+ 29933 multiletter control sequences out of 15000+200000
  20132 words of font info for 56 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
  62i,21n,100p,1107b,2053s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -1442,9 +1453,9 @@ cal/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/symbols/msam10.pfb><C:/User
 s/Р”РјРёС‚СЂРёР№/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/
 symbols/msbm10.pfb><C:/Users/Р”РјРёС‚СЂРёР№/AppData/Local/Programs/MiKTeX 2.9/f
 onts/type1/public/rsfs/rsfs10.pfb>
-Output written on TV&MS.pdf (41 pages, 623998 bytes).
+Output written on TV&MS.pdf (45 pages, 641254 bytes).
 PDF statistics:
- 557 PDF objects out of 1000 (max. 8388607)
+ 572 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  33 words of extra memory for PDF output out of 10000 (max. 10000000)
 
