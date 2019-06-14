@@ -7,7 +7,7 @@
 $$\Pro(|\xi| > x) \le \frac{\Expec g(|\xi|)}{g(x)}$$
 \end{Lem}
 \begin{Proof} \\
-$$\Expec g(|\xi|) = \Expec g(|\xi|) \Ind(|\xi| \ge x) + \Expec g(|\xi|) \Ind(|\xi| < x) \ge \Expec g(|\xi|) \Ind(|\xi| \ge x) \ge g(x)\Ind(|\xi| \ge x) = g(x)\Pro(|\xi| > x)$$
+$$\Expec g(|\xi|) = \Expec g(|\xi|) \Ind(|\xi| \ge x) + \Expec g(|\xi|) \Ind(|\xi| < x) \ge \Expec g(|\xi|) \Ind(|\xi| \ge x) \ge g(x)\Expec\Ind(|\xi| \ge x) = g(x)\Pro(|\xi| > x)$$
 Здесь мы воспользовались представлением $1 = \Ind(A) + \Ind(\overline{A})$, затем неотрицательностью функции и, следовательно, ее матожидания. Далее использовалась монотонность функции, и в последнем переходе тождество $\Expec \Ind(A) = 1 \Pro(A) + 0 \Pro(\overline{A}) = \Pro(A)$
 \end{Proof}
 

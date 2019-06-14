@@ -79,7 +79,7 @@ $$\frac{1}{n!2^n} = \frac{\Expec\xi^{2n}}{(2n)!} \Rightarrow \Expec\xi^{2n} = \f
 
 \begin{Th}[Интегральная теорема Муавра-Лапласа]
 Пусть $\sqrt{npq}$ велико. Тогда
-$$\Pro(m_1 \le \nu_n \le m_2) = \Pro(\frac{m_1 - np}{\sqrt{npq}} \le \frac{\mu_n - np}{\sqrt{npq}} \le \frac{m_2 - np}{\sqrt{npq}}) \approx \int\limits_{x_1}^{x_2}\phi(x)dx, \quad x1 \equiv \frac{m_1 - np}{\sqrt{npq}}, x2 \equiv\frac{m_2 - np}{\sqrt{npq}}$$
+$$\Pro(m_1 \le \mu_n \le m_2) = \Pro(\frac{m_1 - np}{\sqrt{npq}} \le \frac{\mu_n - np}{\sqrt{npq}} \le \frac{m_2 - np}{\sqrt{npq}}) \approx \int\limits_{x_1}^{x_2}\phi(x)dx, \quad x1 \equiv \frac{m_1 - np}{\sqrt{npq}}, x2 \equiv\frac{m_2 - np}{\sqrt{npq}}$$
 \end{Th}
 
 С данной теоремой связана <<Задача о докторе Споке>>. (Добавить ссылку)
@@ -88,7 +88,7 @@ $$\Pro(m_1 \le \nu_n \le m_2) = \Pro(\frac{m_1 - np}{\sqrt{npq}} \le \frac{\mu_n
 $$p\xi=\frac{\xi}{\Expec\xi}$$
 
 При стремлении вероятности успеха к нулю, номер первого успеха будет стремиться к бесконечности, как и матожидание $\xi$. Однако их отношение будет иметь конечный предел:
-$$\forall x > 0 \quad \Pro(p\xi > x) = \Pro(\xi > \frac{\xi}p) = \Sum{k}{[\frac{x}{p}] + 1}{\infty}p(1-p)^{k-1} = \frac{p(1-p)^{[\frac{x}p]}}p = (1-p)^{[\frac{x}p]}$$ 
+$$\forall x > 0 \quad \Pro(p\xi > x) = \Pro(\xi > \frac{x}p) = \Sum{k}{[\frac{x}{p}] + 1}{\infty}p(1-p)^{k-1} = \frac{p(1-p)^{[\frac{x}p]}}p = (1-p)^{[\frac{x}p]}$$ 
 $$\lim\limits_{p \to 0} \Pro(p\xi > x) = \lim\limits_{p \to 0}(1-p)^{[\frac{x}p]} = e^{-x}$$
 В последнем переходе от дробной части можно избавиться, так как она не вносит никакого вклада в предел.
 Итак, получили, что
@@ -107,7 +107,7 @@ $$ \Pro(\xi > t + \tau | \xi > \tau) = \Pro(\xi > t)$$
 По определению условной вероятности
 $$\Pro(\xi > t + \tau | \xi > \tau) = \frac{\Pro(\xi > t + \tau, \xi > \tau)}{\Pro(\xi > \tau)} = \frac{\Pro(\xi > t + \tau)}{\Pro(\xi > \tau)} = \frac{e^{-\lambda(t+\tau)}}{e^{-\lambda \tau}} = e^{-\lambda t}$$
 
-Показательное распределение является единственным обладающим таким свойством в классе абсолютно непрерывных распределений. В классе дискретных распределений таким свойством обладает только геометрическое распределение.
+Показательное распределение является единственным обладающим таким свойством в классе абсолютно непрерывных распределений. В классе дискретных распределений таким свойством обладает только геометрическое распределение (введенное как число неудач до первого успеха).
 
 \newpage
 

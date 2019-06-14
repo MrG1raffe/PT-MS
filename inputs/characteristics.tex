@@ -7,7 +7,7 @@
 Лебеговой меры $\mu$.
 
 \begin{itemize}
- 	\item Если $\xi(\omega) = \sum\limits_{i=1}^kx_i \Ind(A_i) \quad (i \not= j \Rightarrow A_iA_j = \varnothing, \ \bigcup_{i=1}^k = \Omega)$. 
+ 	\item Если $\xi(\omega) = \sum\limits_{i=1}^kx_i \Ind(A_i) \quad (i \not= j \Rightarrow A_iA_j = \varnothing, \ \bigcup_{i=1}^k A_i = \Omega)$. 
  	$$\Expec \xi = \int\limits_{\Omega} \xi(\omega) \Pro(d\omega) \equiv \sum\limits_{i=1}^k x_i \Pro(\Set{\omega}{\xi(\omega)=x_i}) =  \sum\limits_{i=1}^k x_i \Pro(A_i)$$
 	\item $\xi(\omega) \ge 0$. В этом случае аналогично интегралу Лебега
 	$$ \Expec \xi = \int\limits_{\Omega} \xi d\Pro = \lim_{n \to \infty}  \biggl[  \sum\limits_{k=1}^{n2^n} \frac{k-1}{2^n} \Pro\biggl(\Set{\omega}{\frac{k-1}{2^n} \le \xi(\omega) < \frac{k}{2^n}}\biggl) 
@@ -98,7 +98,7 @@ $$\Disp\xi = \Expec(\xi^2 - 2\xi\Expec\xi + (\Expec\xi)^2) = \Expec\xi^2 - 2\Exp
 
 \begin{Def}
 \underline{Ковариация} двух случайных величин --- это величина, равная
-$$ \Cov(\xi,\eta) = \Expec(\xi - \Expec\xi)\Expec(\eta - \Expec\eta)$$
+$$ \Cov(\xi,\eta) = \Expec(\xi - \Expec\xi)(\eta - \Expec\eta)$$
 \end{Def}
 
 Ковариация положительна, если случайные величины одновременно отклоняются в одну сторону и отрицательная, если в разные. Формулу ковариации так же можно упростить, раскрыв скобки в определении:
