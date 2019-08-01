@@ -1,126 +1,37 @@
 \documentclass[12pt]{article}
 \usepackage[utf8]{inputenc}
 \usepackage[russian]{babel}
-\usepackage{mathrsfs}
-\usepackage{amssymb}
-\usepackage{amsmath}
-\usepackage{graphicx}
-\usepackage{bbm} % для индикатора
-\usepackage{chngcntr} % без этого пакета у меня не робит counterwithin
-\usepackage{ulem} % нужен для \uline, которая умеет переносить подчеркнутый текст
-\usepackage{subfiles} % по-царски юзаем разбивку на файлы: с возможностью компиляции каждого файла по отдельности и с автоматической преамбулой
-\usepackage{cancel}
-\usepackage{tikz}  
-\usepackage{pb-diagram}
-\usepackage{pgfplots}
-\usepackage{caption}
-\usetikzlibrary{arrows,decorations.pathmorphing,backgrounds,positioning,fit,petri}
-\usepgflibrary{arrows.meta}
-\usetikzlibrary{arrows.meta}
-\graphicspath{{pictures/}{../pictures/}} % один сработает для основоного, другой для subfiles
-\DeclareGraphicsExtensions{.pdf,.png,.jpg}
 
-\textheight=24cm
-\textwidth=16cm
-\oddsidemargin=0pt
-\topmargin=-1.5cm
-\parindent=24pt
-\parskip=0pt
-\tolerance=2000
-\flushbottom
-
-\newtheorem{Th}{Теорема}
-\newtheorem{Def}{Определение}
-\newtheorem{Lem}{Лемма}
-\newtheorem{St}{Утверждение}
-
-\newenvironment{Proof}{\par\noindent{\bf Доказательство}}{$\blacksquare$} 
-\newenvironment{Ex}{{\bf Пример}\ }{}
-\newenvironment{Wtf}{\includegraphics[height=5mm]{ping}}{}
-\newenvironment{Why}{\includegraphics[height= 5mm]{cat}}{}
-\newenvironment{Note}{\par\noindent{\bf Замечание}}{}
-
-\numberwithin{Th}{section}
-\numberwithin{Def}{section}
-\numberwithin{Lem}{section}
-\numberwithin{St}{section}
-\numberwithin{equation}{section}
-\counterwithin*{section}{part}
-
-\newcommand\Set[2]{\left\{ #1 \colon #2 \right\}}
-\newcommand\Sum[3]{\sum\limits_{#1 = #2}^{#3}}
-\newcommand\Pro{\mathbb{P}} % вероятность
-\newcommand\Ev{\mathscr{A}} % алгебра событий
-\newcommand\Bor{\mathscr{B}} % борелевская сигма-алгебра
-\newcommand\Real{\mathbb{R}} % вещественная прямая
-\newcommand\Int{\mathbb{Z}} % целые числа
-\newcommand\Nat{\mathbb{N}} % натуральные числа
-\newcommand\Compl{\mathbb{C}} % комплексные числа
-\newcommand\Expec{\mathbb{E}} % матожидание 
-\newcommand\Disp{\mathbb{D}}  % дисперсия
-\newcommand\Ind{\mathbbm{1}} % индикатор
-\newcommand\Med{{\rm med \,}} % медиана
-\newcommand\Cov{{\rm cov \,}} % ковыряция
-\newcommand\Mod{{\rm mod \,}} % мода
-\newcommand\Pois{{\rm Pois \,}} 
-\newcommand\Norm{\mathcal{N}} % нормальное распределение
-\newcommand\xequiv[1]{\stackrel{\mathrm{ #1}}{\equiv}}
+\usepackage{textbook}
 
 \begin{document}
-\tableofcontents
-\newpage
 
-\part{Теория вероятности}
+	\subfile{inputs/title.tex}
+	
+	\tableofcontents
+	\newpage
 
-\hfill\parbox{0.5\linewidth}{
-\textit{Ты спросишь меня, кого я люблю больше: тебя или теорию вероятности. Я~отвечу, что почти наверное я больше люблю тебя, и ты уйдешь, так и не узнав, что почти наверное значит с вероятностью~1.}
-\begin{flushright}
-    Игорян
-\end{flushright} 
-}
-\newpage
+	\part{Теория вероятности}
+	\subfile{inputs/epigraph.tex}
 
-\subfile{inputs/prob_space.tex}
+	\subfile{inputs/prob_space.tex}
+	\subfile{inputs/cond_prob.tex}
+	\subfile{inputs/bayes.tex}
+	\subfile{inputs/rnd_var.tex}
+	\subfile{inputs/lebesgue.tex}
+	\subfile{inputs/distr.tex}
+	\subfile{inputs/characteristics.tex}
+	\subfile{inputs/nezavis.tex}
+	\subfile{inputs/nerav.tex}
+	\subfile{inputs/bernulli.tex}
+	\subfile{inputs/lim_th.tex}
+	\subfile{inputs/vec.tex}
+	\subfile{inputs/charfunc.tex}
+	\subfile{inputs/distr_of_funcs.tex}
+	\subfile{inputs/types_of_lims.tex}
+	\subfile{inputs/zbch.tex}
+	\subfile{inputs/cpt.tex}
 
-\subfile{inputs/cond_prob.tex}
-
-\subfile{inputs/bayes.tex}
-
-\subfile{inputs/rnd_var.tex}
-
-\subfile{inputs/lebesgue.tex}
-
-\subfile{inputs/distr.tex}
-
-\subfile{inputs/characteristics.tex}
-
-\subfile{inputs/nezavis.tex}
-
-\subfile{inputs/nerav.tex}
-
-\subfile{inputs/bernulli.tex}
-
-\subfile{inputs/lim_th.tex}
-
-\subfile{inputs/vec.tex}
-
-\subfile{inputs/charfunc.tex}
-
-\subfile{inputs/distr_of_funcs.tex}
-
-\subfile{inputs/types_of_lims.tex}
-
-\subfile{inputs/zbch.tex}
-
-\subfile{inputs/cpt.tex}
-
-
-
-
-
-
-\part{Математическая статистика}
-
-
+	\part{Математическая статистика}
 
 \end{document}
