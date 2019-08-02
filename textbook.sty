@@ -6,9 +6,17 @@
 %---------------------------------------------------------------------------------
 
 % Counter of section
-
 \usepackage{chngcntr} % для counterwithin
 \counterwithin*{section}{part}
+
+% Section 
+\usepackage{titlesec}
+\titleformat{\section} {\normalfont\Large\bfseries\filcenter}{\S \!\ \thesection}{1em}{}
+\titlespacing*{\subsection}{0pt}{3.5ex}{.3ex}
+
+% Change spacing after section
+\usepackage[titles]{tocloft}
+\renewcommand{\cftbeforesecskip}{3pt}
 
 %---------------------------------------------------------------------------------
 %---------------------------------------------------------------------------------
@@ -24,7 +32,21 @@
 %---------------------------------------------------------------------------------
 %---------------------------------------------------------------------------------
 
-% No
+% Section
+\usepackage{titletoc}
+%\usepackage{titlesec}
+
+\titlecontents{part}[0pt]{\normalsize\bfseries\protect\addvspace{15pt}}%
+{}{\partname{} }%
+{\enspace\titlerule\contentspage}%
+
+\titlecontents{section}[2.4pc]
+{\addvspace{0.4cm}}
+{\contentslabel[\thecontentslabel]{2.4pc}}
+{\S}
+{\hfill\small \hspace{3cm}\thecontentspage}
+[]
+
 
 %---------------------------------------------------------------------------------
 %---------------------------------------------------------------------------------
@@ -42,11 +64,11 @@
     {\includegraphics[width=\paperwidth]{back}};
 \end{tikzpicture}}}
 \backgroundsetup{
-scale=1,
-color=black,
-opacity=0.4,
-angle=0,
-contents={}%
+	scale=1,
+	color=black,
+	opacity=0.4,
+	angle=0,
+	contents={}%
 }
 
 %---------------------------------------------------------------------------------
@@ -65,6 +87,30 @@ contents={}%
 \parskip=0pt
 \tolerance=2000
 \flushbottom
+
+% Headers and footers
+
+\usepackage{fancyhdr}
+\usepackage{etoolbox}
+\usepackage{lipsum} % just for the example
+
+\pagestyle{fancy}
+\fancypagestyle{main}{%
+  \fancyhf{}%
+  \fancyhead[C]{\slshape\leftmark}%
+  \fancyfoot[C]{\thepage}%
+  \renewcommand{\headrulewidth}{0.4pt}%
+  \renewcommand{\footrulewidth}{0.4pt}%
+}
+\fancypagestyle{plain}{%
+  \fancyhf{}%
+  \fancyfoot[C]{\thepage}%
+  \renewcommand{\headrulewidth}{0pt}%
+  \renewcommand{\footrulewidth}{0.4pt}%
+}
+
+\appto\frontmatter{\pagestyle{plain}}
+\appto\mainmatter{\pagestyle{main}}
 
 %---------------------------------------------------------------------------------
 %---------------------------------------------------------------------------------
@@ -139,10 +185,23 @@ contents={}%
 %---------------------------------------------------------------------------------
 %---------------------------------------------------------------------------------
 
+%Font
+\usepackage{libertine}
+
 %Epigraph
 \usepackage{epigraph}
 \setlength\epigraphwidth{.6\textwidth}
 \setlength\epigraphrule{0pt}
+
+%Hyperref at table of content
+\usepackage{hyperref}
+\hypersetup{
+    colorlinks,
+    citecolor=black,
+    filecolor=black,
+    linkcolor=black,
+    urlcolor=black
+}
 
 %---------------------------------------------------------------------------------
 %---------------------------------------------------------------------------------
