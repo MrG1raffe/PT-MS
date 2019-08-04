@@ -13,10 +13,9 @@
 
 	\newpage
 
-	\mainmatter
-
 	\part{Теория вероятности}
 	\subfile{inputs/epigraph.tex}
+	\mainmatter
 
 	\subfile{inputs/prob_space.tex}
 	\subfile{inputs/cond_prob.tex}
@@ -36,8 +35,15 @@
 	\subfile{inputs/zbch.tex}
 	\subfile{inputs/cpt.tex}
 
+	\frontmatter
 	\part{Математическая статистика}
+	\newpage
+	\mainmatter
 
     \subfile{inputs/ms_intro.tex}
 
+	\titlespacing*{\chapter}{0pt}{0pt}{40pt}
+	\frontmatter
+	\bibliographystyle{utf8gost705u} %% стилевой файл
+	\bibliography{biblio}
 \end{document}

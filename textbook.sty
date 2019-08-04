@@ -14,6 +14,24 @@
 \titleformat{\section} {\normalfont\Large\bfseries\filcenter}{\S \!\ \thesection}{1em}{}
 \titlespacing*{\subsection}{0pt}{3.5ex}{.3ex}
 
+% Part
+\titleformat
+{\part} % command
+[display] % shape
+{\bfseries\Large\itshape} % format
+{} % label
+{0.5ex} % sep
+{
+    \rule{\textwidth}{2pt}
+	\vspace{1cm}
+    \centering
+    Часть №\,\thepart. \;
+} % before-code
+[    
+	\vspace{-1cm}
+	\rule{\textwidth}{0.3pt}
+] % after-code
+
 % Change spacing after section
 \usepackage[titles]{tocloft}
 \renewcommand{\cftbeforesecskip}{3pt}
@@ -24,7 +42,11 @@
 %---------------------------------------------------------------------------------
 %---------------------------------------------------------------------------------
 
-% No
+% Для декораций
+\usepackage{doc}
+\usepackage{tikz}
+\usetikzlibrary{decorations.pathreplacing,calligraphy,matrix}
+\GetFileInfo{spath3.sty}
 
 %---------------------------------------------------------------------------------
 %---------------------------------------------------------------------------------
@@ -97,16 +119,16 @@
 \pagestyle{fancy}
 \fancypagestyle{main}{%
   \fancyhf{}%
-  \fancyhead[C]{\slshape\leftmark}%
-  \fancyfoot[C]{\thepage}%
+  \fancyhead[C]{\rightmark}%
+  \fancyfoot[C]{-\ \texttt{\thepage}\ -}%
   \renewcommand{\headrulewidth}{0.4pt}%
   \renewcommand{\footrulewidth}{0.4pt}%
 }
 \fancypagestyle{plain}{%
   \fancyhf{}%
-  \fancyfoot[C]{\thepage}%
+  \fancyfoot[C]{}%
   \renewcommand{\headrulewidth}{0pt}%
-  \renewcommand{\footrulewidth}{0.4pt}%
+  \renewcommand{\footrulewidth}{0pt}%
 }
 
 \appto\frontmatter{\pagestyle{plain}}
@@ -137,6 +159,9 @@
 \newenvironment{Wtf}{\includegraphics[height=5mm]{ping}}{}
 \newenvironment{Why}{\includegraphics[height= 5mm]{cat}}{}
 \newenvironment{Note}{\par\noindent{\bf Замечание}}{}
+
+% For fancy enumerate
+\usepackage{enumitem,pifont}
 
 %---------------------------------------------------------------------------------
 %---------------------------------------------------------------------------------
@@ -172,6 +197,7 @@
 \def\Cov{{\rm cov \,}} % ковыряция
 \def\Mod{{\rm mod \,}} % мода
 \def\Pois{{\rm Pois \,}} 
+\def\Smpl{\mathbb{X}} 
 \def\Norm{\mathcal{N}} % нормальное распределение
 
 
