@@ -4,18 +4,23 @@
 \section{Вероятностные неравенства}
 \begin{Lem}
 Для любой неотрицательной неубывающей функции $g(x)$ выполнено неравенство 
-$$\Pro(|\xi| > x) \le \frac{\Expec g(|\xi|)}{g(x)}$$
+$$\Pro(|\xi| > x) \leqslant \frac{\Expec g(|\xi|)}{g(x)}$$
 \end{Lem}
 \begin{Proof} \\
-$$\Expec g(|\xi|) = \Expec g(|\xi|) \Ind(|\xi| \ge x) + \Expec g(|\xi|) \Ind(|\xi| < x) \ge \Expec g(|\xi|) \Ind(|\xi| \ge x) \ge g(x)\Expec\Ind(|\xi| \ge x) = g(x)\Pro(|\xi| > x)$$
+\begin{multline*}
+    \Expec g(|\xi|) = \Expec g(|\xi|) \Ind(|\xi| \geqslant x) +
+    \Expec g(|\xi|) \Ind(|\xi| < x) \geqslant \\
+    \Expec g(|\xi|) \Ind(|\xi| \geqslant x) \geqslant 
+    g(x)\Expec\Ind(|\xi| \geqslant x) = g(x)\Pro(|\xi| > x)
+\end{multline*}
 Здесь мы воспользовались представлением $1 = \Ind(A) + \Ind(\overline{A})$, затем неотрицательностью функции и, следовательно, ее матожидания. Далее использовалась монотонность функции, и в последнем переходе тождество $\Expec \Ind(A) = 1 \Pro(A) + 0 \Pro(\overline{A}) = \Pro(A)$
 \end{Proof}
 
-Из этой леммы слкдуют два полезных неравенства.
+Из этой леммы следуют два полезных неравенства.
 
 \begin{Th} [неравенство Маркова]
 Для любой случайной величины $\xi$, имееющей конечное $\Expec|\xi|$, выполнено
-$$\Pro(|\xi| > \epsilon) \le \frac{\Expec|\xi|}{\epsilon}$$
+$$\Pro(|\xi| > \varepsilon) \le \frac{\Expec|\xi|}{\varepsilon}$$
 \end{Th}
 \begin{Proof}\\
 В неравенстве леммы возьмем $g(x) = x$.
@@ -23,7 +28,7 @@ $$\Pro(|\xi| > \epsilon) \le \frac{\Expec|\xi|}{\epsilon}$$
 
 \begin{Th} [неравенство Чебышева]
 Для любой случайной величины $\xi$, имееющей конечный первый и второй момент, выполнено
-$$\Pro(|\xi - \Expec\xi| > \epsilon) \le \frac{\Disp\xi}{\epsilon^2}$$
+$$\Pro(|\xi - \Expec\xi| > \varepsilon) \le \frac{\Disp\xi}{\varepsilon^2}$$
 \end{Th}
 \begin{Proof}\\
 В неравенстве леммы возьмем $g(x) = x^2$.
