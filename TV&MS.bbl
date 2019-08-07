@@ -14,4 +14,11 @@
 \newblock М.: ТК Вебли, Изд-во Проспект, 2006.
 \newblock 160~{с.}
 
+\bibitem{Gusev}
+\selectlanguageifdefined{russian}
+Гусев~Н.~А. Заметки к курсу: мера и интеграл
+  Лебега.
+\newblock 2019.
+\newblock \url{https://www.ngusev.ru/mt/mt-lectures.pdf}.
+
 \end{thebibliography}

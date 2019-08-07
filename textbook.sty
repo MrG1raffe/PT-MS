@@ -11,7 +11,10 @@
 
 % Section 
 \usepackage{titlesec}
-\titleformat{\section} {\normalfont\Large\bfseries\filcenter}{\S \!\ \thesection}{1em}{}
+\titleformat{\section} {\normalfont\Large\bfseries\filcenter}{\S \!\ \thesection.}{1em}{}
+
+% Subsection
+\titleformat{\subsection} {\normalfont\large\bfseries\filcenter}{\thesubsection.}{1em}{}
 \titlespacing*{\subsection}{0pt}{3.5ex}{.3ex}
 
 % Part
@@ -59,7 +62,7 @@
 %\usepackage{titlesec}
 
 \titlecontents{part}[0pt]{\normalsize\bfseries\protect\addvspace{15pt}}%
-{}{\partname{} }%
+{}{\color{blue}\partname{} }%
 {\enspace\titlerule\contentspage}%
 
 \titlecontents{section}[2.4pc]
@@ -68,6 +71,9 @@
 {\S}
 {\hfill\small \hspace{3cm}\thecontentspage}
 []
+
+% Глубина отображения
+\setcounter{tocdepth}{1}
 
 
 %---------------------------------------------------------------------------------
@@ -141,23 +147,63 @@
 %---------------------------------------------------------------------------------
 
 % Theorems
+\usepackage{amsthm}
+\usepackage{xcolor}
+\usepackage[most]{tcolorbox}
 
+\theoremstyle{definition}
 \newtheorem{Th}{Теорема}[section]
-\newtheorem{Def}[Th]{Определение}
 \newtheorem{Lem}[Th]{Лемма}
 \newtheorem{St}[Th]{Утверждение}
+\newtheorem*{Ex}{Пример}
+
+% Definition
+\newtheorem{Def}[Th]{Определение}
+\tcolorboxenvironment{Def}{
+  enhanced,
+  borderline={0.8pt}{0pt}{cyan!70},
+  borderline={0.4pt}{2pt}{black},
+  boxrule=0.4pt,
+  colback=green!70!white!30,
+  coltitle=black,
+  sharp corners
+}
+
+\usetikzlibrary{patterns}
+\def\mybox{
+\begin{tikzpicture}
+    \pattern[pattern=north east lines, pattern color=orange] 
+    (0,0)--(0,0.1)--(0.1,0.1)--(0.1,0)--cycle;
+    \pattern[pattern=north east lines, pattern color=orange] 
+    (0,0.2)--(0,0.3)--(0.1,0.3)--(0.1,0.2)--cycle;
+\end{tikzpicture}}
+
+\usepackage[normalem]{ulem} % uline
+\makeatletter
+\newcommand\colordashline[1][cyan!70]{\bgroup \markoverwith{\lower3.5\p@\hbox{\sixly \textcolor{#1}{\char58}}}\ULon}
+\font\sixly=lasy6
+\makeatother
+
+\newcommand{\mdef}[1]{\emph{\colordashline{\mybox~#1~\mybox\,}}}
+
 
 % Math Environments
 
-\newenvironment{Proof}{\par\noindent{\bf Доказательство}}{$\blacksquare$} 
-\newenvironment{Ex}{{\bf Пример}\ }{}
+\usepackage{mdframed}
+\mdfsetup{splitbottomskip=0.8cm,splittopskip=0cm,
+	innerrightmargin=0.3cm,innertopmargin=0.4cm,
+	linewidth=4pt,
+	linecolor=green!50!black,middlelinecolor=gray,
+	topline=false,bottomline=false}
+\newenvironment{Proof}{\par\begin{mdframed}\textbf{Доказательство. }}
+	{\hfill$\blacksquare$\end{mdframed}\vspace{0.1cm}} 
 
 % Environments
 
 \usepackage{graphicx}
 
-\newenvironment{Wtf}{\includegraphics[height=5mm]{ping}}{}
-\newenvironment{Why}{\includegraphics[height= 5mm]{cat}}{}
+\newenvironment{Wtf}{\par\noindent\textbf{Рубрика <<Зачем так сложно?>>\;}}{}
+\newenvironment{Why}{\par\noindent\textbf{Why?}}{}
 \newenvironment{Note}{\par\noindent{\bf Замечание}}{}
 
 % For fancy enumerate
@@ -184,7 +230,8 @@
 \newcommand\Sum[3]{\sum\limits_{#1 = #2}^{#3}}
 
 \def\Pro{\mathbb{P}} % вероятность
-\def\Ev{\mathscr{A}} % алгебра событий
+\def\Ev{\mathcal{A}} % алгебра событий
+\def\K{\mathcal{K}} % алгебра событий
 \def\Bor{\mathscr{B}} % борелевская сигма-алгебра
 \def\Real{\mathbb{R}} % вещественная прямая
 \def\Int{\mathbb{Z}} % целые числа
@@ -200,6 +247,7 @@
 \def\Smpl{\mathbb{X}} 
 \def\Norm{\mathcal{N}} % нормальное распределение
 
+\def\h{{\large \rotatebox[origin=c]{180}{$\Lsh$}}}
 
 % Меняем нумерацию для уравнений
 \numberwithin{equation}{section}
@@ -221,12 +269,13 @@
 
 %Hyperref at table of content
 \usepackage{hyperref}
+\definecolor{fashionfuchsia}{rgb}{0.96, 0.0, 0.63}
 \hypersetup{
     colorlinks,
     citecolor=black,
     filecolor=black,
-    linkcolor=black,
-    urlcolor=black
+    linkcolor=blue,
+    urlcolor=fashionfuchsia
 }
 
 %---------------------------------------------------------------------------------
