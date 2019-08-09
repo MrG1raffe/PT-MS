@@ -1322,3 +1322,1466 @@ PDF statistics:
  0 named destinations out of 1000 (max. 500000)
  33 words of extra memory for PDF output out of 10000 (max. 10000000)
 
+=======
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6930 64-bit) (preloaded format=pdflatex 2019.1.15)  13 JUN 2019 17:49
+entering extended mode
+**./TV&MS.tex
+(TV&MS.tex
+LaTeX2e <2018-12-01>
+
+("C:\Users\Дмитрий\AppData\Local\Programs\MiKTeX 2.9\tex/latex/base\arti
+cle.cls"
+Document Class: article 2018/09/03 v1.4i Standard LaTeX document class
+
+("C:\Users\Дмитрий\AppData\Local\Programs\MiKTeX 2.9\tex/latex/base\size
+12.clo"
+File: size12.clo 2018/09/03 v1.4i Standard LaTeX file (size option)
+)
+\c@part=\count80
+\c@section=\count81
+\c@subsection=\count82
+\c@subsubsection=\count83
+\c@paragraph=\count84
+\c@subparagraph=\count85
+\c@figure=\count86
+\c@table=\count87
+\abovecaptionskip=\skip41
+\belowcaptionskip=\skip42
+\bibindent=\dimen102
+)
+("C:\Users\Дмитрий\AppData\Local\Programs\MiKTeX 2.9\tex/latex/base\inpu
+tenc.sty"
+Package: inputenc 2018/08/11 v1.3c Input encoding file
+\inpenc@prehook=\toks14
+\inpenc@posthook=\toks15
+)
+("C:\Users\Дмитрий\AppData\Local\Programs\MiKTeX 2.9\tex/generic/babel\b
+abel.sty"
+Package: babel 2018/11/13 3.27 The Babel package
+
+("C:\Users\Дмитрий\AppData\Local\Programs\MiKTeX 2.9\tex/generic/babel\s
+witch.def"
+File: switch.def 2018/11/13 3.27 Babel switching mechanism
+)
+*************************************
+* Local config file bblopts.cfg used
+*
+
+("C:\Users\Дмитрий\AppData\Local\Programs\MiKTeX 2.9\tex/latex/arabi\bbl
+opts.cfg"
+File: bblopts.cfg 2005/09/08 v0.1 add Arabic and Farsi to "declared" options of
+ babel
+)
+("C:\Users\Дмитрий\AppData\Local\Programs\MiKTeX 2.9\tex/latex/babel-rus
+sian\russianb.ldf"
+Language: russian 2017/08/12 1.3j Russian support for the Babel system
+
+("C:\Users\Дмитрий\AppData\Local\Programs\MiKTeX 2.9\tex/generic/babel\b
+abel.def"
+File: babel.def 2018/11/13 3.27 Babel common definitions
+\babel@savecnt=\count88
+\U@D=\dimen103
+
+("C:\Users\Дмитрий\AppData\Local\Programs\MiKTeX 2.9\tex/generic/babel\t
+xtbabel.def")
+\bbl@dirlevel=\count89
+)
+
+Package babel Warning: No Cyrillic font encoding has been loaded so far.
+(babel)                A font encoding should be declared before babel.
+(babel)                Default `T2A' encoding will be loaded  on input line 74.
+
+
+
+("C:\Users\Дмитрий\AppData\Local\Programs\MiKTeX 2.9\tex/latex/cyrillic\
+t2aenc.def"
+File: t2aenc.def 2005/09/27 v1.0i Cyrillic encoding definition file
+Now handling font encoding T2A ...
+... processing UTF-8 mapping file for font encoding T2A
+
+("C:\Users\Дмитрий\AppData\Local\Programs\MiKTeX 2.9\tex/latex/base\t2ae
+nc.dfu"
+File: t2aenc.dfu 2018/10/05 v1.2f UTF-8 support for inputenc
+   defining Unicode char U+00A4 (decimal 164)
+   defining Unicode char U+00A7 (decimal 167)
+   defining Unicode char U+00AB (decimal 171)
+   defining Unicode char U+00BB (decimal 187)
+   defining Unicode char U+0131 (decimal 305)
+   defining Unicode char U+0237 (decimal 567)
+   defining Unicode char U+0400 (decimal 1024)
+   defining Unicode char U+0401 (decimal 1025)
+   defining Unicode char U+0402 (decimal 1026)
+   defining Unicode char U+0403 (decimal 1027)
+   defining Unicode char U+0404 (decimal 1028)
+   defining Unicode char U+0405 (decimal 1029)
+   defining Unicode char U+0406 (decimal 1030)
+   defining Unicode char U+0407 (decimal 1031)
+   defining Unicode char U+0408 (decimal 1032)
+   defining Unicode char U+0409 (decimal 1033)
+   defining Unicode char U+040A (decimal 1034)
+   defining Unicode char U+040B (decimal 1035)
+   defining Unicode char U+040C (decimal 1036)
+   defining Unicode char U+040D (decimal 1037)
+   defining Unicode char U+040E (decimal 1038)
+   defining Unicode char U+040F (decimal 1039)
+   defining Unicode char U+0410 (decimal 1040)
+   defining Unicode char U+0411 (decimal 1041)
+   defining Unicode char U+0412 (decimal 1042)
+   defining Unicode char U+0413 (decimal 1043)
+   defining Unicode char U+0414 (decimal 1044)
+   defining Unicode char U+0415 (decimal 1045)
+   defining Unicode char U+0416 (decimal 1046)
+   defining Unicode char U+0417 (decimal 1047)
+   defining Unicode char U+0418 (decimal 1048)
+   defining Unicode char U+0419 (decimal 1049)
+   defining Unicode char U+041A (decimal 1050)
+   defining Unicode char U+041B (decimal 1051)
+   defining Unicode char U+041C (decimal 1052)
+   defining Unicode char U+041D (decimal 1053)
+   defining Unicode char U+041E (decimal 1054)
+   defining Unicode char U+041F (decimal 1055)
+   defining Unicode char U+0420 (decimal 1056)
+   defining Unicode char U+0421 (decimal 1057)
+   defining Unicode char U+0422 (decimal 1058)
+   defining Unicode char U+0423 (decimal 1059)
+   defining Unicode char U+0424 (decimal 1060)
+   defining Unicode char U+0425 (decimal 1061)
+   defining Unicode char U+0426 (decimal 1062)
+   defining Unicode char U+0427 (decimal 1063)
+   defining Unicode char U+0428 (decimal 1064)
+   defining Unicode char U+0429 (decimal 1065)
+   defining Unicode char U+042A (decimal 1066)
+   defining Unicode char U+042B (decimal 1067)
+   defining Unicode char U+042C (decimal 1068)
+   defining Unicode char U+042D (decimal 1069)
+   defining Unicode char U+042E (decimal 1070)
+   defining Unicode char U+042F (decimal 1071)
+   defining Unicode char U+0430 (decimal 1072)
+   defining Unicode char U+0431 (decimal 1073)
+   defining Unicode char U+0432 (decimal 1074)
+   defining Unicode char U+0433 (decimal 1075)
+   defining Unicode char U+0434 (decimal 1076)
+   defining Unicode char U+0435 (decimal 1077)
+   defining Unicode char U+0436 (decimal 1078)
+   defining Unicode char U+0437 (decimal 1079)
+   defining Unicode char U+0438 (decimal 1080)
+   defining Unicode char U+0439 (decimal 1081)
+   defining Unicode char U+043A (decimal 1082)
+   defining Unicode char U+043B (decimal 1083)
+   defining Unicode char U+043C (decimal 1084)
+   defining Unicode char U+043D (decimal 1085)
+   defining Unicode char U+043E (decimal 1086)
+   defining Unicode char U+043F (decimal 1087)
+   defining Unicode char U+0440 (decimal 1088)
+   defining Unicode char U+0441 (decimal 1089)
+   defining Unicode char U+0442 (decimal 1090)
+   defining Unicode char U+0443 (decimal 1091)
+   defining Unicode char U+0444 (decimal 1092)
+   defining Unicode char U+0445 (decimal 1093)
+   defining Unicode char U+0446 (decimal 1094)
+   defining Unicode char U+0447 (decimal 1095)
+   defining Unicode char U+0448 (decimal 1096)
+   defining Unicode char U+0449 (decimal 1097)
+   defining Unicode char U+044A (decimal 1098)
+   defining Unicode char U+044B (decimal 1099)
+   defining Unicode char U+044C (decimal 1100)
+   defining Unicode char U+044D (decimal 1101)
+   defining Unicode char U+044E (decimal 1102)
+   defining Unicode char U+044F (decimal 1103)
+   defining Unicode char U+0450 (decimal 1104)
+   defining Unicode char U+0451 (decimal 1105)
+   defining Unicode char U+0452 (decimal 1106)
+   defining Unicode char U+0453 (decimal 1107)
+   defining Unicode char U+0454 (decimal 1108)
+   defining Unicode char U+0455 (decimal 1109)
+   defining Unicode char U+0456 (decimal 1110)
+   defining Unicode char U+0457 (decimal 1111)
+   defining Unicode char U+0458 (decimal 1112)
+   defining Unicode char U+0459 (decimal 1113)
+   defining Unicode char U+045A (decimal 1114)
+   defining Unicode char U+045B (decimal 1115)
+   defining Unicode char U+045C (decimal 1116)
+   defining Unicode char U+045D (decimal 1117)
+   defining Unicode char U+045E (decimal 1118)
+   defining Unicode char U+045F (decimal 1119)
+   defining Unicode char U+0490 (decimal 1168)
+   defining Unicode char U+0491 (decimal 1169)
+   defining Unicode char U+0492 (decimal 1170)
+   defining Unicode char U+0493 (decimal 1171)
+   defining Unicode char U+0496 (decimal 1174)
+   defining Unicode char U+0497 (decimal 1175)
+   defining Unicode char U+0498 (decimal 1176)
+   defining Unicode char U+0499 (decimal 1177)
+   defining Unicode char U+049A (decimal 1178)
+   defining Unicode char U+049B (decimal 1179)
+   defining Unicode char U+049C (decimal 1180)
+   defining Unicode char U+049D (decimal 1181)
+   defining Unicode char U+04A0 (decimal 1184)
+   defining Unicode char U+04A1 (decimal 1185)
+   defining Unicode char U+04A2 (decimal 1186)
+   defining Unicode char U+04A3 (decimal 1187)
+   defining Unicode char U+04A4 (decimal 1188)
+   defining Unicode char U+04A5 (decimal 1189)
+   defining Unicode char U+04AA (decimal 1194)
+   defining Unicode char U+04AB (decimal 1195)
+   defining Unicode char U+04AE (decimal 1198)
+   defining Unicode char U+04AF (decimal 1199)
+   defining Unicode char U+04B0 (decimal 1200)
+   defining Unicode char U+04B1 (decimal 1201)
+   defining Unicode char U+04B2 (decimal 1202)
+   defining Unicode char U+04B3 (decimal 1203)
+   defining Unicode char U+04B6 (decimal 1206)
+   defining Unicode char U+04B7 (decimal 1207)
+   defining Unicode char U+04B8 (decimal 1208)
+   defining Unicode char U+04B9 (decimal 1209)
+   defining Unicode char U+04BA (decimal 1210)
+   defining Unicode char U+04BB (decimal 1211)
+   defining Unicode char U+04C0 (decimal 1216)
+   defining Unicode char U+04C1 (decimal 1217)
+   defining Unicode char U+04C2 (decimal 1218)
+   defining Unicode char U+04D0 (decimal 1232)
+   defining Unicode char U+04D1 (decimal 1233)
+   defining Unicode char U+04D2 (decimal 1234)
+   defining Unicode char U+04D3 (decimal 1235)
+   defining Unicode char U+04D4 (decimal 1236)
+   defining Unicode char U+04D5 (decimal 1237)
+   defining Unicode char U+04D6 (decimal 1238)
+   defining Unicode char U+04D7 (decimal 1239)
+   defining Unicode char U+04D8 (decimal 1240)
+   defining Unicode char U+04D9 (decimal 1241)
+   defining Unicode char U+04DA (decimal 1242)
+   defining Unicode char U+04DB (decimal 1243)
+   defining Unicode char U+04DC (decimal 1244)
+   defining Unicode char U+04DD (decimal 1245)
+   defining Unicode char U+04DE (decimal 1246)
+   defining Unicode char U+04DF (decimal 1247)
+   defining Unicode char U+04E2 (decimal 1250)
+   defining Unicode char U+04E3 (decimal 1251)
+   defining Unicode char U+04E4 (decimal 1252)
+   defining Unicode char U+04E5 (decimal 1253)
+   defining Unicode char U+04E6 (decimal 1254)
+   defining Unicode char U+04E7 (decimal 1255)
+   defining Unicode char U+04E8 (decimal 1256)
+   defining Unicode char U+04E9 (decimal 1257)
+   defining Unicode char U+04EC (decimal 1260)
+   defining Unicode char U+04ED (decimal 1261)
+   defining Unicode char U+04EE (decimal 1262)
+   defining Unicode char U+04EF (decimal 1263)
+   defining Unicode char U+04F0 (decimal 1264)
+   defining Unicode char U+04F1 (decimal 1265)
+   defining Unicode char U+04F2 (decimal 1266)
+   defining Unicode char U+04F3 (decimal 1267)
+   defining Unicode char U+04F4 (decimal 1268)
+   defining Unicode char U+04F5 (decimal 1269)
+   defining Unicode char U+04F8 (decimal 1272)
+   defining Unicode char U+04F9 (decimal 1273)
+   defining Unicode char U+200C (decimal 8204)
+   defining Unicode char U+2013 (decimal 8211)
+   defining Unicode char U+2014 (decimal 8212)
+   defining Unicode char U+2018 (decimal 8216)
+   defining Unicode char U+2019 (decimal 8217)
+   defining Unicode char U+201C (decimal 8220)
+   defining Unicode char U+201D (decimal 8221)
+   defining Unicode char U+201E (decimal 8222)
+   defining Unicode char U+2030 (decimal 8240)
+   defining Unicode char U+2031 (decimal 8241)
+   defining Unicode char U+2116 (decimal 8470)
+   defining Unicode char U+2329 (decimal 9001)
+   defining Unicode char U+232A (decimal 9002)
+   defining Unicode char U+2423 (decimal 9251)
+))
+Package babel Info: Making " an active character on input line 120.
+Package babel Info: Default for \cyrdash is provided on input line 157.
+))
+("C:\Users\Дмитрий\AppData\Local\Programs\MiKTeX 2.9\tex/latex/jknappen\
+mathrsfs.sty"
+Package: mathrsfs 1996/01/01 Math RSFS package v1.0 (jk)
+\symrsfs=\mathgroup4
+)
+("C:\Users\Дмитрий\AppData\Local\Programs\MiKTeX 2.9\tex/latex/amsfonts\
+amssymb.sty"
+Package: amssymb 2013/01/14 v3.01 AMS font symbols
+
+("C:\Users\Дмитрий\AppData\Local\Programs\MiKTeX 2.9\tex/latex/amsfonts\
+amsfonts.sty"
+Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
+\@emptytoks=\toks16
+\symAMSa=\mathgroup5
+\symAMSb=\mathgroup6
+LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
+(Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
+))
+("C:\Users\Дмитрий\AppData\Local\Programs\MiKTeX 2.9\tex/latex/amsmath\a
+msmath.sty"
+Package: amsmath 2018/12/01 v2.17b AMS math features
+\@mathmargin=\skip43
+
+For additional information on amsmath, use the `?' option.
+
+("C:\Users\Дмитрий\AppData\Local\Programs\MiKTeX 2.9\tex/latex/amsmath\a
+mstext.sty"
+Package: amstext 2000/06/29 v2.01 AMS text
+
+("C:\Users\Дмитрий\AppData\Local\Programs\MiKTeX 2.9\tex/latex/amsmath\a
+msgen.sty"
+File: amsgen.sty 1999/11/30 v2.0 generic functions
+\@emptytoks=\toks17
+\ex@=\dimen104
+))
+("C:\Users\Дмитрий\AppData\Local\Programs\MiKTeX 2.9\tex/latex/amsmath\a
+msbsy.sty"
+Package: amsbsy 1999/11/29 v1.2d Bold Symbols
+\pmbraise@=\dimen105
+)
+("C:\Users\Дмитрий\AppData\Local\Programs\MiKTeX 2.9\tex/latex/amsmath\a
+msopn.sty"
+Package: amsopn 2016/03/08 v2.02 operator names
+)
+\inf@bad=\count90
+LaTeX Info: Redefining \frac on input line 223.
+\uproot@=\count91
+\leftroot@=\count92
+LaTeX Info: Redefining \overline on input line 385.
+\classnum@=\count93
+\DOTSCASE@=\count94
+LaTeX Info: Redefining \ldots on input line 482.
+LaTeX Info: Redefining \dots on input line 485.
+LaTeX Info: Redefining \cdots on input line 606.
+\Mathstrutbox@=\box27
+\strutbox@=\box28
+\big@size=\dimen106
+LaTeX Font Info:    Redeclaring font encoding OML on input line 729.
+LaTeX Font Info:    Redeclaring font encoding OMS on input line 730.
+\macc@depth=\count95
+\c@MaxMatrixCols=\count96
+\dotsspace@=\muskip10
+\c@parentequation=\count97
+\dspbrk@lvl=\count98
+\tag@help=\toks18
+\row@=\count99
+\column@=\count100
+\maxfields@=\count101
+\andhelp@=\toks19
+\eqnshift@=\dimen107
+\alignsep@=\dimen108
+\tagshift@=\dimen109
+\tagwidth@=\dimen110
+\totwidth@=\dimen111
+\lineht@=\dimen112
+\@envbody=\toks20
+\multlinegap=\skip44
+\multlinetaggap=\skip45
+\mathdisplay@stack=\toks21
+LaTeX Info: Redefining \[ on input line 2844.
+LaTeX Info: Redefining \] on input line 2845.
+)
+("C:\Users\Дмитрий\AppData\Local\Programs\MiKTeX 2.9\tex/latex/graphics\
+graphicx.sty"
+Package: graphicx 2017/06/01 v1.1a Enhanced LaTeX Graphics (DPC,SPQR)
+
+("C:\Users\Дмитрий\AppData\Local\Programs\MiKTeX 2.9\tex/latex/graphics\
+keyval.sty"
+Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
+\KV@toks@=\toks22
+)
+("C:\Users\Дмитрий\AppData\Local\Programs\MiKTeX 2.9\tex/latex/graphics\
+graphics.sty"
+Package: graphics 2017/06/25 v1.2c Standard LaTeX Graphics (DPC,SPQR)
+
+("C:\Users\Дмитрий\AppData\Local\Programs\MiKTeX 2.9\tex/latex/graphics\
+trig.sty"
+Package: trig 2016/01/03 v1.10 sin cos tan (DPC)
+)
+("C:\Users\Дмитрий\AppData\Local\Programs\MiKTeX 2.9\tex/latex/graphics-
+cfg\graphics.cfg"
+File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
+)
+Package graphics Info: Driver file: pdftex.def on input line 99.
+
+("C:\Users\Дмитрий\AppData\Local\Programs\MiKTeX 2.9\tex/latex/graphics-
+def\pdftex.def"
+File: pdftex.def 2018/01/08 v1.0l Graphics/color driver for pdftex
+))
+\Gin@req@height=\dimen113
+\Gin@req@width=\dimen114
+)
+("C:\Users\Дмитрий\AppData\Local\Programs\MiKTeX 2.9\tex/latex/bbm\bbm.s
+ty"
+Package: bbm 1999/03/15 V 1.2 provides fonts for set symbols - TH
+LaTeX Font Info:    Overwriting math alphabet `\mathbbm' in version `bold'
+(Font)                  U/bbm/m/n --> U/bbm/bx/n on input line 33.
+LaTeX Font Info:    Overwriting math alphabet `\mathbbmss' in version `bold'
+(Font)                  U/bbmss/m/n --> U/bbmss/bx/n on input line 35.
+)
+("C:\Users\Дмитрий\AppData\Local\Programs\MiKTeX 2.9\tex/latex/chngcntr\
+chngcntr.sty"
+Package: chngcntr 2018/04/09 v1.1a change counter resetting
+Package chngcntr Info: \counterwithout already defined.
+(chngcntr)             Quitting chngcntr on input line 21.
+)
+("C:\Users\Дмитрий\AppData\Local\Programs\MiKTeX 2.9\tex/latex/ulem\ulem
+.sty"
+\UL@box=\box29
+\UL@hyphenbox=\box30
+\UL@skip=\skip46
+\UL@hook=\toks23
+\UL@height=\dimen115
+\UL@pe=\count102
+\UL@pixel=\dimen116
+\ULC@box=\box31
+Package: ulem 2012/05/18
+\ULdepth=\dimen117
+)
+("C:\Users\Дмитрий\AppData\Local\Programs\MiKTeX 2.9\tex/latex/cancel\ca
+ncel.sty"
+Package: cancel 2013/04/12 v2.2 Cancel math terms
+)
+("C:\Users\Дмитрий\AppData\Local\Programs\MiKTeX 2.9\tex/latex/pgf/front
+endlayer\tikz.sty"
+("C:\Users\Дмитрий\AppData\Local\Programs\MiKTeX 2.9\tex/latex/pgf/basic
+layer\pgf.sty"
+("C:\Users\Дмитрий\AppData\Local\Programs\MiKTeX 2.9\tex/latex/pgf/utili
+ties\pgfrcs.sty"
+("C:\Users\Дмитрий\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/uti
+lities\pgfutil-common.tex"
+\pgfutil@everybye=\toks24
+\pgfutil@tempdima=\dimen118
+\pgfutil@tempdimb=\dimen119
+
+("C:\Users\Дмитрий\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/uti
+lities\pgfutil-common-lists.tex"))
+("C:\Users\Дмитрий\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/uti
+lities\pgfutil-latex.def"
+\pgfutil@abb=\box32
+
+("C:\Users\Дмитрий\AppData\Local\Programs\MiKTeX 2.9\tex/latex/ms\everys
+hi.sty"
+Package: everyshi 2001/05/15 v3.00 EveryShipout Package (MS)
+))
+("C:\Users\Дмитрий\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/uti
+lities\pgfrcs.code.tex"
+("C:\Users\Дмитрий\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf\pgf
+.revision.tex")
+Package: pgfrcs 2019/01/05 v3.1 (3.1)
+))
+Package: pgf 2019/01/05 v3.1 (3.1)
+
+("C:\Users\Дмитрий\AppData\Local\Programs\MiKTeX 2.9\tex/latex/pgf/basic
+layer\pgfcore.sty"
+("C:\Users\Дмитрий\AppData\Local\Programs\MiKTeX 2.9\tex/latex/pgf/syste
+mlayer\pgfsys.sty"
+("C:\Users\Дмитрий\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/sys
+temlayer\pgfsys.code.tex"
+Package: pgfsys 2019/01/05 v3.1 (3.1)
+
+("C:\Users\Дмитрий\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/uti
+lities\pgfkeys.code.tex"
+\pgfkeys@pathtoks=\toks25
+\pgfkeys@temptoks=\toks26
+
+("C:\Users\Дмитрий\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/uti
+lities\pgfkeysfiltered.code.tex"
+\pgfkeys@tmptoks=\toks27
+))
+\pgf@x=\dimen120
+\pgf@y=\dimen121
+\pgf@xa=\dimen122
+\pgf@ya=\dimen123
+\pgf@xb=\dimen124
+\pgf@yb=\dimen125
+\pgf@xc=\dimen126
+\pgf@yc=\dimen127
+\w@pgf@writea=\write3
+\r@pgf@reada=\read1
+\c@pgf@counta=\count103
+\c@pgf@countb=\count104
+\c@pgf@countc=\count105
+\c@pgf@countd=\count106
+\t@pgf@toka=\toks28
+\t@pgf@tokb=\toks29
+\t@pgf@tokc=\toks30
+\pgf@sys@id@count=\count107
+
+("C:\Users\Дмитрий\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/sys
+temlayer\pgf.cfg"
+File: pgf.cfg 2019/01/05 v3.1 (3.1)
+)
+Driver file for pgf: pgfsys-pdftex.def
+
+("C:\Users\Дмитрий\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/sys
+temlayer\pgfsys-pdftex.def"
+File: pgfsys-pdftex.def 2019/01/05 v3.1 (3.1)
+
+("C:\Users\Дмитрий\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/sys
+temlayer\pgfsys-common-pdf.def"
+File: pgfsys-common-pdf.def 2019/01/05 v3.1 (3.1)
+)))
+("C:\Users\Дмитрий\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/sys
+temlayer\pgfsyssoftpath.code.tex"
+File: pgfsyssoftpath.code.tex 2019/01/05 v3.1 (3.1)
+\pgfsyssoftpath@smallbuffer@items=\count108
+\pgfsyssoftpath@bigbuffer@items=\count109
+)
+("C:\Users\Дмитрий\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/sys
+temlayer\pgfsysprotocol.code.tex"
+File: pgfsysprotocol.code.tex 2019/01/05 v3.1 (3.1)
+))
+("C:\Users\Дмитрий\AppData\Local\Programs\MiKTeX 2.9\tex/latex/xcolor\xc
+olor.sty"
+Package: xcolor 2016/05/11 v2.12 LaTeX color extensions (UK)
+
+("C:\Users\Дмитрий\AppData\Local\Programs\MiKTeX 2.9\tex/latex/graphics-
+cfg\color.cfg"
+File: color.cfg 2016/01/02 v1.6 sample color configuration
+)
+Package xcolor Info: Driver file: pdftex.def on input line 225.
+Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1348.
+Package xcolor Info: Model `hsb' substituted by `rgb' on input line 1352.
+Package xcolor Info: Model `RGB' extended on input line 1364.
+Package xcolor Info: Model `HTML' substituted by `rgb' on input line 1366.
+Package xcolor Info: Model `Hsb' substituted by `hsb' on input line 1367.
+Package xcolor Info: Model `tHsb' substituted by `hsb' on input line 1368.
+Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1369.
+Package xcolor Info: Model `Gray' substituted by `gray' on input line 1370.
+Package xcolor Info: Model `wave' substituted by `hsb' on input line 1371.
+)
+("C:\Users\Дмитрий\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/bas
+iclayer\pgfcore.code.tex"
+Package: pgfcore 2019/01/05 v3.1 (3.1)
+
+("C:\Users\Дмитрий\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/mat
+h\pgfmath.code.tex"
+("C:\Users\Дмитрий\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/mat
+h\pgfmathcalc.code.tex"
+("C:\Users\Дмитрий\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/mat
+h\pgfmathutil.code.tex")
+("C:\Users\Дмитрий\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/mat
+h\pgfmathparser.code.tex"
+\pgfmath@dimen=\dimen128
+\pgfmath@count=\count110
+\pgfmath@box=\box33
+\pgfmath@toks=\toks31
+\pgfmath@stack@operand=\toks32
+\pgfmath@stack@operation=\toks33
+)
+("C:\Users\Дмитрий\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/mat
+h\pgfmathfunctions.code.tex"
+("C:\Users\Дмитрий\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/mat
+h\pgfmathfunctions.basic.code.tex")
+("C:\Users\Дмитрий\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/mat
+h\pgfmathfunctions.trigonometric.code.tex")
+("C:\Users\Дмитрий\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/mat
+h\pgfmathfunctions.random.code.tex")
+("C:\Users\Дмитрий\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/mat
+h\pgfmathfunctions.comparison.code.tex")
+("C:\Users\Дмитрий\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/mat
+h\pgfmathfunctions.base.code.tex")
+("C:\Users\Дмитрий\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/mat
+h\pgfmathfunctions.round.code.tex")
+("C:\Users\Дмитрий\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/mat
+h\pgfmathfunctions.misc.code.tex")
+("C:\Users\Дмитрий\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/mat
+h\pgfmathfunctions.integerarithmetics.code.tex")))
+("C:\Users\Дмитрий\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/mat
+h\pgfmathfloat.code.tex"
+\c@pgfmathroundto@lastzeros=\count111
+))
+("C:\Users\Дмитрий\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/bas
+iclayer\pgfcorepoints.code.tex"
+File: pgfcorepoints.code.tex 2019/01/05 v3.1 (3.1)
+\pgf@picminx=\dimen129
+\pgf@picmaxx=\dimen130
+\pgf@picminy=\dimen131
+\pgf@picmaxy=\dimen132
+\pgf@pathminx=\dimen133
+\pgf@pathmaxx=\dimen134
+\pgf@pathminy=\dimen135
+\pgf@pathmaxy=\dimen136
+\pgf@xx=\dimen137
+\pgf@xy=\dimen138
+\pgf@yx=\dimen139
+\pgf@yy=\dimen140
+\pgf@zx=\dimen141
+\pgf@zy=\dimen142
+)
+("C:\Users\Дмитрий\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/bas
+iclayer\pgfcorepathconstruct.code.tex"
+File: pgfcorepathconstruct.code.tex 2019/01/05 v3.1 (3.1)
+\pgf@path@lastx=\dimen143
+\pgf@path@lasty=\dimen144
+)
+("C:\Users\Дмитрий\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/bas
+iclayer\pgfcorepathusage.code.tex"
+File: pgfcorepathusage.code.tex 2019/01/05 v3.1 (3.1)
+\pgf@shorten@end@additional=\dimen145
+\pgf@shorten@start@additional=\dimen146
+)
+("C:\Users\Дмитрий\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/bas
+iclayer\pgfcorescopes.code.tex"
+File: pgfcorescopes.code.tex 2019/01/05 v3.1 (3.1)
+\pgfpic=\box34
+\pgf@hbox=\box35
+\pgf@layerbox@main=\box36
+\pgf@picture@serial@count=\count112
+)
+("C:\Users\Дмитрий\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/bas
+iclayer\pgfcoregraphicstate.code.tex"
+File: pgfcoregraphicstate.code.tex 2019/01/05 v3.1 (3.1)
+\pgflinewidth=\dimen147
+)
+("C:\Users\Дмитрий\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/bas
+iclayer\pgfcoretransformations.code.tex"
+File: pgfcoretransformations.code.tex 2019/01/05 v3.1 (3.1)
+\pgf@pt@x=\dimen148
+\pgf@pt@y=\dimen149
+\pgf@pt@temp=\dimen150
+)
+("C:\Users\Дмитрий\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/bas
+iclayer\pgfcorequick.code.tex"
+File: pgfcorequick.code.tex 2019/01/05 v3.1 (3.1)
+)
+("C:\Users\Дмитрий\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/bas
+iclayer\pgfcoreobjects.code.tex"
+File: pgfcoreobjects.code.tex 2019/01/05 v3.1 (3.1)
+)
+("C:\Users\Дмитрий\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/bas
+iclayer\pgfcorepathprocessing.code.tex"
+File: pgfcorepathprocessing.code.tex 2019/01/05 v3.1 (3.1)
+)
+("C:\Users\Дмитрий\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/bas
+iclayer\pgfcorearrows.code.tex"
+File: pgfcorearrows.code.tex 2019/01/05 v3.1 (3.1)
+\pgfarrowsep=\dimen151
+)
+("C:\Users\Дмитрий\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/bas
+iclayer\pgfcoreshade.code.tex"
+File: pgfcoreshade.code.tex 2019/01/05 v3.1 (3.1)
+\pgf@max=\dimen152
+\pgf@sys@shading@range@num=\count113
+)
+("C:\Users\Дмитрий\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/bas
+iclayer\pgfcoreimage.code.tex"
+File: pgfcoreimage.code.tex 2019/01/05 v3.1 (3.1)
+
+("C:\Users\Дмитрий\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/bas
+iclayer\pgfcoreexternal.code.tex"
+File: pgfcoreexternal.code.tex 2019/01/05 v3.1 (3.1)
+\pgfexternal@startupbox=\box37
+))
+("C:\Users\Дмитрий\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/bas
+iclayer\pgfcorelayers.code.tex"
+File: pgfcorelayers.code.tex 2019/01/05 v3.1 (3.1)
+)
+("C:\Users\Дмитрий\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/bas
+iclayer\pgfcoretransparency.code.tex"
+File: pgfcoretransparency.code.tex 2019/01/05 v3.1 (3.1)
+)
+("C:\Users\Дмитрий\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/bas
+iclayer\pgfcorepatterns.code.tex"
+File: pgfcorepatterns.code.tex 2019/01/05 v3.1 (3.1)
+)
+("C:\Users\Дмитрий\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/bas
+iclayer\pgfcorerdf.code.tex"
+File: pgfcorerdf.code.tex 2019/01/05 v3.1 (3.1)
+)))
+("C:\Users\Дмитрий\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/mod
+ules\pgfmoduleshapes.code.tex"
+File: pgfmoduleshapes.code.tex 2019/01/05 v3.1 (3.1)
+\pgfnodeparttextbox=\box38
+)
+("C:\Users\Дмитрий\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/mod
+ules\pgfmoduleplot.code.tex"
+File: pgfmoduleplot.code.tex 2019/01/05 v3.1 (3.1)
+)
+("C:\Users\Дмитрий\AppData\Local\Programs\MiKTeX 2.9\tex/latex/pgf/compa
+tibility\pgfcomp-version-0-65.sty"
+Package: pgfcomp-version-0-65 2019/01/05 v3.1 (3.1)
+\pgf@nodesepstart=\dimen153
+\pgf@nodesepend=\dimen154
+)
+("C:\Users\Дмитрий\AppData\Local\Programs\MiKTeX 2.9\tex/latex/pgf/compa
+tibility\pgfcomp-version-1-18.sty"
+Package: pgfcomp-version-1-18 2019/01/05 v3.1 (3.1)
+))
+("C:\Users\Дмитрий\AppData\Local\Programs\MiKTeX 2.9\tex/latex/pgf/utili
+ties\pgffor.sty"
+("C:\Users\Дмитрий\AppData\Local\Programs\MiKTeX 2.9\tex/latex/pgf/utili
+ties\pgfkeys.sty"
+("C:\Users\Дмитрий\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/uti
+lities\pgfkeys.code.tex"))
+("C:\Users\Дмитрий\AppData\Local\Programs\MiKTeX 2.9\tex/latex/pgf/math\
+pgfmath.sty"
+("C:\Users\Дмитрий\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/mat
+h\pgfmath.code.tex"))
+("C:\Users\Дмитрий\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/uti
+lities\pgffor.code.tex"
+Package: pgffor 2019/01/05 v3.1 (3.1)
+
+("C:\Users\Дмитрий\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/mat
+h\pgfmath.code.tex")
+\pgffor@iter=\dimen155
+\pgffor@skip=\dimen156
+\pgffor@stack=\toks34
+\pgffor@toks=\toks35
+))
+("C:\Users\Дмитрий\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/fro
+ntendlayer/tikz\tikz.code.tex"
+Package: tikz 2019/01/05 v3.1 (3.1)
+
+("C:\Users\Дмитрий\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/lib
+raries\pgflibraryplothandlers.code.tex"
+File: pgflibraryplothandlers.code.tex 2019/01/05 v3.1 (3.1)
+\pgf@plot@mark@count=\count114
+\pgfplotmarksize=\dimen157
+)
+\tikz@lastx=\dimen158
+\tikz@lasty=\dimen159
+\tikz@lastxsaved=\dimen160
+\tikz@lastysaved=\dimen161
+\tikzleveldistance=\dimen162
+\tikzsiblingdistance=\dimen163
+\tikz@figbox=\box39
+\tikz@figbox@bg=\box40
+\tikz@tempbox=\box41
+\tikz@tempbox@bg=\box42
+\tikztreelevel=\count115
+\tikznumberofchildren=\count116
+\tikznumberofcurrentchild=\count117
+\tikz@fig@count=\count118
+
+("C:\Users\Дмитрий\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/mod
+ules\pgfmodulematrix.code.tex"
+File: pgfmodulematrix.code.tex 2019/01/05 v3.1 (3.1)
+\pgfmatrixcurrentrow=\count119
+\pgfmatrixcurrentcolumn=\count120
+\pgf@matrix@numberofcolumns=\count121
+)
+\tikz@expandcount=\count122
+
+("C:\Users\Дмитрий\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/fro
+ntendlayer/tikz/libraries\tikzlibrarytopaths.code.tex"
+File: tikzlibrarytopaths.code.tex 2019/01/05 v3.1 (3.1)
+)))
+("C:\Users\Дмитрий\AppData\Local\Programs\MiKTeX 2.9\tex/latex/pb-diagra
+m\pb-diagram.sty"
+\dgARROWLENGTH=\skip47
+\dgTEXTARROWLENGTH=\skip48
+\dgHORIZPAD=\skip49
+\dgVERTPAD=\skip50
+\dgLABELOFFSET=\skip51
+\dgARROWPARTS=\count123
+\dgDOTSPACING=\skip52
+\dgDOTSIZE=\skip53
+\dgMAXSQUARE=\count124
+\dgMINDBLSQ=\count125
+\dgCOLUMNWIDTH=\skip54
+\dg@HORIZ=\count126
+\dg@VERT=\count127
+\dg@XLPAD=\count128
+\dg@YBPAD=\count129
+\dg@XRPAD=\count130
+\dg@YTPAD=\count131
+\dg@X=\count132
+\dg@Y=\count133
+\dg@XGRID=\count134
+\dg@YGRID=\count135
+\dg@SIZE=\count136
+\dg@USERSIZE=\count137
+\dg@DX=\count138
+\dg@DY=\count139
+\dg@XLBL=\count140
+\dg@YLBL=\count141
+\dg@XOFFSET=\count142
+\dg@YOFFSET=\count143
+\dg@LBLOFF=\count144
+\dg@XLBLOFF=\count145
+\dg@YLBLOFF=\count146
+\dg@LBLPOS=\count147
+\dg@XTEMP=\count148
+\dg@YTEMP=\count149
+\dg@ZTEMP=\count150
+\dg@XNODE=\count151
+\dg@YNODE=\count152
+\dg@XEND=\count153
+\dg@YEND=\count154
+\dg@WEND=\count155
+\dg@HEND=\count156
+\dg@COUNT=\count157
+\dg@NODEBOX=\box43
+\dg@LABONEBOX=\box44
+\dg@LABTWOBOX=\box45
+)
+("C:\Users\Дмитрий\AppData\Local\Programs\MiKTeX 2.9\tex/latex/pgfplots\
+pgfplots.sty"
+("C:\Users\Дмитрий\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgfplot
+s\pgfplots.revision.tex")
+Package: pgfplots 2018/03/28 v1.16 Data Visualization (1.16)
+
+("C:\Users\Дмитрий\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgfplot
+s\pgfplots.code.tex"
+("C:\Users\Дмитрий\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgfplot
+s\pgfplotscore.code.tex"
+\t@pgfplots@toka=\toks36
+\t@pgfplots@tokb=\toks37
+\t@pgfplots@tokc=\toks38
+\pgfplots@tmpa=\dimen164
+\c@pgfplots@coordindex=\count158
+\c@pgfplots@scanlineindex=\count159
+
+("C:\Users\Дмитрий\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgfplot
+s/sys\pgfplotssysgeneric.code.tex"))
+("C:\Users\Дмитрий\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgfplot
+s/libs\pgfplotslibrary.code.tex")
+("C:\Users\Дмитрий\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgfplot
+s/oldpgfcompatib\pgfplotsoldpgfsupp_loader.code.tex"
+("C:\Users\Дмитрий\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/lib
+raries\pgflibraryfpu.code.tex")
+Package pgfplots: loading complementary arithmetics for your pgf version...
+
+("C:\Users\Дмитрий\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgfplot
+s/oldpgfcompatib\pgfplotsoldpgfsupp_pgflibraryfpu.code.tex")
+("C:\Users\Дмитрий\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgfplot
+s/oldpgfcompatib\pgfplotsoldpgfsupp_pgfmathfloat.code.tex"
+\c@pgfmathroundto@lastzeros=\count160
+))
+("C:\Users\Дмитрий\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgfplot
+s/util\pgfplotsutil.code.tex"
+("C:\Users\Дмитрий\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgfplot
+s/liststructure\pgfplotsliststructure.code.tex")
+("C:\Users\Дмитрий\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgfplot
+s/liststructure\pgfplotsliststructureext.code.tex")
+("C:\Users\Дмитрий\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgfplot
+s/liststructure\pgfplotsarray.code.tex"
+\c@pgfplotsarray@tmp=\count161
+)
+("C:\Users\Дмитрий\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgfplot
+s/liststructure\pgfplotsmatrix.code.tex")
+("C:\Users\Дмитрий\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgfplot
+s/numtable\pgfplotstableshared.code.tex"
+\c@pgfplotstable@counta=\count162
+\t@pgfplotstable@a=\toks39
+)
+("C:\Users\Дмитрий\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgfplot
+s/liststructure\pgfplotsdeque.code.tex")
+("C:\Users\Дмитрий\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgfplot
+s/util\pgfplotsbinary.code.tex"
+("C:\Users\Дмитрий\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgfplot
+s/util\pgfplotsbinary.data.code.tex"))
+("C:\Users\Дмитрий\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgfplot
+s/util\pgfplotsutil.verb.code.tex")
+("C:\Users\Дмитрий\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgfplot
+s/libs\pgflibrarypgfplots.surfshading.code.tex"
+\c@pgfplotslibrarysurf@no=\count163
+
+("C:\Users\Дмитрий\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgfplot
+s/sys\pgflibrarypgfplots.surfshading.pgfsys-pdftex.def")))
+("C:\Users\Дмитрий\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgfplot
+s/util\pgfplotscolormap.code.tex"
+("C:\Users\Дмитрий\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgfplot
+s/util\pgfplotscolor.code.tex"))
+("C:\Users\Дмитрий\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgfplot
+s\pgfplotsstackedplots.code.tex")
+("C:\Users\Дмитрий\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgfplot
+s\pgfplotsplothandlers.code.tex"
+("C:\Users\Дмитрий\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgfplot
+s\pgfplotsmeshplothandler.code.tex"
+("C:\Users\Дмитрий\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgfplot
+s\pgfplotsmeshplotimage.code.tex")))
+("C:\Users\Дмитрий\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgfplot
+s\pgfplots.scaling.code.tex")
+("C:\Users\Дмитрий\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgfplot
+s\pgfplotscoordprocessing.code.tex")
+("C:\Users\Дмитрий\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgfplot
+s\pgfplots.errorbars.code.tex")
+("C:\Users\Дмитрий\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgfplot
+s\pgfplots.markers.code.tex")
+("C:\Users\Дмитрий\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgfplot
+s\pgfplotsticks.code.tex")
+("C:\Users\Дмитрий\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgfplot
+s\pgfplots.paths.code.tex")
+("C:\Users\Дмитрий\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/fro
+ntendlayer/tikz/libraries\tikzlibrarydecorations.code.tex"
+("C:\Users\Дмитрий\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/mod
+ules\pgfmoduledecorations.code.tex"
+\pgfdecoratedcompleteddistance=\dimen165
+\pgfdecoratedremainingdistance=\dimen166
+\pgfdecoratedinputsegmentcompleteddistance=\dimen167
+\pgfdecoratedinputsegmentremainingdistance=\dimen168
+\pgf@decorate@distancetomove=\dimen169
+\pgf@decorate@repeatstate=\count164
+\pgfdecorationsegmentamplitude=\dimen170
+\pgfdecorationsegmentlength=\dimen171
+)
+\tikz@lib@dec@box=\box46
+)
+("C:\Users\Дмитрий\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/fro
+ntendlayer/tikz/libraries\tikzlibrarydecorations.pathmorphing.code.tex"
+("C:\Users\Дмитрий\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/lib
+raries/decorations\pgflibrarydecorations.pathmorphing.code.tex"))
+("C:\Users\Дмитрий\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/fro
+ntendlayer/tikz/libraries\tikzlibrarydecorations.pathreplacing.code.tex"
+("C:\Users\Дмитрий\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/lib
+raries/decorations\pgflibrarydecorations.pathreplacing.code.tex"))
+\pgfplots@numplots=\count165
+\pgfplots@xmin@reg=\dimen172
+\pgfplots@xmax@reg=\dimen173
+\pgfplots@ymin@reg=\dimen174
+\pgfplots@ymax@reg=\dimen175
+\pgfplots@zmin@reg=\dimen176
+\pgfplots@zmax@reg=\dimen177
+)
+("C:\Users\Дмитрий\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/fro
+ntendlayer/tikz/libraries\tikzlibraryplotmarks.code.tex"
+File: tikzlibraryplotmarks.code.tex 2019/01/05 v3.1 (3.1)
+
+("C:\Users\Дмитрий\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/lib
+raries\pgflibraryplotmarks.code.tex"
+File: pgflibraryplotmarks.code.tex 2019/01/05 v3.1 (3.1)
+)))
+("C:\Users\Дмитрий\AppData\Local\Programs\MiKTeX 2.9\tex/latex/caption\c
+aption.sty"
+Package: caption 2018/10/06 v3.3-154 Customizing captions (AR)
+
+("C:\Users\Дмитрий\AppData\Local\Programs\MiKTeX 2.9\tex/latex/caption\c
+aption3.sty"
+Package: caption3 2018/09/12 v1.8c caption3 kernel (AR)
+Package caption3 Info: TeX engine: e-TeX on input line 64.
+\captionmargin=\dimen178
+\captionmargin@=\dimen179
+\captionwidth=\dimen180
+\caption@tempdima=\dimen181
+\caption@indent=\dimen182
+\caption@parindent=\dimen183
+\caption@hangindent=\dimen184
+)
+\c@caption@flags=\count166
+\c@ContinuedFloat=\count167
+)
+("C:\Users\Дмитрий\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/fro
+ntendlayer/tikz/libraries\tikzlibraryarrows.code.tex"
+File: tikzlibraryarrows.code.tex 2019/01/05 v3.1 (3.1)
+
+("C:\Users\Дмитрий\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/lib
+raries\pgflibraryarrows.code.tex"
+File: pgflibraryarrows.code.tex 2019/01/05 v3.1 (3.1)
+\arrowsize=\dimen185
+))
+("C:\Users\Дмитрий\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/fro
+ntendlayer/tikz/libraries\tikzlibrarybackgrounds.code.tex"
+File: tikzlibrarybackgrounds.code.tex 2019/01/05 v3.1 (3.1)
+\pgf@layerbox@background=\box47
+\pgf@layerboxsaved@background=\box48
+)
+("C:\Users\Дмитрий\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/fro
+ntendlayer/tikz/libraries\tikzlibrarypositioning.code.tex"
+File: tikzlibrarypositioning.code.tex 2019/01/05 v3.1 (3.1)
+)
+("C:\Users\Дмитрий\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/fro
+ntendlayer/tikz/libraries\tikzlibraryfit.code.tex"
+File: tikzlibraryfit.code.tex 2019/01/05 v3.1 (3.1)
+)
+("C:\Users\Дмитрий\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/fro
+ntendlayer/tikz/libraries\tikzlibrarypetri.code.tex"
+File: tikzlibrarypetri.code.tex 2019/01/05 v3.1 (3.1)
+)
+("C:\Users\Дмитрий\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/lib
+raries\pgflibraryarrows.meta.code.tex"
+File: pgflibraryarrows.meta.code.tex 2019/01/05 v3.1 (3.1)
+\pgfarrowinset=\dimen186
+\pgfarrowlength=\dimen187
+\pgfarrowwidth=\dimen188
+\pgfarrowlinewidth=\dimen189
+)
+\c@Th=\count168
+\c@Def=\count169
+\c@Lem=\count170
+\c@St=\count171
+ (TV&MS.aux
+LaTeX Font Info:    Try loading font information for T2A+cmr on input line 3.
+
+("C:\Users\Дмитрий\AppData\Local\Programs\MiKTeX 2.9\tex/latex/cyrillic\
+t2acmr.fd"
+File: t2acmr.fd 2001/08/11 v1.0a Computer Modern Cyrillic font definitions
+))
+\openout1 = `TV&MS.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 70.
+LaTeX Font Info:    ... okay on input line 70.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 70.
+LaTeX Font Info:    ... okay on input line 70.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 70.
+LaTeX Font Info:    ... okay on input line 70.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 70.
+LaTeX Font Info:    ... okay on input line 70.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 70.
+LaTeX Font Info:    ... okay on input line 70.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 70.
+LaTeX Font Info:    ... okay on input line 70.
+LaTeX Font Info:    Checking defaults for T2A/cmr/m/n on input line 70.
+LaTeX Font Info:    ... okay on input line 70.
+
+("C:\Users\Дмитрий\AppData\Local\Programs\MiKTeX 2.9\tex/context/base\su
+pp-pdf.mkii"
+[Loading MPS to PDF converter (version 2006.09.02).]
+\scratchcounter=\count172
+\scratchdimen=\dimen190
+\scratchbox=\box49
+\nofMPsegments=\count173
+\nofMParguments=\count174
+\everyMPshowfont=\toks40
+\MPscratchCnt=\count175
+\MPscratchDim=\dimen191
+\MPnumerator=\count176
+\makeMPintoPDFobject=\count177
+\everyMPtoPDFconversion=\toks41
+)
+("C:\Users\Дмитрий\AppData\Local\Programs\MiKTeX 2.9\tex/latex/oberdiek\
+epstopdf-base.sty"
+Package: epstopdf-base 2016/05/15 v2.6 Base part for package epstopdf
+
+("C:\Users\Дмитрий\AppData\Local\Programs\MiKTeX 2.9\tex/generic/oberdie
+k\infwarerr.sty"
+Package: infwarerr 2016/05/16 v1.4 Providing info/warning/error messages (HO)
+)
+("C:\Users\Дмитрий\AppData\Local\Programs\MiKTeX 2.9\tex/latex/oberdiek\
+grfext.sty"
+Package: grfext 2016/05/16 v1.2 Manage graphics extensions (HO)
+
+("C:\Users\Дмитрий\AppData\Local\Programs\MiKTeX 2.9\tex/generic/oberdie
+k\kvdefinekeys.sty"
+Package: kvdefinekeys 2016/05/16 v1.4 Define keys (HO)
+
+("C:\Users\Дмитрий\AppData\Local\Programs\MiKTeX 2.9\tex/generic/oberdie
+k\ltxcmds.sty"
+Package: ltxcmds 2016/05/16 v1.23 LaTeX kernel commands for general use (HO)
+)))
+("C:\Users\Дмитрий\AppData\Local\Programs\MiKTeX 2.9\tex/latex/oberdiek\
+kvoptions.sty"
+Package: kvoptions 2016/05/16 v3.12 Key value format for package options (HO)
+
+("C:\Users\Дмитрий\AppData\Local\Programs\MiKTeX 2.9\tex/generic/oberdie
+k\kvsetkeys.sty"
+Package: kvsetkeys 2016/05/16 v1.17 Key value parser (HO)
+
+("C:\Users\Дмитрий\AppData\Local\Programs\MiKTeX 2.9\tex/generic/oberdie
+k\etexcmds.sty"
+Package: etexcmds 2016/05/16 v1.6 Avoid name clashes with e-TeX commands (HO)
+
+("C:\Users\Дмитрий\AppData\Local\Programs\MiKTeX 2.9\tex/generic/oberdie
+k\ifluatex.sty"
+Package: ifluatex 2016/05/16 v1.4 Provides the ifluatex switch (HO)
+Package ifluatex Info: LuaTeX not detected.
+))))
+("C:\Users\Дмитрий\AppData\Local\Programs\MiKTeX 2.9\tex/generic/oberdie
+k\pdftexcmds.sty"
+Package: pdftexcmds 2018/09/10 v0.29 Utility functions of pdfTeX for LuaTeX (HO
+)
+
+("C:\Users\Дмитрий\AppData\Local\Programs\MiKTeX 2.9\tex/generic/oberdie
+k\ifpdf.sty"
+Package: ifpdf 2018/09/07 v3.3 Provides the ifpdf switch
+)
+Package pdftexcmds Info: LuaTeX not detected.
+Package pdftexcmds Info: \pdf@primitive is available.
+Package pdftexcmds Info: \pdf@ifprimitive is available.
+Package pdftexcmds Info: \pdfdraftmode found.
+)
+Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
+38.
+Package grfext Info: Graphics extension search list:
+(grfext)             [.pdf,.png,.jpg,.eps]
+(grfext)             \AppendGraphicsExtensions on input line 456.
+) ABD: EveryShipout initializing macros
+
+Package pgfplots Warning: running in backwards compatibility mode (unsuitable t
+ick labels; missing features). Consider writing \pgfplotsset{compat=1.16} into 
+your preamble.
+ on input line 70.
+
+Package caption Info: Begin \AtBeginDocument code.
+Package caption Info: End \AtBeginDocument code.
+(TV&MS.toc)
+\tf@toc=\write4
+\openout4 = `TV&MS.toc'.
+
+ [1
+
+{C:/Users/Дмитрий/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}] [2
+]
+LaTeX Font Info:    Try loading font information for U+rsfs on input line 88.
+
+("C:\Users\Дмитрий\AppData\Local\Programs\MiKTeX 2.9\tex/latex/jknappen\
+ursfs.fd"
+File: ursfs.fd 1998/03/24 rsfs font definition file (jk)
+)
+LaTeX Font Info:    Try loading font information for U+msa on input line 88.
+
+("C:\Users\Дмитрий\AppData\Local\Programs\MiKTeX 2.9\tex/latex/amsfonts\
+umsa.fd"
+File: umsa.fd 2013/01/14 v3.01 AMS symbols A
+)
+LaTeX Font Info:    Try loading font information for U+msb on input line 88.
+
+("C:\Users\Дмитрий\AppData\Local\Programs\MiKTeX 2.9\tex/latex/amsfonts\
+umsb.fd"
+File: umsb.fd 2013/01/14 v3.01 AMS symbols B
+) [3]
+<pictures/ping.jpg, id=29, 1204.5pt x 1204.5pt>
+File: pictures/ping.jpg Graphic file (type jpg)
+<use pictures/ping.jpg>
+Package pdftex.def Info: pictures/ping.jpg  used on input line 153.
+(pdftex.def)             Requested size: 14.22546pt x 14.22636pt.
+ [4 <./pictures/ping.jpg>]
+<pictures/cat.jpg, id=33, 184.69pt x 184.69pt>
+File: pictures/cat.jpg Graphic file (type jpg)
+<use pictures/cat.jpg>
+Package pdftex.def Info: pictures/cat.jpg  used on input line 197.
+(pdftex.def)             Requested size: 14.22595pt x 14.22636pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 194--201
+
+ []
+
+[5 <./pictures/cat.jpg>]
+Underfull \hbox (badness 10000) in paragraph at lines 211--212
+
+ []
+
+<pictures/cond_prob.jpg, id=40, 216.05719pt x 152.06813pt>
+File: pictures/cond_prob.jpg Graphic file (type jpg)
+<use pictures/cond_prob.jpg>
+Package pdftex.def Info: pictures/cond_prob.jpg  used on input line 213.
+(pdftex.def)             Requested size: 121.278pt x 85.35826pt.
+
+Overfull \hbox (64.3725pt too wide) in paragraph at lines 213--213
+[][] 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 213--218
+
+ []
+
+File: pictures/ping.jpg Graphic file (type jpg)
+<use pictures/ping.jpg>
+Package pdftex.def Info: pictures/ping.jpg  used on input line 223.
+(pdftex.def)             Requested size: 14.22546pt x 14.22636pt.
+
+Overfull \hbox (21.8966pt too wide) in paragraph at lines 241--242
+[]\T2A/cmr/m/it/12 ������� $\OML/cmm/m/it/12 A[]; A[]; [] ; A[]$ \T2A/cmr/m/it/
+12 ��-��-��-��-�� $[]$,
+ []
+
+[6 <./pictures/cond_prob.jpg>] [7]
+Underfull \hbox (badness 10000) in paragraph at lines 269--276
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 277--286
+
+ []
+
+[8]
+File: pictures/ping.jpg Graphic file (type jpg)
+<use pictures/ping.jpg>
+Package pdftex.def Info: pictures/ping.jpg  used on input line 307.
+(pdftex.def)             Requested size: 14.22546pt x 14.22636pt.
+File: pictures/ping.jpg Graphic file (type jpg)
+<use pictures/ping.jpg>
+Package pdftex.def Info: pictures/ping.jpg  used on input line 327.
+(pdftex.def)             Requested size: 14.22546pt x 14.22636pt.
+ [9]
+Overfull \hbox (32.6404pt too wide) in paragraph at lines 347--348
+[]\T2A/cmr/m/it/12 ����� $\OML/cmm/m/it/12 ; $ \T2A/cmr/m/it/12 --- ���-���-�
+�� ��-��-��-��. ��-��� ���-��-���� $[]$
+ []
+
+
+LaTeX Warning: Command \CYRI invalid in math mode on input line 350.
+
+Missing character: There is no � in font cmr12!
+
+Underfull \hbox (badness 1496) in paragraph at lines 349--353
+\T2A/cmr/bx/n/12 �������������� $[] \OT1/cmr/m/n/12 = [] []$\T2A/cmr/m/n/12 . �
+�-��-���, ���
+ []
+
+[10] [11]
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 407.
+
+
+("C:\Users\Дмитрий\AppData\Local\Programs\MiKTeX 2.9\tex/latex/base\omsc
+mr.fd"
+File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
+)
+LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <12> not available
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 407.
+LaTeX Font Info:    Try loading font information for U+bbm on input line 429.
+
+("C:\Users\Дмитрий\AppData\Local\Programs\MiKTeX 2.9\tex/latex/bbm\ubbm.
+fd"
+File: ubbm.fd 1999/03/15 V 1.2 Font definition for bbm font - TH
+) [12]
+Overfull \hbox (3.05792pt too wide) detected at line 445
+[] \OML/cmm/m/it/12 f\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 x\OT1/cmr/m/n/12 )\OML/c
+mm/m/it/12 \OT1/cmr/m/n/12 (\OML/cmm/m/it/12 dx\OT1/cmr/m/n/12 ) = [][][] []\O
+ML/cmm/m/it/12 [][] []\OT1/cmr/m/n/12 +\OML/cmm/m/it/12 n\OT1/cmr/m/n/12 ([])
+[]
+ []
+
+[13] [14]
+<pictures/kantor.png, id=72, 202.50656pt x 107.65219pt>
+File: pictures/kantor.png Graphic file (type png)
+<use pictures/kantor.png>
+Package pdftex.def Info: pictures/kantor.png  used on input line 510.
+(pdftex.def)             Requested size: 160.57169pt x 85.35826pt.
+
+Overfull \hbox (103.66618pt too wide) in paragraph at lines 510--510
+[][] 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 503--516
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 503--516
+
+ []
+
+[15]
+Underfull \hbox (badness 10000) in paragraph at lines 516--520
+
+ []
+
+[16 <./pictures/kantor.png>]
+Overfull \hbox (1.93245pt too wide) detected at line 543
+\U/msb/m/n/12 E\OML/cmm/m/it/12  \OT1/cmr/m/n/12 = [] \OML/cmm/m/it/12 d\U/ms
+b/m/n/12 P \OT1/cmr/m/n/12 = [][][] []\U/msb/m/n/12 P[][] []\OT1/cmr/m/n/12 +\O
+ML/cmm/m/it/12 n\U/msb/m/n/12 P\OT1/cmr/m/n/12 ([])[]
+ []
+
+[17]
+Underfull \hbox (badness 10000) in paragraph at lines 573--576
+
+ []
+
+[18] [19]
+Overfull \hbox (74.65692pt too wide) detected at line 676
+\U/msb/m/n/12 E\OML/cmm/m/it/12  \OT1/cmr/m/n/12 = [] \OML/cmm/m/it/12 x[]y[]
+\U/msb/m/n/12 P\OT1/cmr/m/n/12 (\OML/cmm/m/it/12  \OT1/cmr/m/n/12 = \OML/cmm/m
+/it/12 x[];  \OT1/cmr/m/n/12 = \OML/cmm/m/it/12 y[]\OT1/cmr/m/n/12 ) = [] \OML
+/cmm/m/it/12 x[]y[]\U/msb/m/n/12 P\OT1/cmr/m/n/12 (\OML/cmm/m/it/12  \OT1/cmr/
+m/n/12 = \OML/cmm/m/it/12 x[]\OT1/cmr/m/n/12 )\U/msb/m/n/12 P\OT1/cmr/m/n/12 (\
+OML/cmm/m/it/12  \OT1/cmr/m/n/12 = \OML/cmm/m/it/12 y[]\OT1/cmr/m/n/12 ) = [] 
+\OML/cmm/m/it/12 x[]\U/msb/m/n/12 P\OT1/cmr/m/n/12 (\OML/cmm/m/it/12  \OT1/cmr
+/m/n/12 = \OML/cmm/m/it/12 x[]\OT1/cmr/m/n/12 ) [] \OML/cmm/m/it/12 y[]\U/msb/m
+/n/12 P\OT1/cmr/m/n/12 (\OML/cmm/m/it/12  \OT1/cmr/m/n/12 = \OML/cmm/m/it/12 y
+[]\OT1/cmr/m/n/12 ) = \U/msb/m/n/12 E\OML/cmm/m/it/12 \U/msb/m/n/12 E\OML/cmm/
+m/it/12 
+ []
+
+[20]
+Underfull \hbox (badness 10000) in paragraph at lines 709--710
+
+ []
+
+
+Overfull \hbox (67.51787pt too wide) detected at line 710
+\U/msb/m/n/12 E\OML/cmm/m/it/12 g\OT1/cmr/m/n/12 (\OMS/cmsy/m/n/12 j\OML/cmm/m/
+it/12 \OMS/cmsy/m/n/12 j\OT1/cmr/m/n/12 ) = \U/msb/m/n/12 E\OML/cmm/m/it/12 g\
+OT1/cmr/m/n/12 (\OMS/cmsy/m/n/12 j\OML/cmm/m/it/12 \OMS/cmsy/m/n/12 j\OT1/cmr/
+m/n/12 )\U/bbm/m/n/12 1\OT1/cmr/m/n/12 (\OMS/cmsy/m/n/12 j\OML/cmm/m/it/12 \OM
+S/cmsy/m/n/12 j  \OML/cmm/m/it/12 x\OT1/cmr/m/n/12 ) + \U/msb/m/n/12 E\OML/cmm
+/m/it/12 g\OT1/cmr/m/n/12 (\OMS/cmsy/m/n/12 j\OML/cmm/m/it/12 \OMS/cmsy/m/n/12
+ j\OT1/cmr/m/n/12 )\U/bbm/m/n/12 1\OT1/cmr/m/n/12 (\OMS/cmsy/m/n/12 j\OML/cmm/m
+/it/12 \OMS/cmsy/m/n/12 j \OML/cmm/m/it/12 < x\OT1/cmr/m/n/12 ) \OMS/cmsy/m/n/
+12  \U/msb/m/n/12 E\OML/cmm/m/it/12 g\OT1/cmr/m/n/12 (\OMS/cmsy/m/n/12 j\OML/c
+mm/m/it/12 \OMS/cmsy/m/n/12 j\OT1/cmr/m/n/12 )\U/bbm/m/n/12 1\OT1/cmr/m/n/12 (
+\OMS/cmsy/m/n/12 j\OML/cmm/m/it/12 \OMS/cmsy/m/n/12 j  \OML/cmm/m/it/12 x\OT1
+/cmr/m/n/12 ) \OMS/cmsy/m/n/12  \OML/cmm/m/it/12 g\OT1/cmr/m/n/12 (\OML/cmm/m/
+it/12 x\OT1/cmr/m/n/12 )\U/msb/m/n/12 E\U/bbm/m/n/12 1\OT1/cmr/m/n/12 (\OMS/cms
+y/m/n/12 j\OML/cmm/m/it/12 \OMS/cmsy/m/n/12 j  \OML/cmm/m/it/12 x\OT1/cmr/m/n
+/12 ) = \OML/cmm/m/it/12 g\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 x\OT1/cmr/m/n/12 )\
+U/msb/m/n/12 P\OT1/cmr/m/n/12 (\OMS/cmsy/m/n/12 j\OML/cmm/m/it/12 \OMS/cmsy/m/
+n/12 j \OML/cmm/m/it/12 > x\OT1/cmr/m/n/12 )
+ []
+
+[21]
+Overfull \hbox (17.55109pt too wide) in paragraph at lines 736--737
+[]\T2A/cmr/m/it/12 ���������� ���-���-��� ��-��-��-�� $\OML/cmm/m/it/12 $ \T2A
+/cmr/m/it/12 ���-�� $[]$,
+ []
+
+
+LaTeX Warning: Command \cyrb invalid in math mode on input line 767.
+
+Missing character: There is no � in font cmr12!
+[22]
+Overfull \hbox (69.67932pt too wide) detected at line 800
+\OMS/cmsy/m/n/12 j\OML/cmm/m/it/12 B[]\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 x; f\OT
+1/cmr/m/n/12 ) \OMS/cmsy/m/n/12   \OML/cmm/m/it/12 f\OT1/cmr/m/n/12 (\OML/cmm/m
+/it/12 x\OT1/cmr/m/n/12 )\OMS/cmsy/m/n/12 j \OT1/cmr/m/n/12 = \OMS/cmsy/m/n/12 
+j [] \OML/cmm/m/it/12 C[]x[]\OT1/cmr/m/n/12 (1 \OMS/cmsy/m/n/12   \OML/cmm/m/it
+/12 x\OT1/cmr/m/n/12 )[]\OML/cmm/m/it/12 f\OT1/cmr/m/n/12 ([]) \OMS/cmsy/m/n/12
+   [] \OML/cmm/m/it/12 C[]x[]\OT1/cmr/m/n/12 (1 \OMS/cmsy/m/n/12   \OML/cmm/m/i
+t/12 x\OT1/cmr/m/n/12 )[]\OML/cmm/m/it/12 f\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 x\
+OT1/cmr/m/n/12 )\OMS/cmsy/m/n/12 j  [] \OML/cmm/m/it/12 C[]x[]\OT1/cmr/m/n/12 
+(1 \OMS/cmsy/m/n/12   \OML/cmm/m/it/12 x\OT1/cmr/m/n/12 )[]\OMS/cmsy/m/n/12 j\O
+ML/cmm/m/it/12 f\OT1/cmr/m/n/12 ([]) \OMS/cmsy/m/n/12   \OML/cmm/m/it/12 f\OT1/
+cmr/m/n/12 (\OML/cmm/m/it/12 x\OT1/cmr/m/n/12 )\OMS/cmsy/m/n/12 j
+ []
+
+[23] [24]
+File: pictures/cat.jpg Graphic file (type jpg)
+<use pictures/cat.jpg>
+Package pdftex.def Info: pictures/cat.jpg  used on input line 847.
+(pdftex.def)             Requested size: 14.22595pt x 14.22636pt.
+ [25] [26]
+Overfull \hbox (68.19409pt too wide) detected at line 906
+\U/msb/m/n/12 P\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 m[] \OMS/cmsy/m/n/12  \OML/cm
+m/m/it/12 [] \OMS/cmsy/m/n/12  \OML/cmm/m/it/12 m[]\OT1/cmr/m/n/12 ) = \U/msb
+/m/n/12 P\OT1/cmr/m/n/12 ([] \OMS/cmsy/m/n/12  []  []\OT1/cmr/m/n/12 ) \OMS/c
+msy/m/n/12  [] \OML/cmm/m/it/12 \OT1/cmr/m/n/12 (\OML/cmm/m/it/12 x\OT1/cmr/m
+/n/12 )\OML/cmm/m/it/12 dx;  x\OT1/cmr/m/n/12 1 \OMS/cmsy/m/n/12  []\OML/cmm/m
+/it/12 ; x\OT1/cmr/m/n/12 2 \OMS/cmsy/m/n/12  []
+ []
+
+[27] [28]
+Overfull \hbox (54.90862pt too wide) in paragraph at lines 954--956
+\T2A/cmr/m/n/12 ��-����-�� � ��-��-��-��-���, ��-���-�� $[] \OML/cmm/m/it/12 F[
+]\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 x\OT1/cmr/m/n/12 ) = \OML/cmm/m/it/12 F[]\OT
+1/cmr/m/n/12 (\OML/cmm/m/it/12 x[]; [] ; x[]; x[]; [] ; x[]\OT1/cmr/m/n/12 )$\T
+2A/cmr/m/n/12 . 
+ []
+
+[29] [30] [31]
+File: pictures/ping.jpg Graphic file (type jpg)
+<use pictures/ping.jpg>
+Package pdftex.def Info: pictures/ping.jpg  used on input line 1051.
+(pdftex.def)             Requested size: 14.22546pt x 14.22636pt.
+
+Overfull \hbox (2.01501pt too wide) detected at line 1081
+\OMS/cmsy/m/n/12 ,  \U/msb/m/n/12 P\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 A[]\OT1/cm
+r/m/n/12 ) = 0\OML/cmm/m/it/12 ; m \U/msa/m/n/12 > \OT1/cmr/m/n/12 1  \OMS/cmsy
+/m/n/12 ,  \U/msb/m/n/12 P\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 A[]\OT1/cmr/m/n/12 
+) = 0\OML/cmm/m/it/12 ; " > \OT1/cmr/m/n/12 0  \OMS/cmsy/m/n/12 ,  \U/msb/m/n/1
+2 P [] [] \OT1/cmr/m/n/12 0\OML/cmm/m/it/12 ; " > \OT1/cmr/m/n/12 0  \OMS/cmsy/
+m/n/12 ,
+ []
+
+[32]
+File: pictures/ping.jpg Graphic file (type jpg)
+<use pictures/ping.jpg>
+Package pdftex.def Info: pictures/ping.jpg  used on input line 1086.
+(pdftex.def)             Requested size: 14.22546pt x 14.22636pt.
+ [33]
+Underfull \hbox (badness 10000) in paragraph at lines 1237--1238
+
+ []
+
+[34]
+File: pictures/ping.jpg Graphic file (type jpg)
+<use pictures/ping.jpg>
+Package pdftex.def Info: pictures/ping.jpg  used on input line 1251.
+(pdftex.def)             Requested size: 14.22546pt x 14.22636pt.
+ [35]
+Overfull \hbox (7.38301pt too wide) in paragraph at lines 1333--1335
+[]$\OML/cmm/m/it/12 f\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 t\OT1/cmr/m/n/12 )$ \T2A
+/cmr/m/it/12 ��-��-��-�� ��-���-��-��-���-��-���� ����-
+ []
+
+[36] [37]
+File: pictures/cat.jpg Graphic file (type jpg)
+<use pictures/cat.jpg>
+Package pdftex.def Info: pictures/cat.jpg  used on input line 1404.
+(pdftex.def)             Requested size: 14.22595pt x 14.22636pt.
+ [38] [39]
+Overfull \hbox (1.44719pt too wide) in paragraph at lines 1483--1484
+[]\T2A/cmr/m/it/12 ���� $\OMS/cmsy/m/n/12 f\OML/cmm/m/it/12 []\OMS/cmsy/m/n/12
+ g$ \T2A/cmr/m/it/12  ����-��-��-��� ���-��-��-�� ���-
+ []
+
+
+Overfull \hbox (20.10367pt too wide) in paragraph at lines 1509--1512
+[]\T2A/cmr/m/it/12 ����� $\OMS/cmsy/m/n/12 f\OML/cmm/m/it/12 []\OMS/cmsy/m/n/1
+2 g$ \T2A/cmr/m/it/12  ��-���-��-��-����-����� �����-
+ []
+
+[40]
+Overfull \hbox (3.6114pt too wide) in paragraph at lines 1530--1531
+[]\T2A/cmr/m/it/12 ���� $\OMS/cmsy/m/n/12 f\OML/cmm/m/it/12 []\OMS/cmsy/m/n/12
+ g$ \T2A/cmr/m/it/12 
+ []
+
+File: pictures/ping.jpg Graphic file (type jpg)
+<use pictures/ping.jpg>
+Package pdftex.def Info: pictures/ping.jpg  used on input line 1541.
+(pdftex.def)             Requested size: 14.22546pt x 14.22636pt.
+
+Overfull \hbox (48.59894pt too wide) detected at line 1568
+ []$[]  \U/msb/m/n/12 P [] \OT1/cmr/m/n/12 = [] \OML/cmm/m/it/12 p\OT1/cmr/m/n/
+12 (\OML/cmm/m/it/12 x\OT1/cmr/m/n/12 )\OML/cmm/m/it/12 dx \OT1/cmr/m/n/12 + []
+ \OML/cmm/m/it/12 p\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 x\OT1/cmr/m/n/12 )\OML/cmm
+/m/it/12 dx \OT1/cmr/m/n/12 = [] [][] + [] [][] =$ 
+ []
+
+[41] [42]
+File: pictures/cat.jpg Graphic file (type jpg)
+<use pictures/cat.jpg>
+Package pdftex.def Info: pictures/cat.jpg  used on input line 1610.
+(pdftex.def)             Requested size: 14.22595pt x 14.22636pt.
+ [43]
+Overfull \hbox (26.3511pt too wide) in paragraph at lines 1698--1700
+[]$[] [] \U/msa/m/n/12 6 \OML/cmm/m/it/12 C[]$\T2A/cmr/m/it/12 . 
+ []
+
+[44] [45] (TV&MS.aux) ) 
+Here is how much of TeX's memory you used:
+ 26533 strings out of 492946
+ 671492 string characters out of 3122270
+ 821361 words of memory out of 3000000
+ 29933 multiletter control sequences out of 15000+200000
+ 20132 words of font info for 56 fonts, out of 3000000 for 9000
+ 1141 hyphenation exceptions out of 8191
+ 62i,21n,100p,1107b,2053s stack positions out of 5000i,500n,10000p,200000b,50000s
+ <C:\Users\Дмитрий\AppData\Local\MiKTeX\2.9\fonts
+/pk/ljfour/lh/lh-t2a/dpi600\larm0800.pk> <C:\Users\Дмитрий\AppData\Local
+\MiKTeX\2.9\fonts/pk/ljfour/lh/lh-t2a/dpi600\lati0800.pk> <C:\Users\Дмитр�
+�й\AppData\Local\MiKTeX\2.9\fonts/pk/ljfour/public/bbm/dpi600\bbm12.pk> <C:\Us
+ers\Дмитрий\AppData\Local\MiKTeX\2.9\fonts/pk/ljfour/lh/lh-t2a/dpi600\la
+ti1200.pk> <C:\Users\Дмитрий\AppData\Local\MiKTeX\2.9\fonts/pk/ljfour/lh
+/lh-t2a/dpi600\labx2488.pk> <C:\Users\Дмитрий\AppData\Local\MiKTeX\2.9\f
+onts/pk/ljfour/lh/lh-t2a/dpi600\larm1200.pk> <C:\Users\Дмитрий\AppData\L
+ocal\MiKTeX\2.9\fonts/pk/ljfour/lh/lh-t2a/dpi600\labx1200.pk> <C:\Users\Дми�
+�рий\AppData\Local\MiKTeX\2.9\fonts/pk/ljfour/lh/lh-t2a/dpi600\labx1440.pk> 
+<C:\Users\Дмитрий\AppData\Local\MiKTeX\2.9\fonts/pk/ljfour/lh/lh-t2a/dpi
+600\labx1728.pk><C:/Users/Дмитрий/AppData/Local/Programs/MiKTeX 2.9/font
+s/type1/public/amsfonts/cm/cmex10.pfb><C:/Users/Дмитрий/AppData/Local/Pr
+ograms/MiKTeX 2.9/fonts/type1/public/amsfonts/cmextra/cmex8.pfb><C:/Users/Дм�
+�трий/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi
+12.pfb><C:/Users/Дмитрий/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/p
+ublic/amsfonts/cm/cmmi6.pfb><C:/Users/Дмитрий/AppData/Local/Programs/MiK
+TeX 2.9/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Users/Дмитрий/AppDa
+ta/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users
+/Дмитрий/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/c
+m/cmr6.pfb><C:/Users/Дмитрий/AppData/Local/Programs/MiKTeX 2.9/fonts/typ
+e1/public/amsfonts/cm/cmr8.pfb><C:/Users/Дмитрий/AppData/Local/Programs/
+MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/Дмитрий/A
+ppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy6.pfb><C:/U
+sers/Дмитрий/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfon
+ts/cm/cmsy8.pfb><C:/Users/Дмитрий/AppData/Local/Programs/MiKTeX 2.9/font
+s/type1/public/amsfonts/latxfont/line10.pfb><C:/Users/Дмитрий/AppData/Lo
+cal/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/symbols/msam10.pfb><C:/User
+s/Дмитрий/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/
+symbols/msbm10.pfb><C:/Users/Дмитрий/AppData/Local/Programs/MiKTeX 2.9/f
+onts/type1/public/rsfs/rsfs10.pfb>
+Output written on TV&MS.pdf (45 pages, 641254 bytes).
+PDF statistics:
+ 572 PDF objects out of 1000 (max. 8388607)
+ 0 named destinations out of 1000 (max. 500000)
+ 33 words of extra memory for PDF output out of 10000 (max. 10000000)
+
+>>>>>>> 7dd5d3f64923a3a7dffd71988cf1531076ed4dcd
