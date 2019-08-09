@@ -1,0 +1,323 @@
+
+%---------------------------------------------------------------------------------
+%---------------------------------------------------------------------------------
+% Chapters, Sections, Subsections
+%---------------------------------------------------------------------------------
+%---------------------------------------------------------------------------------
+
+% Counter of section
+\usepackage{chngcntr} % для counterwithin
+\counterwithin*{section}{part}
+
+% Section 
+\usepackage{titlesec}
+\titleformat{\section} {\normalfont\Large\bfseries\filcenter}{\S \!\ \thesection.}{1em}{}
+
+% Subsection
+\titleformat{\subsection} {\normalfont\large\bfseries\filcenter}{\thesubsection.}{1em}{}
+\titlespacing*{\subsection}{0pt}{3.5ex}{.3ex}
+
+% Part
+\titleformat
+{\part} % command
+[display] % shape
+{\bfseries\Large\itshape} % format
+{} % label
+{0.5ex} % sep
+{
+    \rule{\textwidth}{2pt}
+	\vspace{1cm}
+    \centering
+    Часть №\,\thepart. \;
+} % before-code
+[    
+	\vspace{-1cm}
+	\rule{\textwidth}{0.3pt}
+] % after-code
+
+% Change spacing after section
+\usepackage[titles]{tocloft}
+\renewcommand{\cftbeforesecskip}{3pt}
+
+%---------------------------------------------------------------------------------
+%---------------------------------------------------------------------------------
+% Title
+%---------------------------------------------------------------------------------
+%---------------------------------------------------------------------------------
+
+% Для декораций
+\usepackage{doc}
+\usepackage{tikz}
+\usetikzlibrary{decorations.pathreplacing,calligraphy,matrix}
+\GetFileInfo{spath3.sty}
+
+%---------------------------------------------------------------------------------
+%---------------------------------------------------------------------------------
+% Table of Content
+%---------------------------------------------------------------------------------
+%---------------------------------------------------------------------------------
+
+% Section
+\usepackage{titletoc}
+%\usepackage{titlesec}
+
+\titlecontents{part}[0pt]{\normalsize\bfseries\protect\addvspace{15pt}}%
+{}{\color{blue}\partname{} }%
+{\enspace\titlerule\contentspage}%
+
+\titlecontents{section}[2.4pc]
+{\addvspace{0.4cm}}
+{\contentslabel[\thecontentslabel]{2.4pc}}
+{\S}
+{\hfill\small \hspace{3cm}\thecontentspage}
+[]
+
+% Глубина отображения
+\setcounter{tocdepth}{1}
+
+
+%---------------------------------------------------------------------------------
+%---------------------------------------------------------------------------------
+% Background
+%---------------------------------------------------------------------------------
+%---------------------------------------------------------------------------------
+
+\usepackage[pages=some]{background}
+\usepackage{graphicx}
+\usepackage{eso-pic}
+\usepackage{transparent}
+\AddToShipoutPictureBG{{\transparent{0.1}
+  \begin{tikzpicture}[remember picture,overlay]
+\node [xshift=0cm, yshift=0cm] at (current page.center) 
+    {\includegraphics[width=\paperwidth]{back}};
+\end{tikzpicture}}}
+\backgroundsetup{
+	scale=1,
+	color=black,
+	opacity=0.4,
+	angle=0,
+	contents={}%
+}
+
+%---------------------------------------------------------------------------------
+%---------------------------------------------------------------------------------
+% Footers and headers and margins
+%---------------------------------------------------------------------------------
+%---------------------------------------------------------------------------------
+
+% Отступы
+
+\textheight=24cm
+\textwidth=16cm
+\oddsidemargin=0pt
+\topmargin=-1.5cm
+\parindent=24pt
+\parskip=0pt
+\tolerance=2000
+\flushbottom
+
+% Headers and footers
+
+\usepackage{fancyhdr}
+\usepackage{etoolbox}
+\usepackage{lipsum} % just for the example
+
+\pagestyle{fancy}
+\fancypagestyle{main}{%
+  \fancyhf{}%
+  \fancyhead[C]{\rightmark}%
+  \fancyfoot[C]{-\ \texttt{\thepage}\ -}%
+  \renewcommand{\headrulewidth}{0.4pt}%
+  \renewcommand{\footrulewidth}{0.4pt}%
+}
+\fancypagestyle{plain}{%
+  \fancyhf{}%
+  \fancyfoot[C]{}%
+  \renewcommand{\headrulewidth}{0pt}%
+  \renewcommand{\footrulewidth}{0pt}%
+}
+
+\appto\frontmatter{\pagestyle{plain}}
+\appto\mainmatter{\pagestyle{main}}
+
+%---------------------------------------------------------------------------------
+%---------------------------------------------------------------------------------
+% Theorems and environments
+%---------------------------------------------------------------------------------
+%---------------------------------------------------------------------------------
+
+% Theorems
+\usepackage{amsthm}
+\usepackage{xcolor}
+\usepackage[most]{tcolorbox}
+
+\theoremstyle{definition}
+\newtheorem{Th}{Теорема}[section]
+\newtheorem{Lem}[Th]{Лемма}
+\newtheorem{St}[Th]{Утверждение}
+\newtheorem*{Ex}{Пример}
+
+% Definition
+\newtheorem{Def}[Th]{Определение}
+\tcolorboxenvironment{Def}{
+  enhanced,
+  borderline={0.8pt}{0pt}{cyan!70},
+  borderline={0.4pt}{2pt}{black},
+  boxrule=0.4pt,
+  colback=green!70!white!30,
+  coltitle=black,
+  sharp corners
+}
+
+\usetikzlibrary{patterns}
+\def\mybox{
+\begin{tikzpicture}
+    \pattern[pattern=north east lines, pattern color=orange] 
+    (0,0)--(0,0.1)--(0.1,0.1)--(0.1,0)--cycle;
+    \pattern[pattern=north east lines, pattern color=orange] 
+    (0,0.2)--(0,0.3)--(0.1,0.3)--(0.1,0.2)--cycle;
+\end{tikzpicture}}
+
+\usepackage[normalem]{ulem} % uline
+\makeatletter
+\newcommand\colordashline[1][cyan!70]{\bgroup \markoverwith{\lower3.5\p@\hbox{\sixly \textcolor{#1}{\char58}}}\ULon}
+\font\sixly=lasy6
+\makeatother
+
+\newcommand{\mdef}[1]{\emph{\colordashline{\mybox~#1~\mybox\,}}}
+
+
+% Math Environments
+
+\usepackage{mdframed}
+\mdfsetup{splitbottomskip=0.8cm,splittopskip=0cm,
+	innerrightmargin=0.3cm,innertopmargin=0.4cm,
+	linewidth=4pt,
+	linecolor=green!50!black,middlelinecolor=gray,
+	topline=false,bottomline=false}
+\newenvironment{Proof}{\par\begin{mdframed}\textbf{Доказательство. }}
+	{\hfill$\blacksquare$\end{mdframed}\vspace{0.1cm}} 
+
+% Environments
+
+\usepackage{graphicx}
+
+\newenvironment{Wtf}{\par\noindent\textbf{ЧО?!\;}}{}
+\newenvironment{Why}{\par\noindent\textbf{Зочем?}}{}
+\newenvironment{Note}{\par\noindent{\bf Замечание}}{}
+
+% For fancy enumerate
+\usepackage{enumitem,pifont}
+
+%---------------------------------------------------------------------------------
+%---------------------------------------------------------------------------------
+% Math
+%---------------------------------------------------------------------------------
+%---------------------------------------------------------------------------------
+
+% Packages
+
+\usepackage{mathrsfs}
+\usepackage{amssymb}
+\usepackage{amsmath}
+
+\usepackage{bbm} % для индикатора
+
+% Сокращения
+
+\newcommand\xequiv[1]{\stackrel{\mathrm{ #1}}{\equiv}}
+\newcommand\Set[2]{\left\{ #1 \colon #2 \right\}}
+\newcommand\Sum[3]{\sum\limits_{#1 = #2}^{#3}}
+\newcommand\Alsur{\mathrel{\stackrel{\mathrm{\text{п.н.}}}=}} % almost shure
+
+\def\Pro{\mathbb{P}} % вероятность
+\def\Ev{\mathcal{A}} % алгебра событий
+\def\K{\mathcal{K}} % алгебра событий
+\def\Bor{\mathscr{B}} % борелевская сигма-алгебра
+\def\Real{\mathbb{R}} % вещественная прямая
+\def\Int{\mathbb{Z}} % целые числа
+\def\Nat{\mathbb{N}} % натуральные числа
+\def\Compl{\mathbb{C}} % комплексные числа
+\def\Expec{\mathbb{E}} % матожидание 
+\def\Disp{\mathbb{D}}  % дисперсия
+\def\Ind{\mathbbm{1}} % индикатор
+\def\Smpl{\mathbb{X}} % выборка
+\def\Med{{\rm med \,}} % медиана
+\def\Cov{{\rm cov \,}} % ковыряция
+\def\Mod{{\rm mod \,}} % мода
+\def\Pois{{\rm Pois \,}} 
+\def\Norm{\mathcal{N}} % нормальное распределение
+
+\def\h{{\large \rotatebox[origin=c]{180}{$\Lsh$}}}
+
+\renewcommand{\epsilon}{\varepsilon}
+\renewcommand{\phi}{\varphi}
+\renewcommand{\kappa}{\varkappa}
+\renewcommand{\geq}{\geqslant}
+\renewcommand{\leq}{\leqslant}
+\renewcommand{\emptyset}{\varnothing}
+
+% Меняем нумерацию для уравнений
+\numberwithin{equation}{section}
+
+
+%---------------------------------------------------------------------------------
+%---------------------------------------------------------------------------------
+% Fonts, text
+%---------------------------------------------------------------------------------
+%---------------------------------------------------------------------------------
+
+%Font
+\usepackage{libertine}
+
+%Epigraph
+\usepackage{epigraph}
+\setlength\epigraphwidth{.6\textwidth}
+\setlength\epigraphrule{0pt}
+
+%Hyperref at table of content
+\usepackage{hyperref}
+\definecolor{fashionfuchsia}{rgb}{0.96, 0.0, 0.63}
+\hypersetup{
+    colorlinks,
+    citecolor=black,
+    filecolor=black,
+    linkcolor=blue,
+    urlcolor=fashionfuchsia
+}
+
+%---------------------------------------------------------------------------------
+%---------------------------------------------------------------------------------
+% Subfiles
+%---------------------------------------------------------------------------------
+%---------------------------------------------------------------------------------
+
+\usepackage{subfiles} % по-царски юзаем разбивку на файлы: 
+% с возможностью компиляции каждого файла по отдельности и с автоматической преамбулой
+
+\graphicspath{{pictures/}{../pictures/}} % один сработает для основного, 
+% другой для subfiles
+
+\DeclareGraphicsExtensions{.pdf,.png,.jpg}
+
+%---------------------------------------------------------------------------------
+%---------------------------------------------------------------------------------
+% Others
+%---------------------------------------------------------------------------------
+%---------------------------------------------------------------------------------
+
+% Additional packages
+
+\usepackage{ulem} % нужен для \uline
+\usepackage{cancel} %  зачеркивать
+\usepackage{tikz} % рисуночки
+
+% Это зачем? - науке неизвестно
+
+\usepackage{pb-diagram}
+\usepackage{pgfplots}
+\usepackage{caption}
+\usetikzlibrary{arrows,decorations.pathmorphing,backgrounds,positioning,fit,petri}
+\usepgflibrary{arrows.meta}
+\usetikzlibrary{arrows.meta}
+
