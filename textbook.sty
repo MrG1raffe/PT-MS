@@ -202,8 +202,8 @@
 
 \usepackage{graphicx}
 
-\newenvironment{Wtf}{\par\noindent\textbf{Рубрика <<Зачем так сложно?>>\;}}{}
-\newenvironment{Why}{\par\noindent\textbf{Why?}}{}
+\newenvironment{Wtf}{\par\noindent\textbf{ЧО?!\;}}{}
+\newenvironment{Why}{\par\noindent\textbf{Зочем?}}{}
 \newenvironment{Note}{\par\noindent{\bf Замечание}}{}
 
 % For fancy enumerate
@@ -228,6 +228,7 @@
 \newcommand\xequiv[1]{\stackrel{\mathrm{ #1}}{\equiv}}
 \newcommand\Set[2]{\left\{ #1 \colon #2 \right\}}
 \newcommand\Sum[3]{\sum\limits_{#1 = #2}^{#3}}
+\newcommand\Alsur{\mathrel{\stackrel{\mathrm{\text{п.н.}}}=}} % almost shure
 
 \def\Pro{\mathbb{P}} % вероятность
 \def\Ev{\mathcal{A}} % алгебра событий
@@ -240,14 +241,21 @@
 \def\Expec{\mathbb{E}} % матожидание 
 \def\Disp{\mathbb{D}}  % дисперсия
 \def\Ind{\mathbbm{1}} % индикатор
+\def\Smpl{\mathbb{X}} % выборка
 \def\Med{{\rm med \,}} % медиана
 \def\Cov{{\rm cov \,}} % ковыряция
 \def\Mod{{\rm mod \,}} % мода
 \def\Pois{{\rm Pois \,}} 
-\def\Smpl{\mathbb{X}} 
 \def\Norm{\mathcal{N}} % нормальное распределение
 
 \def\h{{\large \rotatebox[origin=c]{180}{$\Lsh$}}}
+
+\renewcommand{\epsilon}{\varepsilon}
+\renewcommand{\phi}{\varphi}
+\renewcommand{\kappa}{\varkappa}
+\renewcommand{\geq}{\geqslant}
+\renewcommand{\leq}{\leqslant}
+\renewcommand{\emptyset}{\varnothing}
 
 % Меняем нумерацию для уравнений
 \numberwithin{equation}{section}
@@ -312,5 +320,4 @@
 \usetikzlibrary{arrows,decorations.pathmorphing,backgrounds,positioning,fit,petri}
 \usepgflibrary{arrows.meta}
 \usetikzlibrary{arrows.meta}
-
 

@@ -1,1 +1,10 @@
-Матстат конспект/*
+*.orig
+*.out
+*.aux
+*.fdb_latexmk
+*.fls
+*.log
+*.gz
+*.toc
+/TV\&MS.fls
+Матстат конспект/
