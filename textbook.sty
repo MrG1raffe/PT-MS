@@ -254,7 +254,9 @@
 \renewcommand{\phi}{\varphi}
 \renewcommand{\kappa}{\varkappa}
 \renewcommand{\geq}{\geqslant}
+\renewcommand{\ge}{\geqslant}
 \renewcommand{\leq}{\leqslant}
+\renewcommand{\le}{\leqslant}
 \renewcommand{\emptyset}{\varnothing}
 
 % Меняем нумерацию для уравнений
@@ -312,12 +314,15 @@
 \usepackage{cancel} %  зачеркивать
 \usepackage{tikz} % рисуночки
 
-% Это зачем? - науке неизвестно
+% Для всяких диаграм и графиков
 
 \usepackage{pb-diagram}
 \usepackage{pgfplots}
 \usepackage{caption}
+
+\usetikzlibrary{intersections}
 \usetikzlibrary{arrows,decorations.pathmorphing,backgrounds,positioning,fit,petri}
-\usepgflibrary{arrows.meta}
 \usetikzlibrary{arrows.meta}
+\usepgflibrary{arrows.meta}
+\usepgfplotslibrary{fillbetween}
 
