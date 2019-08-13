@@ -175,7 +175,8 @@
 
 \usepackage[normalem]{ulem} % uline
 \makeatletter
-\newcommand\colordashline[1][red!70]{\bgroup \markoverwith{\lower3.5\p@\hbox{\uwavefont \textcolor{#1}{\char58}}}\ULon}
+\newcommand\colordashline[1][red!70]{\bgroup \markoverwith{\lower4.8\p@\hbox{\sixly\textcolor{#1}{\char58}}}\ULon}
+\font\sixly=lasyb10 scaled 900
 \makeatother
 
 \newcommand{\mdef}[1]{\emph{\colordashline{#1}}}
@@ -218,7 +219,7 @@
 \usepackage{bbm} % для индикатора
 
 % Equal with def above
-\newcommand\myeq{\mathrel{\overset{\makebox[0pt]{\mbox{\normalfont\tiny def}}}{=}}}
+\newcommand\myeq{\mathrel{\overset{\makebox[0pt]{\mbox{\normalfont\scriptsize def}}}{=}}}
 
 % Сокращения
 
