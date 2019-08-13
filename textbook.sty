@@ -73,7 +73,7 @@
 []
 
 % Глубина отображения
-\setcounter{tocdepth}{1}
+\setcounter{tocdepth}{2}
 
 
 %---------------------------------------------------------------------------------
@@ -86,7 +86,7 @@
 \usepackage{graphicx}
 \usepackage{eso-pic}
 \usepackage{transparent}
-\AddToShipoutPictureBG{{\transparent{0.1}
+\AddToShipoutPictureBG{{\transparent{0.2}
   \begin{tikzpicture}[remember picture,overlay]
 \node [xshift=0cm, yshift=0cm] at (current page.center) 
     {\includegraphics[width=\paperwidth]{back}};
@@ -128,7 +128,7 @@
   \fancyhead[C]{\rightmark}%
   \fancyfoot[C]{-\ \texttt{\thepage}\ -}%
   \renewcommand{\headrulewidth}{0.4pt}%
-  \renewcommand{\footrulewidth}{0.4pt}%
+  \renewcommand{\footrulewidth}{0pt}%
 }
 \fancypagestyle{plain}{%
   \fancyhf{}%
@@ -170,21 +170,16 @@
 }
 
 \usetikzlibrary{patterns}
-\def\mybox{
-\begin{tikzpicture}
-    \pattern[pattern=north east lines, pattern color=orange] 
-    (0,0)--(0,0.1)--(0.1,0.1)--(0.1,0)--cycle;
-    \pattern[pattern=north east lines, pattern color=orange] 
-    (0,0.2)--(0,0.3)--(0.1,0.3)--(0.1,0.2)--cycle;
-\end{tikzpicture}}
+
+\font\uwavefont=lasyb10 scaled 652
 
 \usepackage[normalem]{ulem} % uline
 \makeatletter
-\newcommand\colordashline[1][cyan!70]{\bgroup \markoverwith{\lower3.5\p@\hbox{\sixly \textcolor{#1}{\char58}}}\ULon}
-\font\sixly=lasy6
+\newcommand\colordashline[1][red!70]{\bgroup \markoverwith{\lower4.8\p@\hbox{\sixly\textcolor{#1}{\char58}}}\ULon}
+\font\sixly=lasyb10 scaled 900
 \makeatother
 
-\newcommand{\mdef}[1]{\emph{\colordashline{\mybox~#1~\mybox\,}}}
+\newcommand{\mdef}[1]{\emph{\colordashline{#1}}}
 
 
 % Math Environments
@@ -203,7 +198,7 @@
 \usepackage{graphicx}
 
 \newenvironment{Wtf}{\par\noindent\textbf{ЧО?!\;}}{}
-\newenvironment{Why}{\par\noindent\textbf{Зочем?}}{}
+\newenvironment{Why}{\par\noindent\textbf{Зочем?\;}}{}
 \newenvironment{Note}{\par\noindent{\bf Замечание}}{}
 
 % For fancy enumerate
@@ -222,6 +217,9 @@
 \usepackage{amsmath}
 
 \usepackage{bbm} % для индикатора
+
+% Equal with def above
+\newcommand\myeq{\mathrel{\overset{\makebox[0pt]{\mbox{\normalfont\scriptsize def}}}{=}}}
 
 % Сокращения
 
@@ -254,7 +252,9 @@
 \renewcommand{\phi}{\varphi}
 \renewcommand{\kappa}{\varkappa}
 \renewcommand{\geq}{\geqslant}
+\renewcommand{\ge}{\geqslant}
 \renewcommand{\leq}{\leqslant}
+\renewcommand{\le}{\leqslant}
 \renewcommand{\emptyset}{\varnothing}
 
 % Меняем нумерацию для уравнений
@@ -312,12 +312,15 @@
 \usepackage{cancel} %  зачеркивать
 \usepackage{tikz} % рисуночки
 
-% Это зачем? - науке неизвестно
+% Для всяких диаграм и графиков
 
 \usepackage{pb-diagram}
 \usepackage{pgfplots}
 \usepackage{caption}
+
+\usetikzlibrary{intersections}
 \usetikzlibrary{arrows,decorations.pathmorphing,backgrounds,positioning,fit,petri}
-\usepgflibrary{arrows.meta}
 \usetikzlibrary{arrows.meta}
+\usepgflibrary{arrows.meta}
+\usepgfplotslibrary{fillbetween}
 
