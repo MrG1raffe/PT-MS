@@ -171,10 +171,11 @@
 
 \usetikzlibrary{patterns}
 
+\font\uwavefont=lasyb10 scaled 652
+
 \usepackage[normalem]{ulem} % uline
 \makeatletter
-\newcommand\colordashline[1][orange!70]{\bgroup \markoverwith{\lower3.5\p@\hbox{\sixly \textcolor{#1}{\char58}}}\ULon}
-\font\sixly=lasy6
+\newcommand\colordashline[1][red!70]{\bgroup \markoverwith{\lower3.5\p@\hbox{\uwavefont \textcolor{#1}{\char58}}}\ULon}
 \makeatother
 
 \newcommand{\mdef}[1]{\emph{\colordashline{#1}}}
