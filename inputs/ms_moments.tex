@@ -1,0 +1,99 @@
+\documentclass[../TV&MS.tex]{subfiles}
+\begin{document}
+
+\newpage
+
+\section{Выборочные моменты}
+
+Все с детского садика знают, что чтобы посчитать что-то среднее,
+надо сложить все вместе и поделить на количество.
+А почему это так работает? Сейчас будем выяснять.
+Вводные такие: есть функция распределения $F(x)$, и из неё нам нагенерировали
+выборку $\Smpl = \left( X_1,\ldots X_n \right)$.
+Пусть для этого распределения существуют матожидание и дисперсия:
+\begin{equation}
+    a \myeq \int\limits_{-\infty}^{\infty} x\,dF(x),
+\end{equation}
+\begin{equation}
+    \sigma^2 \myeq \int\limits_{-\infty}^{\infty} x^2\,dF(x) - a^2.
+\end{equation} 
+
+Теперь введём понятия выборочного среднего и выборочной дисперсии.
+\begin{Def}\label{ms:m:def:sampleMean}
+    \mdef{Выборочным средним} называется
+    $\displaystyle \overline{X} \myeq \frac{1}{n} \sum\limits_{i=1}^{n} X_i$.
+\end{Def} 
+\begin{Def}\label{ms:m:def:sampleVar}
+    \mdef{Выборочной дисперсией} называется
+    $\displaystyle S^2 \myeq \frac{1}{n} \sum\limits_{i=1}^{n} \left( X_i - \overline{X} \right)^2$.
+\end{Def} 
+
+Теперь исследуем, каким образом выборочное среднее приближаем матожидание.
+Переформулировав усиленный закон больших чисел, получаем:
+
+\begin{equation}
+    \overline{X} \xrightarrow[n\rightarrow\infty]{\text{п.н.}} \Expec X_i
+.\end{equation} 
+
+Собственно, на этом мои полномочия всё.
+Про именно матожидание больше ничего интересного нет, будем ковырять дисперсию.
+Посчитаем $\Expec S^2$:
+
+\begin{multline}
+    \Expec S^2
+    = \Expec \left[ \frac{1}{n} \sum\limits_{i=1}^{n} \left( X_i - \overline{X} \right)^2 \right]
+    = \frac{1}{n}  \sum\limits_{i=1}^{n} \Expec \left( X_i - a + a - \overline{X} \right)^2 = \\
+    = \frac{1}{n} \sum\limits_{i=1}^{n} \Expec \left( X_i - a \right)^2
+    -\frac{2}{n} \sum\limits_{i=1}^{n} \Expec \left( X_i - a \right)\left( \overline{X} - a \right)
+    + \frac{1}{n} \sum\limits_{i=1}^{n} \Expec \left( \overline{X} - a \right)^2 = \\
+    = \sigma^2
+    - 2\Expec \left[ \left( \frac{1}{n}\sum\limits_{i=1}^{n}X_i - a\right) \left( \overline{X} - a \right) \right]
+    + \Expec\left(\overline{X} - a\right)^2 =\\
+    = \sigma^2 - \Expec \left( \overline{X} - a \right)^2 
+    = \left\{ \text{\parbox{1.7cm}{\footnotesize 2-е слагаемое~---~дисперсия}} \right\}
+    = \sigma^2 - \Disp\overline{X}=\\
+    = \left\{ \text{\parbox{4cm}{\footnotesize Для норсв дисперсия суммы равна сумме дисперсий и константа выносится с квадратом.}} \right\}
+    = \sigma^2 - \frac{1}{n^2} \Disp\left[\sum\limits_{i=1}^{n} X_i\right]
+    = \sigma^2 - \frac{1}{n} \sigma^2 = \frac{n-1}{n} \sigma^2
+\end{multline} 
+
+О как. Немного флекса и мы получили так называемую смещенную оценку дисперсии.
+Наша оценка стабильно врет в $\frac{n-1}{n}$ раз.
+Поэтому мы её немного поправим и получим
+
+\begin{Def}
+    \mdef{Исправленной (несмещенной) выборочной дисперсией} называется
+    $$\overline{S}^2 \myeq \frac{1}{n-1} \sum\limits_{i=1}^{n} (X_i - \overline{X})^2.$$
+\end{Def} 
+
+\begin{Wtf}
+    Тут можно запутаться и забыть, там минус один или плюс. Поясним.
+    Если выборка состоит из одного элемента, то говорить об \textit{отклонении}
+    (а дисперсия~---~это среднеквадратичное отклонение от среднего) не по понятиям.
+    Поэтому формула и не работает, когда $n=1$.
+    А вообще этот $n-1$ в знаменателе лезет везде, где мы пытаемся оценить
+    что-то, что выглядит как дисперсия или по смыслу напоминает дисперсию.
+\end{Wtf} 
+
+Теперь надо успеть рассмотреть выборочные моменты до того, как поедет кукуха.
+Обозначим $\mu_k \myeq \Expec X_i^{k}$ и попробуем их приблизить.
+
+\begin{Def}
+    \mdef{Выборочным моментом $k$-го порядка} называется число
+    \[
+        m_k \myeq \frac{1}{n}\sum\limits_{i=1}^{n} X_i^{k}
+    .\] 
+\end{Def} 
+
+Тут уже мы не будем особо ковыряться во всём этом безобразии и просто запишем ЦПТ, откуда уже можно получить примерное выражение для вероятности $\Pro\left( m_k < x \right)$.
+Естественно, матожиданием выборочного момента является теоретический момент.
+
+\begin{equation}
+    \frac{\sqrt{n}(m_k - \mu_k)}{\sqrt{\Disp X_i^{k}}}
+    = \frac{\sum\limits_{i=1}^{n} X_i^{k} - n\mu_k}{\sqrt{n(\mu_{2k} - \mu_k^2)}} \xrightarrow{d}
+    \Norm(0, 1)
+.\end{equation} 
+
+\newpage
+
+\end{document} 

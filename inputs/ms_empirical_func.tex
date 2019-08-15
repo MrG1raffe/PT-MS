@@ -41,49 +41,6 @@ $X_{(k)} < x$ тогда и только тогда, когда хотя бы $k
     \end{equation}   
 \end{Def}
 
-\begin{figure}
-    \centering
-    \begin{tikzpicture}
-        \begin{axis}[
-                xmin=-3,
-                xmax=3,
-                legend pos = outer north east,
-                legend style = {fill=none}
-            ]
-            \addplot[
-                const plot mark right,
-                mark=o,
-                blue
-            ] table {data/ms_emp_func_sample.dat};
-            \addlegendentry{Выборочная ф.р.}
-            \addplot[
-                mark=none,
-                red,
-                smooth
-            ] table {data/ms_normal_distr_func.dat};
-            \addlegendentry{Истинная ф.р.}
-            \addplot[
-                const plot mark right,
-                green,
-                name path = upper 
-                ] table {data/ms_sample_upper.dat};
-            \addplot[
-                const plot mark right,
-                green,
-                name path = lower
-                ] table {data/ms_sample_lower.dat};
-            \addplot [green!20] fill between [
-                    of = lower and upper,
-                    soft clip = {domain = -4:4}
-                ];
-            \addlegendentry{См. зам. к~т.~\ref{ms:ef:th:kolmogorov}}
-        \end{axis} 
-    \end{tikzpicture} 
-    \caption{Эмпирическая и истинная функции распределения.
-    В качестве примера взята выборка размера $25$ из стандартного нормального распределения.}
-    \label{ms:ef:fig:sample}
-\end{figure} 
-
 Выборочная функция распределения приближает истинную функцию распределения.
 Смысл, в котором эмпирическая функция приближает истинную, раскрывается в пачке следующих теорем и утверждений.
 
@@ -153,6 +110,52 @@ $X_{(k)} < x$ тогда и только тогда, когда хотя бы $k
     получаем утверждение теоремы.
 \end{Proof} 
 
+\begin{figure}
+    \centering
+    \begin{tikzpicture}
+        \begin{axis}[
+                area legend,
+                xmin=-3,
+                xmax=3,
+                legend pos = outer north east,
+                legend style = {fill=none}
+            ]
+            \addplot[
+                line legend,
+                const plot mark right,
+                mark=o,
+                blue
+            ] table {data/ms_emp_func_sample.dat};
+            \addlegendentry{Выборочная ф.р.}
+            \addplot[
+                line legend,
+                mark=none,
+                red,
+                smooth
+            ] table {data/ms_normal_distr_func.dat};
+            \addlegendentry{Истинная ф.р.}
+            \addplot[
+                const plot mark right,
+                green,
+                name path = upper 
+                ] table {data/ms_sample_upper.dat};
+            \addplot[
+                const plot mark right,
+                green,
+                name path = lower
+                ] table {data/ms_sample_lower.dat};
+            \addplot [green!20] fill between [
+                    of = lower and upper,
+                    soft clip = {domain = -4:4}
+                ];
+            \addlegendentry{См. зам. к~т.~\ref{ms:ef:th:kolmogorov}}
+        \end{axis} 
+    \end{tikzpicture} 
+    \caption{Эмпирическая и истинная функции распределения.
+    В качестве примера взята выборка размера $25$ из стандартного нормального распределения.}
+    \label{ms:ef:fig:sample}
+\end{figure}
+
 Хорошо. Вот мы выяснили, что все хорошо и выборочная ф.р. благополучно сходится к теоретической.
 Но сразу встает вопрос, а вот какой размер выборки мы можем считать достаточным?
 Иными словами, нам интересна не только сам факт сходимости, но и скорость сходимости эмпирической ф.р. к теоретической.
@@ -175,7 +178,7 @@ $X_{(k)} < x$ тогда и только тогда, когда хотя бы $k
 \begin{multline}
     \Pro \left( D_n < x \right) = 
     \Pro \left( \sup\limits_y \bigl| F_n(y) - F(y) \bigr| < x \right) = \\
-    = \left\{ \text{\parbox{5cm}{
+    = \left\{ \text{\parbox{4cm}{\footnotesize
             Считаем, что $F(x)$ непрерывна и строго монотонна и полагаем
             $y = F^{-1}(z)$
     }} \right\}
