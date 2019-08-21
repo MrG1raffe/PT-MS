@@ -1,0 +1,105 @@
+\documentclass[../TV&MS.tex]{subfiles}
+\begin{document}
+    
+\section{Параметрическая статистика. Оценки}
+
+\subsection{Определения}
+
+Сначала вспомним, что есть такая штука, как статистическая структура
+$\left( \Real^{n}, \Bor^{n}, \mathcal{P} \right)$.
+Теперь немного уточним, что представляет собой $\mathcal{P}$.
+В точечных оценках и в доверительных интервалах мы будем считать,
+что $\mathcal{P} = \Pro_\theta$.
+То есть мы считаем, что наша семейство распределений параметризовано каким-то векторным параметром $\theta \in \Theta \subset \Real^{m}$.
+Например, $\Pro_\theta = \Norm\left( \theta_1, \theta_2^2 \right)$,
+тогда пространство параметров $\Theta = (-\infty, \infty) \times (0, \infty)$.
+Теперь, собственно, каким образом мы будем это оценивать.
+
+\begin{Def}\label{ms:e:def:stat}
+    \mdef{Статистикой} называется любая измеримая вектор-функция от выборки, не зависящая от $\theta$.
+    \[
+        T(\Smpl) = \bigl( T_1(\Smpl),\ldots, T_n(\Smpl) \bigr)^{T} \colon \Real^{n} \mapsto \Real^{m}
+    .\] 
+\end{Def} 
+
+\begin{Def}\label{ms:e:def:estimate}
+    \mdef{Оценкой} называется статистика, множество значений которой совпадает с $\Theta$
+\end{Def} 
+
+\begin{Def}\label{ms:e:def:unbiased}
+    Оценка называется \mdef{несмещённой}, если $\Expec T(\Smpl) = \theta$.
+\end{Def} 
+
+\begin{Def}\label{ms:e:def:consistent}
+    Оценка называется \mdef{состоятельной}, если $T(\Smpl) \xrightarrow[n\rightarrow \infty]{\Pro_\theta} \theta \quad \forall \theta \in \Theta$.
+    Оценка называется \mdef{сильно состоятельной}, если сходимость почти наверное.
+\end{Def} 
+
+Теперь надо примеров каких-нибудь накидать.
+
+\subsection{Примеры}
+
+\begin{Ex}
+    В предыдущем парагафе мы ввели выборочное среднее (см. опр.~\ref{ms:m:def:sampleMean}).
+    Пройдемся по каждому из этих 4-х пунктов, если положить $T(\Smpl) = \overline{X}$, а $\theta$ имеет смысл матожидания.
+    \begin{enumerate}
+        \item \textbf{Измеримость.} Да, выборочное среднее измеримо как композиция сложения и деления, а эти функции являются измеримыми.
+        \item \textbf{Множество значений.} Тут мы можем выстрелить себе в ногу или в какое другое место и искусственно ввести ограничение на пространоство параметров, но зачем? 
+            Если не вводить никаких дурацких ограничений (например, оцениваем МО выборки из нормального распределения, но говорим, что МО обязательно не меньше 300), то все ОК.
+        \item \textbf{Несмещённость.} 
+            \[
+                \Expec \overline{X} = \frac{1}{n}\sum\limits_{i=1}^{n} \Expec X_i = \Expec X_i
+            \] 
+            Следовательно, оценка является несмещённой.
+        \item \textbf{Состоятельность} сразу следует из ЗБЧ, а сильная состоятельность~---~из УЗБЧ.
+    \end{enumerate} 
+\end{Ex} 
+
+\begin{Ex}
+    Чуть менее подробно рассмотрим выборочную дисперсию $\sigma^2$ (см. опр.~\ref{ms:m:def:sampleVar}).
+    $T(\Smpl) = S^2 = \frac{1}{n}\sum\limits_{i=1}^{n} (X_i - \overline{X})^2$.
+    Как было показано ранее~\eqref{ms:m:eq:biasedVar}, $T(\Smpl)$ не является несмещённой оценкой, но является состоятельной и даже сильно состоятельной.
+    Хочется не париться и сказать, что вот здесь~\eqref{ms:m:eq:biasedVar} $\frac{n-1}{n}\sigma^2 \rightarrow \sigma^2$, но не тут-то было.
+    Там мы считали матожидание оценки, а нам нужна сходимость самой оценки.
+    Тогда может к той сумме прикрутить УЗБЧ и всё получится?
+    Снова нет, так как в УЗБЧ мы генерировали значения из одного распределения, а тут для разных $n$ случайная величина $\left( X_i - \overline{X} \right)^2$, возможно, будет распределена по-разному ($\overline{X}$ зависит от $n$).
+    УЗБЧ тут применить можно, но не сразу, надо сначала немного повертеть буквами. 
+    Из этой~\eqref{ms:m:eq:biasedVar} выкладки следует, что:
+    \begin{multline}
+        S^2 = \frac{1}{n}\sum\limits_{i=1}^{n} \left(X_i - a\right)^2 -
+        \left(\overline{X} - a\right)^2
+        = \frac{1}{n}\sum\limits_{i=1}^{n}\left( X_i - a \right)^2 -
+        \left(\frac{1}{n}\sum\limits_{i=1}^{n} X_i - a \right)^2
+        \xrightarrow[n\rightarrow \infty]{\text{п.н.}} \\
+        \xrightarrow[n\rightarrow \infty]{\text{п.н.}}
+        \Expec \left( X_i - a \right)^2 - (a - a)^2
+        = \Disp X_i
+    .\end{multline} 
+    Как-то так.
+    Из простейших свойств пределов (не, ну тут правда очевидно) следует,
+    что исправленная (несмещённая) выборочная дисперсия также является состоятельной оценкой теоретической дисперсии.
+\end{Ex} 
+
+\begin{Ex}
+    Последнее, что хотелось бы тут рассмотреть и поковырять~---~несмещённую, но не состоятельную оценку.
+    Тут придётся натянуть сову на глобус и рассмотреть выборку из $\Norm(a, 1)$ и оценку матожидания $T(\Smpl) = \frac{n-1}{n}X_1 + \frac{1}{n(n-1)}\sum\limits_{i=2}^{n} X_i$.
+    Докажем несмещённость:
+    \begin{equation}
+        \Expec T(\Smpl) = \frac{n-1}{n} \Expec X_1 + \frac{1}{n} \Expec X_i = 
+        \frac{n-1}{n}a + \frac{1}{n}a = a
+    .\end{equation}
+    Снова воспользовались нашим любимым ЗБЧ. А теперь несостоятельность:
+    \begin{multline}
+        \Pro \bigl( \left\lvert T(\Smpl) - a \right\rvert < \epsilon \bigr)
+        = \Pro\left( \left\lvert \frac{n-1}{n}(X_1 - a) +
+        \frac{1}{n(n-1)}\sum\limits_{i=2}^{n} (X_i - a) \right\rvert<\epsilon\right) =\\
+        = \Pro \bigl( \left\lvert X_i - a \right\rvert < \epsilon \bigr) = 
+        \Phi(\epsilon) - \Phi (-\epsilon) \cancel{\xrightarrow[n\rightarrow \infty]{}} 0
+    .\end{multline} 
+    Мы воспользовалить тем, что $X_i$ одинаково распределены, а потом тем,
+    что $(X_i - a) \sim \Norm(0, 1)$, и подставили соответствующую вероятность.
+\end{Ex} 
+
+\newpage
+
+\end{document} 
