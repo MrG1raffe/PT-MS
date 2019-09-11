@@ -1,104 +1,587 @@
 \documentclass[../TV&MS.tex]{subfiles}
 \begin{document}
     
-\section{Испытания Бернулли}
+\section{Распределения и предельные теоремы}
+
+\subsection{Распределение Бернулли}
 
 \begin{Def}
-Дискретная случайная величина $\xi$ имеет \uline{распределение Бер\-нулли}, если
-$$ \Pro(\xi = x_1) = p,\ \Pro(\xi = x_2) = q = 1 - p, \quad x_1 \not= x_2$$
+	Дискретная случайная величина $\xi$ имеет \mdef{распределение Бернулли}, если
+$$ 
+	\Pro(\xi = x_1) = p,\ \Pro(\xi = x_2) = q = 1 - p, \quad x_1 \not= x_2.
+$$
 \end{Def}
 
 \begin{Def}
-\underline{Схема Бернулли} --- последовательность испытаний, удовлетворяющих следующим условиям:
+	\mdef{Схема Бернулли} --- последовательность испытаний, 
+	удовлетворяющих следующим условиям:
 \begin{enumerate}
-	\item Дихотомичность --- у каждого испытания два исхода, называемые <<успехом>> и <<неудачей>> или, сокращенно У/Н.
+	\item Дихотомичность --- у каждого испытания два исхода, 
+	называемые <<успехом>> и <<неудачей>> или, сокращенно У/Н.
+	
 	\item Независимость --- результаты испытаний являются независимыми событиями.
+
 	\item Однородность --- вероятности успеха в каждом испытании равны.
 \end{enumerate}
 \end{Def}
 
-Из определения следует, что одно испытание имеет распределение Бернулли. Элементарным исходом в схеме Бернулли из $n$ испытаний будет являться
-$$\omega = (x_1, x_2, \ldots, x_n),$$
-где $x_i$ --- результат испытания $i$. Пусть в элементарном исходе $k$ успехов. Тогда
-$$\Pro(\omega) = p^kq^{n-k}$$
+	Из определения следует, что одно испытание имеет распределение Бернулли. 
+	Элементарным исходом в схеме Бернулли из $n$ испытаний будет являться
+	$$\omega = (x_1, x_2, \ldots, x_n),$$
+	
+	\noindent где $x_i$ --- результат испытания $i$. Пусть в элементарном исходе 
+	$k$ успехов. Тогда
+	$$\Pro(\omega) = p^kq^{n-k}.$$
 
-Покажем, что веорятность, введенная таким образом, удовлетворяет всем аксиомам вероятностной меры. Неочевидной здесь является только проверка нормировки, то есть надо доказать, что
-$$ \sum\limits_{\omega}\Pro(\omega) = 1$$
-Для этого просуммируем все исходы по числу успехов (обозначим $\mu_n$).
-$$ \sum\limits_{\omega}\Pro(\omega) = \sum\limits_{k = 0}^n\sum\limits_{\omega\colon\mu_n=k}\Pro(\omega) = \sum\limits_{k = 0}^n\sum\limits_{\omega\colon\mu_n=k}p^kq^{n-k} = 
-\sum\limits_{k = 0}^nC_n^kp^kq^{n-k} = (p+q)^n = 1$$
+	Покажем, что вероятность, введенная таким образом, удовлетворяет всем аксиомам 
+	вероятностной меры. Не очевидной здесь является только проверка нормировки, 
+	то есть надо доказать, что
+	$$\sum\limits_{\omega}\Pro(\omega) = 1.$$
 
-Рассмотрим теперь некоторые важные распределения, связанные со схемой Бернулли.
+	Для этого просуммируем все исходы по числу успехов (обозначим $\mu_n$)
+	$$\sum\limits_{\omega}\Pro(\omega) = \sum\limits_{k = 0}^n
+	\sum\limits_{\omega\colon\mu_n=k}\Pro(\omega) = \sum\limits_{k = 0}^n
+	\sum\limits_{\omega\colon\mu_n=k}p^kq^{n-k} = 
+	\sum\limits_{k = 0}^nC_n^kp^kq^{n-k} = (p+q)^n = 1.$$
 
-Уже рассмотренная величина $\mu_n$, равная числу успехов в $n$ испытаниях Бернулли, является случайной величиной с распределением
-$$\forall k = 0, 1, \ldots, n \quad \Pro(\mu_n=k) = C_n^kp^kq^{n-k}$$
-Это следует из того, что исходов с $k$ успехами ровно $C_n^k$, а вероятность каждого равна $p^kq^{n-k}$.
-Такое распределение называется \underline{биномиальным} и обозначается $Bi(n,p)$.
+	Рассмотрим теперь некоторые важные распределения, связанные со схемой Бернулли.
 
-Рассимотрим случайные величины $X_i = \Ind(A_i)б \quad i = 1, \ldots, n$, где $A_i$ --- успех в $i$-м испытании. Каждая такая величина имеет распределение Бернулли.
-Тогда число успехов можно представить так:
-$$\mu_n = \sum\limits_{i=1}^nX_i$$
+	Уже рассмотренная величина $\mu_n$, равная числу успехов в $n$ испытаниях Бернулли, 
+	является случайной величиной с распределением
+	$$\forall k = 0, 1, \ldots, n \quad \Pro(\mu_n=k) = C_n^kp^kq^{n-k}.$$
 
-Найдем матожидание и дисперсию $\mu_n$.
-$$\Expec\mu_n = \Expec\sum\limits_{i=1}^nX_i = \sum\limits_{i=1}^n\Expec X_i = \sum\limits_{i=1}^n(1p + 0 q) = np$$
-$$\Expec X_i^2 = 1p+0q = p$$
-$$\Disp X_i = \Expec X_i^2 - (\Expec X_i)^2 = p - p^2 = pq$$
-В силу независимости испытаний дисперсия линейна относительно сложения
-$$\Disp \mu_n = \Disp\sum\limits_{i=1}^n  X_i  =\sum\limits_{i=1}^n  \Disp X_i = \sum\limits_{i=1}^n pq = npq$$
+	Это следует из того, что исходов с $k$ успехами ровно $C_n^k$, а вероятность 
+	каждого равна $p^kq^{n-k}$. Такое распределение называется \emph{биномиальным} и 
+	обозначается $Bi(n,p)$.
+
+	Рассмотрим случайные величины $X_i = \Ind(A_i)б \quad i = 1, \ldots, n$, где 
+	$A_i$ --- успех в $i$-м испытании. Каждая такая величина имеет распределение 
+	Бернулли. Тогда число успехов можно представить так:
+	$$\mu_n = \sum\limits_{i=1}^nX_i.$$
+
+	Найдем матожидание и дисперсию $\mu_n$
+	$$\Expec\mu_n = \Expec\sum\limits_{i=1}^nX_i = \sum\limits_{i=1}^n\Expec X_i = 
+	\sum\limits_{i=1}^n(1p + 0 q) = np,$$
+	$$\Expec X_i^2 = 1p+0q = p,$$
+	$$\Disp X_i = \Expec X_i^2 - (\Expec X_i)^2 = p - p^2 = pq.$$
+	
+	В силу независимости испытаний дисперсия линейна относительно сложения
+	$$\Disp \mu_n = \Disp\sum\limits_{i=1}^n  X_i  =\sum\limits_{i=1}^n  \Disp X_i = 
+	\sum\limits_{i=1}^n pq = npq.$$
 
 \begin{Th} [Бернулли]
-Для случайной величины с распределением $Bi(n,p)$
-$$\Pro\left(\left|\frac{\mu_n}{n} - p\right| \geqslant \varepsilon\right) \leqslant \frac{npq}{n^2\varepsilon^2}$$
+	Для случайной величины с распределением $Bi(n,p)$
+	$$\Pro\left(\left|\frac{\mu_n}{n} - p\right| \geqslant \varepsilon\right) 
+	\leqslant \frac{npq}{n^2\varepsilon^2}.$$
 \end{Th}
-\begin{Proof} \\
-Домножим обе части неравенства на $n$ и воспользуемся неравенством Чебышева:
-$$\Pro(|\mu_n - pn| \geqslant n\varepsilon) \leqslant \frac{\Disp(\mu_n)}{(n\varepsilon)^2} = \frac{npq}{n^2\varepsilon^2}$$
+
+\begin{Proof}
+	Домножим обе части неравенства на $n$ и воспользуемся неравенством Чебышева:
+	$$\Pro(|\mu_n - pn| \geqslant n\varepsilon) \leqslant 
+	\frac{\Disp(\mu_n)}{(n\varepsilon)^2} = \frac{npq}{n^2\varepsilon^2}.$$
 \end{Proof}
 
-Пусть $f(x) \in C[0, 1]$.
+\subsection{Многочлен Бернштейна}
+
+	Пусть $f(x) \in C[0, 1]$.
 \begin{Def}
-\underline{Многочленом Бернштейна} называется функция 
-$$ B_n(x, f) = \Sum{k}{0}{n}C_n^kx^k(1-x)^{n-k}f\left(\frac{k}{n}\right), \quad x \in [0, 1]$$
+	\mdef{Многочленом Бернштейна} называется функция 
+	$$B_n(x, f) = \Sum{k}{0}{n}C_n^kx^k(1-x)^{n-k}f\left(\frac{k}{n}\right), 
+	\quad x \in [0, 1].$$
 \end{Def}
-Заметим, что $B_n(x, f) = \Expec f(\frac{\mu_n}n),\quad  \mu_n \sim Bi(n, x)$. (запись $\xi \sim$ *destrname*  означает, что случайная величина $\xi$ имеет распределение *destrname*).
+
+	Заметим, что $B_n(x, f) = \Expec f(\frac{\mu_n}n),\quad  \mu_n \sim Bi(n, x)$. 
+	(запись $\xi \sim$ *destrname*  означает, что случайная величина $\xi$ имеет 
+	распределение *destrname*).
 
 \begin{St}
-$$B_n(x, f) \rightrightarrows f(x), \quad x \in [0,1]$$
+	$$B_n(x, f) \rightrightarrows f(x), \quad x \in [0,1].$$
 \end{St}
-\begin{Proof} \\
-Пользуясь тем, что $\sum\limits_{k = 0}^nC_n^kx^k(1-x)^{n-k} = 1$ получим
+
+\begin{Proof}
+	Пользуясь тем, что $\sum\limits_{k = 0}^nC_n^kx^k(1-x)^{n-k} = 1$ получим
 \begin{multline*}
-    |B_n(x, f) - f(x)| = \left|\sum\limits_{k = 0}^nC_n^kx^k(1-x)^{n-k}f\left(\frac{k}n\right) -
-    \sum\limits_{k = 0}^nC_n^kx^k(1-x)^{n-k}f(x)\right| \leqslant \\
-\sum\limits_{k = 0}^nC_n^kx^k(1-x)^{n-k}\left|f\left(\frac{k}n\right) - f(x)\right|
+    |B_n(x, f) - f(x)| = \left|\sum\limits_{k = 0}^nC_n^kx^k(1-x)^{n-k}f
+    \left(\frac{k}n\right) - \sum\limits_{k = 0}^nC_n^kx^k(1-x)^{n-k}f(x)\right| 
+    \leqslant \\ \sum\limits_{k = 0}^nC_n^kx^k(1-x)^{n-k}
+    \left|f\left(\frac{k}n\right) - f(x)\right|.
 \end{multline*}
-Разобьем данную сумму на две:
-$$\Sum{k}{0}{n} = \sum\limits_{|\frac{k}n - x| < \delta} + \sum\limits_{|\frac{k}n - x| \ge \delta}$$
-Выберем $\delta$ так, чтобы первая сумма была меньше $\frac{\varepsilon}2$. Это всегда можно сделать, так как функция $f(x)$ непрерывна, а 
-$\sum\limits_{|\frac{k}n - x| < \delta}C_n^kx^k(1-x)^{n-k} \leqslant 1$.
-Во второй сумме ограничим модуль числом $M = 2\sup\limits_{[0,1]} f(x)$ (1-я теорема Вейерштрасса), а к оставшейся сумме применим неравенство Чебышева, поскольку она равна вероятности 
-$\Pro(|\mu_n - nx| \geqslant n\delta)$. 
-$$\sum\limits_{|\frac{k}n - x| \geqslant \delta}\ldots \leqslant 2M\sum\limits_{|\frac{k}n - x| \geqslant \delta}C_n^kx^k(1-x)^{n-k} \leqslant 2M\frac1{n\delta^2}$$
-Выбором $n$ сделаем вторую сумму меньше $\frac{\varepsilon}2$, доказав, тем самым, равномерную сходимость.
+	Разобьем данную сумму на две:
+	$$\Sum{k}{0}{n} = \sum\limits_{|\frac{k}n - x| < \delta} + 
+	\sum\limits_{|\frac{k}n - x| \ge \delta}.$$
+	
+	Выберем $\delta$ так, чтобы первая сумма была меньше $\frac{\varepsilon}2$. 
+	Это всегда можно сделать, так как функция $f(x)$ непрерывна, а 
+	$\sum\limits_{|\frac{k}n - x| < \delta}C_n^kx^k(1-x)^{n-k} \leqslant 1$.
+	Во второй сумме ограничим модуль числом $M = 2\sup\limits_{[0,1]} f(x)$ 
+	(1-я теорема Вейерштрасса), а к оставшейся сумме применим неравенство Чебышева, 
+	поскольку она равна вероятности $\Pro(|\mu_n - nx| \geqslant n\delta)$. 
+	$$\sum\limits_{|\frac{k}n - x| \geqslant \delta}\ldots \leqslant 
+	2M\sum\limits_{|\frac{k}n - x| \geqslant \delta}C_n^kx^k(1-x)^{n-k} 
+	\leqslant 2M\frac1{n\delta^2}.$$
+	
+	Выбором $n$ сделаем вторую сумму меньше $\frac{\varepsilon}2$, 
+	доказав, тем самым, равномерную сходимость.
 \end{Proof}
 
-Пусть в схеме Бернулли с вероятностью успеха $0 < p \leqslant 1$ величина $\eta$ равна номеру первого успеха. $\eta$ является случайной величиной, принимающей натуральные значения. Найдем распределение $\eta$: серия, в которой первый успех появляется в $k$-м испытании выглядит так: НН...НУ. Отсюда
-$$\forall k \in \Nat \quad \Pro(\eta = k) = (1-p)^{k-1}p = q^{k-1}p $$
-Так как $\Omega = \Set{\omega_k = \underbrace{0\ldots0}_k1}{k \in \Nat}$, то 
-$$\Sum{k}{1}{n}\Pro(\omega_k) = \Sum{k}{1}{n} p(1-p)^{k-1} = 1$$
-Такое распределение называется \underline{геометрическим с параметром $p$}.
+	Пусть в схеме Бернулли с вероятностью успеха $0 < p \leqslant 1$ величина 
+	$\eta$ равна номеру первого успеха. $\eta$ является случайной величиной, 
+	принимающей натуральные значения. Найдем распределение $\eta$: серия, 
+	в которой первый успех появляется в $k$-м испытании выглядит так: НН...НУ. Отсюда
+	$$\forall k \in \Nat \quad \Pro(\eta = k) = (1-p)^{k-1}p = q^{k-1}p.$$
+	
+	Так как $\Omega = \Set{\omega_k = \underbrace{0\ldots0}_k1}{k \in \Nat}$, то 
+	$$\Sum{k}{1}{n}\Pro(\omega_k) = \Sum{k}{1}{n} p(1-p)^{k-1} = 1.$$
 
-Пусть $\xi$ имеет геометрическое распределение с параметром $p$. Тогда
-$$\Expec\xi = \Sum{k}{1}{\infty}kp(1-p)^{k-1} = -p\Sum{k}{1}{\infty}\frac{d}{dp}(1-p)^k = -p \frac{d}{dp}(\frac{1-p}{p}) = \frac1{p}$$
-Аналогично, дифференцируя степенные ряды, получим диспресию
-$$\Disp\xi = \frac{q}{p^2}$$
+	Такое распределение называется \emph{геометрическим с параметром $p$}.
 
-Пусть теперь $\theta$ --- число неудач до $r$-го успеха. Тогда
-$$\forall k \in\Int_0 \quad \Pro(\theta = k) = p^rq^kC_{k+r-1}^{k}$$
-Это следует из того, что всего испытаний было $r+k$, на последнем месте успех, а до него как-то располагаются $k$ неудач и $r-1$ успех.
-Такое распределение называется \underline{отрицательным биномиальным} с параметрами $r, p$.
+	Пусть $\xi$ имеет геометрическое распределение с параметром $p$. Тогда
+	$$\Expec\xi = \Sum{k}{1}{\infty}kp(1-p)^{k-1} = -p\Sum{k}{1}{\infty}\frac{d}{dp}(1-p)^k 
+	= -p \frac{d}{dp}(\frac{1-p}{p}) = \frac1{p}.$$
+
+	Аналогично, дифференцируя степенные ряды, получим дисперсию
+	$$\Disp\xi = \frac{q}{p^2}.$$
+
+	Пусть теперь $\theta$ --- число неудач до $r$-го успеха. Тогда
+	$$\forall k \in\Int_0 \quad \Pro(\theta = k) = p^rq^kC_{k+r-1}^{k}.$$
+	
+	Это следует из того, что всего испытаний было $r+k$, на последнем месте успех, 
+	а до него как-то располагаются $k$ неудач и $r-1$ успех. Такое распределение 
+	называется \emph{отрицательным биномиальным} с параметрами $r, p$.
+
+
+\subsection{Распределение Пуассона. Теорема Муавра-Лапласа}
+
+\begin{Th} [Пуассон]
+	Пусть $\lambda = np$. Тогда при малых $p$ и больших $n$ можно использовать приближение
+	$$\Pro(\mu_n = k) = C_n^kp^kq^{n-k} \approx \frac{e^{-\lambda}\lambda^k}{k!}.$$
+\end{Th}
+\begin{Proof}
+	Докажем индукцией по $k$. При $k = 0$
+	$$\Pro(\mu_n = 0) = (1-p)^n = \left(1 - \frac{\lambda}{n}\right)^n 
+	\longrightarrow e^{-\lambda} \quad (n \to \infty).$$
+	
+	$$\frac{\Pro(\mu_n = k)}{\Pro(\mu_n = k-1)} = \frac{n!}{k!(n-k)!}p^kq^{n-k} 
+	\frac{(k-1)!(n-k+1)!}{n!} \frac{1}{p^{k-1}q^{n-k+1}} = \frac{(n-k+1)p}{kq}.$$
+
+	$$\Pro(\mu_n = k) = \frac{(n-k+1)p}{kq}\Pro(\mu_n = k-1) = 
+	\frac{(n-k+1)\frac{\lambda}n}{k\left(1-\frac{\lambda}n\right)}\Pro(\mu_n = k-1).$$
+
+	Воспользуемся предположением индукции для $k-1$.
+	$$\Pro(\mu_n = k) \to \frac{(n-k+1)\frac{\lambda}n}{k\left(1-\frac{\lambda}n\right)} 
+	\frac{e^{-\lambda}\lambda^{k-1}}{(k-1)!} \longrightarrow \frac{e^{-\lambda}\lambda^{k}}{k!} 
+	(n \to \infty).$$
+\end{Proof}
+
+	Следующая оценка формализует <<малость>> $p$ и <<величину>> $n$:
+	$$\sup\limits_k \left|\Pro(\mu_n = k) - \frac{e^{-\lambda}\lambda^k}{k!}\right| 
+	\leqslant 2np^2.$$
+	
+	Таким образом, зная $n, p$ всегда можно оценить сверху погрешность аппроксимации.
+	
+	\begin{Why}
+	При очень большом числе испытаний ни один нормальный компьютер не способен вычислить  
+	$C_n^kp^kq^{n-k}$, а уж тем более сложить их. Данная теорема позволяет сводить вычисление 
+	таких сложных вещей к вычислению экспонент.
+\end{Why}
+
+\begin{Def}
+	Распределение величины $\xi$ такое, что $\forall k \in \Int_+\quad\Pro(\xi = k)=
+	\dfrac{e^{-\lambda}\lambda^k}{k!}$, называется \mdef{распределением Пуассона} 
+	и обозначается $\Pois(\lambda)$.
+\end{Def}
+
+	Одно из приложений распределения Пуассона --- это пуассоновские потоки. Пусть во времени 
+	происходят некоторые события, которые мы фиксируем. $\lambda$~---~интенсивность 
+	потока~---~показывает среднее число событий за единицу времени. Тогда число произошедших 
+	событий на отрезке $[0, t]$ равно $\xi_t\colon \Pro(\xi_t = k) = 
+	\dfrac{e^{-\lambda t}(\lambda t)^k}{k!}$.
+
+	Свойства пуассоновского распределения ($\xi \sim \Pois(\lambda)$).
+\begin{enumerate}
+	\item $\Expec\xi = \lambda$.
+	\item $\Disp\xi = \lambda$.
+	\item $\xi_i \sim \Pois(\lambda_i) \quad i = 1, \ldots, n \Rightarrow 
+	\Sum{i}{1}{n}\xi_i \sim \Pois(\Sum{i}{1}{n}\lambda_i)$.
+\end{enumerate}
+
+\begin{St}
+	Пусть независимые случайные величины $\xi_i \sim \Pois(\lambda_i), \quad i = 1, 2$. 
+	Тогда условное распределение $\xi_1$ при условии $\xi_1 + \xi_2 = n$ имеет биномиальное 
+	распределение с параметрами $n, \frac{\lambda_1}{\lambda_1 + \lambda_2}$, то есть
+	$$\Pro(\xi_1 = k | \xi_1 + \xi_2 = n) = C_n^kp^k(1-p)^{n-k}, 
+	\quad p = \frac{\lambda_1}{\lambda_1 + \lambda_2}.$$
+\end{St}
+
+\begin{Proof}
+    $$\Pro(\xi_1 = k | \xi_1 + \xi_2 = n) = \frac{\Pro(\xi_1 = k, \xi_1 + \xi_2 = n)}
+    {\Pro(\xi_1 + \xi_2 = n)} = \frac{\Pro(\xi_1 = k, \xi_2 = n - k)}{\Pro(\xi_1 + \xi_2 = n)}=\ldots$$
+	
+	В числителе воспользуемся независимостью $\xi_1, \xi_2$, а в знаменателе свойством 
+	$3$ пуассоновского распределения:
+	$$\ldots=\frac{e^{-\lambda_1}\frac{\lambda_1^k}{k!}e^{-\lambda_2}
+	\frac{\lambda_2^{n-k}}{(n-k)!}}{e^{-(\lambda_1+\lambda_2)}
+	\frac{(\lambda_1+\lambda_2)^n}{n!}} = C_n^k\left(\frac{\lambda_1}{\lambda_1 + \lambda_2}\right)^k
+	\left(\frac{\lambda_2}{\lambda_1 + \lambda_2}\right)^{n-k}.$$
+\end{Proof}
+
+\begin{Th}[Муавра-Лапласа]
+	Пусть $\sqrt{npq}$ велико. Тогда
+	$$\Pro(\mu_n = k) = \Pro\left(\frac{\mu_n - np}{\sqrt{npq}} = \frac{k - np}{\sqrt{npq}}\right) = 
+	\frac{1}{\sqrt{2\pi}}e^{-\frac{x^2}2} + o(1), \quad x \equiv \frac{k - np}{\sqrt{npq}}.$$
+\end{Th}
+
+\begin{Proof} 
+	Не было и не должно быть.
+\end{Proof}
+
+	Рассмотрим функции
+	$$\varphi(x) = \frac{1}{\sqrt{2\pi}}e^{-\frac{x^2}2}.$$
+	$$\Phi(x) = \int\limits_{-\infty}^x \frac{1}{\sqrt{2\pi}}e^{-\frac{u^2}2} du 
+	= \int\limits_{-\infty}^{x}\varphi(u)du.$$
+
+	Заметим, что 
+	$$\int\limits_{-\infty}^{+\infty} \varphi(u)du = 1.$$ 
+
+	Это верно, так как данный интеграл сводится заменой $t = \frac{x}{\sqrt{2}}$ 
+	к известному интегралу Пуассона.
+
+	Так как $\varphi(x)$ неотрицательна, и интеграл от нее по всей прямой равен $1$, 
+	она является плотностью некоторого абсолютно непрерывного распределения, которое называется 
+	\emph{стандартным нормальным распределением} и обозначается $\Norm(0, 1)$.
+
+	Пусть $\xi \sim \Norm(0,1)$.
+	$$\Expec\xi^k = \int\limits_{-\infty}^{+\infty}x^k\varphi(x)dx.$$
+
+	$$e^{h\xi}=1 + h\xi + \frac{(h\xi)^2}{2!} + \ldots.$$
+
+	$$\Expec e^{h\xi} = 1 + h\Expec\xi + \frac{h^2}{2!}\Expec\xi^2 + \ldots \equiv \psi(h).$$
+
+\begin{Def}
+    Функция $\psi(h)$ называется \mdef{производящей функцией моментов}.
+\end{Def}
+
+	Производящая функция моментов позволяет легко найти любой момент, 
+	просто взяв производную от функции в нуле.
+	$$\psi(h) = \int\limits_{-\infty}^{+\infty}e^{hx}\varphi(x)dx = \int\limits_{-\infty}^{+\infty}
+	\frac{1}{\sqrt{2\pi}}e^{hx-\frac{x^2}2}dx = \frac{e^{\frac{h^2}2}}{\sqrt{2\pi}}
+	\int\limits_{-\infty}^{+\infty}e^{-\frac{(x-h)^2}2}dx = e^{\frac{h^2}2}.$$
+	
+	$$e^{\frac{h^2}2} = 1 + \frac{h^2}2 + \frac1{2!}\left(\frac{h^2}2\right)^2 + \ldots.$$
+	
+	Приравнивая это равенство к предыдущему разложению, получим, 
+	что все нечетные центральные моменты равны $0$.
+	$$\Expec\xi^{2n-1} = 0.$$
+	
+	$$\frac{1}{n!2^n} = \frac{\Expec\xi^{2n}}{(2n)!} \Rightarrow \Expec\xi^{2n} = 
+	\frac{(2n)!}{n!2^n} = \frac{2n(2n-1)\ldots n \ldots 1}{n!2^n} = (2n-1)!!$$
+
+	Последняя формула позволяет очень быстро получить нужный момент, 
+	не считая интеграл по частям много раз.
+
+\begin{Th}[Интегральная теорема Муавра-Лапласа]
+	Пусть $\sqrt{npq}$ велико. Тогда
+	$$\Pro(m_1 \leqslant \mu_n \leqslant m_2) = \Pro\left(\frac{m_1 - np}{\sqrt{npq}} \leqslant 
+	\frac{\mu_n - np}{\sqrt{npq}} \leqslant \frac{m_2 - np}{\sqrt{npq}}\right) \approx 
+	\int\limits_{x_1}^{x_2}\varphi(x)dx,$$
+
+	$$x1 \equiv \frac{m_1 - np}{\sqrt{npq}}, \quad x2 \equiv\frac{m_2 - np}{\sqrt{npq}}.$$
+\end{Th}
+
+	С данной теоремой связана <<Задача о докторе Споке>>. (Добавить ссылку)
+
+	Рассмотрим теперь случайную величину $\xi$ с геометрическим распределением. 
+	Поскольку $\Expec\xi = \frac1p$, 
+	$$p\xi=\frac{\xi}{\Expec\xi}.$$
+
+	При стремлении вероятности успеха к нулю, номер первого успеха будет стремиться к бесконечности, 
+	как и матожидание $\xi$. Однако их отношение будет иметь конечный предел:
+	$$\forall x > 0 \quad \Pro(p\xi > x) = \Pro\left(\xi > \frac{x}p\right) = 
+	\Sum{k}{\left[\frac{x}{p}\right] + 1}{\infty}p(1-p)^{k-1} = 
+	\frac{p(1-p)^{\left[\frac{x}p\right]}}p = (1-p)^{\left[\frac{x}p\right]}.$$ 
+	
+	$$\lim\limits_{p \to 0} \Pro(p\xi > x) = 
+	\lim\limits_{p \to 0}(1-p)^{\left[\frac{x}p\right]} = e^{-x}.$$
+	
+	В последнем переходе от дробной части можно избавиться, так как она не вносит 
+	никакого вклада в предел. Итак, получили, что
+	$$\lim\limits_{p \to 0} \Pro(p\xi < x) = 1 - e^{-x}.$$
+
+	Это частный случай \emph{показательного} (экспоненциального) распределения. 
+	В общем случае оно выглядит так:
+	$$F(x) = 1 - e^{-\lambda x},$$
+	$$p(x) = \lambda e^{-\lambda x}.$$
+
+	Матожидание случайной величины, распределенной показательно, имеет вид
+	$$\int\limits_0^{\infty} x\lambda e^{-\lambda x}dx = \frac1{\lambda}$$
+
+	Показательно распределение обладает интересным свойством: свойством отсутствия 
+	последействия (или отсутствия памяти). Предположим, что вы ждете автобус на 
+	остановке, а время между автобусами $\xi$ имеет показательное распределение. 
+	Тогда вероятность того, что вы прождете автобус еще $t$ никак не зависит от того, 
+	как долго ($\tau$) вы уже ждете. Формализуем это:
+	$$ \Pro(\xi > t + \tau | \xi > \tau) = \Pro(\xi > t).$$
+
+	По определению условной вероятности
+	$$\Pro(\xi > t + \tau | \xi > \tau) = \frac{\Pro(\xi > t + \tau, \xi > \tau)}{\Pro(\xi > \tau)} = 
+	\frac{\Pro(\xi > t + \tau)}{\Pro(\xi > \tau)} = \frac{e^{-\lambda(t+\tau)}}{e^{-\lambda \tau}} = 
+	e^{-\lambda t}.$$
+
+	Показательное распределение является единственным обладающим таким свойством в классе абсолютно 
+	непрерывных распределений. В классе дискретных распределений таким свойством обладает только 
+	геометрическое распределение (введенное как число неудач до первого успеха).
+	
+\subsection{Характеристические функции}
+
+	Введем еще какие-нибудь понятия, которые что-то там нам облегчат (наверное).
+
+\begin{Def}
+    Пусть $\xi$ "---~случайная величина. Тогда будем говорить, что 
+    $f_\xi \left( x \right) $ "---~\mdef{характеристическая функция $\xi$}, если:
+    \[
+        f_\xi(t) = \Expec e^{it\xi}.
+    \] 
+\end{Def} 
+
+	Поясним раз.  $\Expec e^{it\xi}$, чтобы не сломать мозг раньше времени, понимаем в смысле
+	$\Expec e^{it\xi} = \Expec \cos{t\xi} + i\Expec \sin{t\xi}$.
+
+	Поясним два. Если $\xi$ "---~дискретная случайная величина, то она задается рядом
+	распределения $\Pro(\xi = x_k)$, тогда  $f_\xi(t) = \sum\limits_{k}^{} e^{itx_k} \Pro(\xi = x_k)$. 
+	Если же $\xi$"---~абсолютно непрерывная случайная величина, то  
+	$f_\xi(t) = \int\limits_{}^{} e^{itx} dF_\xi(x)$, где $F_\xi(x)$"---~функция распределения $\xi$, 
+	а интеграл как всегда берется по всему пространству, да еще и Лебегов.
+
+	Прежде чем мы немного поковыряем свойства харфункции и посмотрим примерчики,
+	введем еще пару определений, ведь без определений так скучно жить!
+
+\begin{Def}
+    Функция $f(x)$ называется \mdef{неотрицательно определенной}, если:
+    \[
+	    \forall n \in \Nat \quad \forall t_1, \ldots t_n \in \Real \quad
+    	\forall z_1, \ldots z_n \in \Compl \quad 
+    	\sum\limits_{i,j=1}^{n} f(t_i - t_j) z_i \overline{z_j} \geqslant 0.
+    \] 
+\end{Def} 
+
+\begin{Def}
+    Случайная величина $\xi$ имеет \mdef{решетчатое распределение}, если
+    $\exists a, b \colon \sum\limits_{-\infty}^{+\infty}
+    \Pro\left(\xi = a + bk\right)= 1$. Тогда число $b$ называется 
+    \mdef{шагом распределени	я}.
+\end{Def} 
+
+	Свойства (под $f(t)$ подразумевается $f_\xi(t)$ для какой-то случайной величины $\xi$):
+
+\begin{enumerate}
+    \item $ \left| f(t) \right| \leqslant 1 $.
+    \item $f(0) = 1$.
+    \item $f(-t) = \overline{f(t)}$ 
+    \item $\forall t \in \Real \quad f_\xi(t) \in \Real \iff$  $\xi$ распределена симметрично 
+    (тривиальное следствие из предыдущего).
+
+    \item\label{ravnepr} $f(t)$ равномерно непрерывна на $\Real$.
+    \item Если $\eta = a\xi + b$, то $f_\eta(t) = e^{itb}f_\xi(at)$.
+    \item\label{nez} Если $\xi_1,  \ldots , \xi_n$"---~независимые случайные величины, и 
+    $\eta = \xi_1 +  \ldots + \xi_n$, то $f_\eta(x) = \prod\limits_{k=1}^{n} f_{\xi_k}(x)$.
+    
+    \item\label{moments} Если $\Expec \left|\xi^k\right| < \infty$, то 
+    $\Expec \xi^k = i^k f^{(k)}_\xi(0)$. Если $k$ четно, то верно и обратное утверждение.
+    
+    \item Верна
+    \begin{Th}[Бохнера-Хинчина]
+       $f(t)$ является характеристической функцией $\iff$ $f(0) = 1$ 
+       и  $f(t)$ обладает свойством неотрицательной определенности.
+    \end{Th}
+
+    \item $ \left| f_\xi(t) \right|$ интегрируема 
+    $\implies p_\xi(x) \xrightarrow[ \left| x \right| \rightarrow \infty]{} 0$,
+    где $p_\xi(x)$ "--- плотность распределения.
+    
+    \item Случайная величина $\xi$ имеет решетчатое распределение с шагом
+    $b \iff \left| f_\xi \left( \dfrac{2\pi}{b} \right) \right| = 1$. 
+\end{enumerate}
+
+	Не расслабляться! Сейчас докажем некоторые утверждения.
+
+\begin{Proof} \eqref{ravnepr}
+\begin{multline*}
+    \bigl| f(t + h) - f(t) \bigr| = 
+    \left| \int\limits_{-\infty}^{\infty} e^{i(t+h)x}dF(x) + 
+    \int\limits_{-\infty}^{\infty} e^{itx}dF(x) \right| \leqslant
+    \int\limits_{-\infty}^{\infty} \Bigl| e^{itx} \left( e^{ith} + 1 \right)  
+    \Bigr| dF(x) \leqslant \\ \leqslant \int\limits_{-\infty}^{\infty} \Bigl| e^{ihx} 
+    - 1 \Bigr| dF(x) = \underbrace{\int\limits_{|x| \leqslant M}^{} \left| e^{ith} 
+    - 1 \right| dF(x)}_{I_1} + \underbrace{\int\limits_{|x| > M}^{} \left| e^{ith}
+    - 1 \right|dF(x)}_{I_2}.
+\end{multline*}
+
+	Оценим теперь интегралы $I_1$ и $I_2$. Функция, непрерывная на компакте равномерно 
+	непрерывна на нем, а значит $\forall \varepsilon > 0 \quad \exists h$, такой что \
+	$I_1 < \dfrac{\varepsilon}{2}$. Для второго интеграла имеем: 
+	$ \left| e^{ith} - 1 \right|\leqslant 2 \implies I_2 \leqslant 2\Pro \left( \left| 
+	\xi \right| > M \right) < \dfrac{\varepsilon}{2}$ за счет выбора $M$.
+\end{Proof} 
+
+\begin{Proof} \eqref{nez}
+
+	Воспользуемся независимостью случайных величин, чтобы разбить одно большое 
+	матожидание на много маленьких.
+    $$
+        f_{\xi_1 +  \ldots + \xi_n} =
+        \Expec e^{it(\xi_1 + \ldots + \xi_n)} = 
+        \Expec \left( e^{it\xi_1} \ldots e^{it\xi_n} \right) =
+        \Expec e^{it\xi_1}  \ldots \Expec e^{it\xi_n} =
+        \prod\limits_{k=1}^{n} f_{\xi_k}(x).
+    $$ 
+\end{Proof} 
+
+\begin{Proof} \eqref{moments}
+
+    Первую производную посчитаем по определению:
+    \[
+        f_\xi'(t) = \lim\limits_{h \rightarrow 0} \frac{f_\xi(t + h) - f_\xi(t)}{h}=
+        \lim\limits_{h \rightarrow 0} \int\limits_{-\infty}^{\infty} e^{ixt} 
+        \frac{e^{ixh} - 1}{h} dF_\xi(x) = \ldots. 
+    \]
+    
+    Тут у нас $\dfrac{e^{ixh} - 1}{h} \leqslant \left| x \right|$,
+    поэтому интеграл сходится равномерно (признак Вейерштрасса),
+    и мы можем поменять местами предел и интеграл и ничего нам за это не будет:
+    \[
+        \ldots = \int\limits_{-\infty}^{\infty} e^{ixt} 
+        \lim\limits_{h \rightarrow 0} \frac{e^{ixh} - 1}{h} dF_\xi(x) = \ldots.
+    \] 
+    
+    Теперь надо пристально посмотреть на последнее подынтегральное выражение и заметить 
+    там $3$-ий замечательный предел:
+    \[
+        \frac{e^{ixh} - 1}{h} \xrightarrow[h \rightarrow 0]{} ix.
+    \] 
+    
+    Тогда продолжаем:
+    \[
+        \ldots = i \int\limits_{-\infty}^{\infty} xe^{itx}dF_\xi(x).
+    \]
+    
+    При $t = 0 \  e^{itx} = 1$, поэтому
+    \[
+        f_\xi'(0) = i \int\limits_{-\infty}^{\infty} xdF(x) = i \Expec \xi.
+    \]
+    
+    По индукции показываем справедливость для производных старших порядков.
+    Обратное утверждение для четных $k$ доказывать не будем. Но там немного 
+    полопиталить и доказать это все безобразие по индукции. Можно залезть в 
+    Ширяева и удовлетворить свое любопытство.
+\end{Proof}
+
+\begin{Why}
+    Мяу. Если $\Expec \left| \xi \right|^n < \infty$, 
+    то мы можем записать харфункцию в виде суммы:
+    \[
+        f_\xi(t) = \sum\limits_{k=0}^{n} \frac{t^k}{k!}f_\xi^{(k)}(0) +\overline{o}(t^{k}) =
+        1 + \sum\limits_{k=1}^{n} \frac{(it)^k}{k!} \Expec \xi^k + \overline{o}(t^{k}).
+    \]
+    
+    Довольно удобно считать моменты, если мы уверены в их существовании.
+\end{Why} 
+
+	Теперь рассмотрим некоторые примеры:
+
+\begin{Ex}
+    Найдем характеристическую функцию для стандартного нормального распределения $\Norm(0, 1)$
+    с плотностью $p(x) = \dfrac{1}{\sqrt{2\pi}} e^{\frac{-x^2}{2}}$.
+    \begin{multline*}
+        f(t) = \Expec e^{it\xi} = 
+        \frac{1}{\sqrt{2\pi}}\int\limits_{-\infty}^{\infty} e^{itx} e^{\frac{-x^2}{2}} dx =
+        \frac{1}{\sqrt{2\pi}} \int\limits_{-\infty}^{\infty} 
+        e^{-\frac{1}{2}(x - it)^2} e^{-\frac{t^2}{2}}dx = \\
+        = \frac{1}{\sqrt{2\pi}} e^{-\frac{t^2}{2}} \int\limits_{-\infty}^{\infty}  
+        e^{-\frac{1}{2}(x - it)^2}d(x - it) = e^{-\frac{t^2}{2}}.
+    \end{multline*}
+\end{Ex}
+
+\begin{Ex}
+    Вот представь ситуацию: входишь ты в хату, а тебе пахан кидает под ноги
+    кидает $\cos t^2$ и говорит: <<а найди-ка нам случайную величину, для 
+    которой это выражение будет харфункцией>>. Тут главное "--- не зашквариться
+    и по понятиям пояснить, что если бы $\cos t^2$ была бы харфункцией, то по
+    свойству~\eqref{ravnepr} она была бы равномерно непрерывной на $\Real$,
+    а это не так: если $t_1^2 = 2\pi k - \dfrac{\pi}{2}$, а $t_2^2 = 2\pi k$,
+    то $\cos t_2^2 - \cos t_1^2 = 1$, а
+    \[
+        % \vphantom чтобы выровнять знаки корня по высоте
+        t_2 - t_1 =\sqrt{\vphantom{\frac{\pi}{2}} 2\pi k} - \sqrt{2\pi k - \frac{\pi}{2} } = 
+        \frac{\frac{\pi}{2}}{\sqrt{\vphantom{\frac{\pi}{2}} 2\pi k} + \sqrt{2\pi k - \frac{\pi}{2} }}
+        \xrightarrow[k \rightarrow \infty]{} 0. 
+    \]
+    
+    То есть для любого наперед заданного $\delta > 0$ мы можем найти $k$
+    достаточно большое, чтобы разность между $t_1$ и $t_2$ была меньше
+    $\delta$, а $\cos t_2^2 - \cos t_1^2 = 1$, что противоречит условию 
+    равномерной непрерывности.
+\end{Ex}
+
+\begin{Ex}
+    А теперь найдем случайную величину $\xi$, такую что $\Expec e^{it\xi} = \cos t$.
+    Для этого вспомним, что если $\xi$ "--- дискретная случайная величина, то 
+    $\Expec g(\xi) = \sum\limits_{k} g(k) \Pro \left( \xi = k \right)  $
+    \[
+        \cos t = \frac{1}{2} \left( e^{it} + e^{-it} \right)
+        \implies \xi = 
+        \left\{
+            \begin{aligned}
+                -1 &, \quad \Pro\left(\xi = -1\right) = \frac{1}{2} \\
+                1 &, \quad \Pro \left( \xi = 1 \right) = \frac{1}{2}
+            \end{aligned}
+        \right. 
+    .\] 
+\end{Ex} 
+		
+\subsection{Распределение функций от случайных величин}
+
+	Рассмотрим отображение $f\colon \Real^n \to \Real^n$ с якобианом 
+	$J_f = \dfrac{D(f_1(x), \ldots, f_n(x))}{D(x_1, \ldots, x_n)}$.
+	Если он отличен от $0$, то существует обратная функция, и выполнено соотношение
+	$$J_fJ_{f^{-1}} = 1.$$
+
+\begin{Th}
+	Пусть  $f\colon \Real^n \to \Real^n$ --- достаточно гладкая функция с ненулевым якобианом. 
+	$\xi = (\xi_1, \ldots, \xi_n) \sim p_\xi(x)$. Рассмотрим случайную величину $\eta = f(\xi)$. 
+	Тогда
+	$$p_\eta(x) = p_\xi(f^{-1}(x))|J_{f^{-1}}(x)|.$$
+\end{Th}
+
+\begin{Proof}
+	Вспомним формулу замены переменных в интеграле:
+	$$\int\limits_B \varphi(x)dx = \int\limits_{f^{-1}(B)} \varphi(f(y))|J_f(y)|dy$$
+
+	Тогда $\forall B \in \Bor_n$
+	$$\int\limits_B p_\xi(f^{-1}(x))|J_{f^{-1}(x)}|dx = \int\limits_{f^{-1}(B)} 
+	p_\xi(f(f^{-1}(B)))|J_{f^{-1}(x)}||J_{f(x)}|dx =.$$
+	
+	$$\int\limits_{f^{-1}(B)}p_\xi(x)dx = \Pro(\xi \in f^{-1}(B))=
+	\Pro(f(\xi) \in B) = \Pro(\eta \in B).$$
+\end{Proof}
+
+	Теперь найдем формулу для плотности суммы случайных величин.
+	Пусть $\xi = (\xi_1, \xi_2) \sim p_\xi(x)$. Рассмотрим $f\colon (x_1, x_2) \mapsto 
+	(x_1 + x_2, x_2)$. Тогда 
+	$$f^{-1} \colon (x_1, x_2) \mapsto (x_1 - x_2, x_2), \quad J_{f^{-1}}=1.$$ 
+	Обозначим $\eta = f(\xi)$. Тогда по только что доказанной теореме 
+	$p_\eta(x_1, x_2) = p_{\xi}(x_1 - x_2, x_2)$. Тогда по свойству $4$ функции 
+	распределения векторной случайной величины
+	$$p_{\xi_1 + \xi_2}(x) = \int\limits_{-\infty}^{+\infty}p_\xi(x-x_2, x_2)dx_2 = 
+	\{\text{независимость}\xi_1, \xi_2\} = \int\limits_{-\infty}^{+\infty}
+	p_{\xi_1}(x-x_2)p_{\xi_2}(x_2)dx_2.$$
+	
+	В силу симметрии 
+	$$p_{\xi_1 + \xi_2}(x) = \int\limits_{-\infty}^{+\infty}p_{\xi_1}(x_1)p_{\xi_2}(x - x_2)dx_1.$$
+
+	Эти формулы называются \emph{формулами свертки}. Существует аналогичная формула 
+	для функция распределения, но мы ее не доказываем, потому что это какой-то функан:
+	$$F_{\xi_1 + \xi_2}(x) = \int\limits_{-\infty}^{+\infty}F_{\xi_1}(x-y)dF_{\xi_2}(y) = 
+	\int\limits_{-\infty}^{+\infty}F_{\xi_2}(x-y)dF_{\xi_1}(y).$$
 
 \newpage
-
-
 \end{document}
