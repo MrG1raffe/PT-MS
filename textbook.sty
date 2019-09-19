@@ -17,6 +17,10 @@
 \titleformat{\subsection} {\normalfont\large\bfseries\filcenter}{\thesubsection.}{1em}{}
 \titlespacing*{\subsection}{0pt}{3.5ex}{.3ex}
 
+% Subsection
+\titleformat{\subsubsection} {\normalfont\bfseries\filcenter}{\thesubsubsection.}{1em}{}
+\titlespacing*{\subsubsection}{0pt}{0.5ex}{.3ex}
+
 % Part
 \titleformat
 {\part} % command
@@ -65,15 +69,8 @@
 {}{\color{blue}\partname{} }%
 {\enspace\titlerule\contentspage}%
 
-\titlecontents{section}[2.4pc]
-{\addvspace{0.4cm}}
-{\contentslabel[\thecontentslabel]{2.4pc}}
-{\S}
-{\hfill\small \hspace{3cm}\thecontentspage}
-[]
-
 % Глубина отображения
-\setcounter{tocdepth}{2}
+\setcounter{tocdepth}{3}
 
 
 %---------------------------------------------------------------------------------
@@ -86,7 +83,7 @@
 \usepackage{graphicx}
 \usepackage{eso-pic}
 \usepackage{transparent}
-\AddToShipoutPictureBG{{\transparent{0.2}
+\AddToShipoutPictureBG{{\transparent{0.05}
   \begin{tikzpicture}[remember picture,overlay]
 \node [xshift=0cm, yshift=0cm] at (current page.center) 
     {\includegraphics[width=\paperwidth]{back}};
