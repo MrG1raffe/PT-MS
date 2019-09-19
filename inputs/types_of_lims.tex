@@ -207,8 +207,9 @@
 	$\dfrac{1}{2}$. Тогда функция распределения для случайной величины $\xi_i$ выглядит так 
 	(Рис.~\ref{ris:distr_seq}): 
 
-\begin{center}
-\begin{minipage}{0.32\linewidth}
+\begin{figure}
+\centering
+\begin{minipage}[t]{0.32\linewidth}
 	\begin{tikzpicture}
 	\begin{axis}[
 		scale=0.5,
@@ -223,7 +224,7 @@
 		extra x tick style={
 			grid=major
 		},
-		extra x tick label={$\frac{3}{4}$}
+		extra x tick label={$0.75$}
 	]
 	\addplot[blue, domain=-0.2:0] {0};
 	\addplot[blue, mark=*] coordinates {(0, 0)};
@@ -236,13 +237,12 @@
 	\addplot[blue, mark=o] coordinates {(0.75, 1)};
 	\end{axis}
 	\end{tikzpicture}
-	\begin{center}
-	\captionof{figure}{Функция \\ распределения $\xi_n$ \\ при $n = 4$}
-	\end{center}	
+    \vfill
 	\label{ris:distr_seq}
+	\caption{Функция распределения $\xi_n$ при $n = 4$}
 \end{minipage}
-\hspace{0.2cm}
-\begin{minipage}{0.32\linewidth}
+\hfill
+\begin{minipage}[t]{0.32\linewidth}
 	\begin{tikzpicture}
 	\begin{axis}[
 		scale=0.5,
@@ -264,13 +264,12 @@
 	\addplot[blue, mark=*] coordinates {(1, 1)};
 	\end{axis}
 	\end{tikzpicture}
-	\begin{center}
-	\captionof{figure}{Предельная \\ функция}
-	\end{center}
+    \vfill
 	\label{ris:limit_f}
+    \caption{Предельная функция}
 \end{minipage}
-\hspace{0.2cm}
-\begin{minipage}{0.32\linewidth}
+\hfill
+\begin{minipage}[t]{0.32\linewidth}
 	\begin{tikzpicture}
 	\begin{axis}[
 		scale=0.5,
@@ -293,12 +292,11 @@
 	\addplot[blue, mark=o] coordinates {(1, 1)};
 	\end{axis}
 \end{tikzpicture}
-\begin{center}
-\captionof{figure}{Функция \\ распределения $\xi$}
-\end{center}
+\vfill
 \label{ris:dist_lim}
+\caption{Функция распределения $\xi$}
 \end{minipage}
-\end{center}
+\end{figure}
 \par\bigskip
 	Тогда предельная функция будет выглядеть так (Рис.~\ref{ris:limit_f}). Заметим, 
 	что она вообще не является функцией распределения, так как в точке $1$ нарушено 
@@ -314,7 +312,7 @@
 \end{St}
 
 \begin{Proof}
-	\emph{\textbf{TODO:}} Чет я не знаю, как это доказать =(
+	Гдето шляется, мы искренне надеемся, что оно сюда вернется.
 \end{Proof}
 
 \begin{St}
@@ -374,7 +372,7 @@
 	\node (pn) at (3.8, -0.2) {$\xi \xequiv{\text{п.н.}} a$};
 	\node[st] (th) [right=of distr] {т. о непрерывности};
 	
-	\draw [->] (prob1) -> (pro);
+    \draw [->] (prob1) -> (pro);
 	\draw [->] (power) -> (pro);
 	\draw [->] (pro) -> (distr);
 	\draw [<->] (distr) -> (weak);
